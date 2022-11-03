@@ -1409,6 +1409,80 @@ paths:
       responses:
         "200":
           description: OK
+  /game/relationship/getPresenceData:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/relationship/getRelationships:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/relationship/clearRelationship:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/relationType"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/targetProfileID"
+      responses:
+        "200":
+          description: OK
+  /game/relationship/ignore:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/blocklevel"
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/relationType"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/targetProfileID"
+      responses:
+        "200":
+          description: OK
+  /game/relationship/setPresence:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/presence_id"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/relationship/setPresenceProperty:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/presencePropertyDef_id"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/propertyValue"
+      responses:
+        "200":
+          description: OK
 components:
   schemas:
     Result:
@@ -3798,3 +3872,67 @@ components:
       schema:
         type: integer
       example: 209072
+    relationType:
+      name: relationType
+      in: query
+      required: true
+      description: "1=Unban, 2=Unmute"
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example:
+        - 1
+        - 2
+    targetProfileID:
+      name: targetProfileID
+      in: query
+      required: true
+      description: ""
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: 4994658
+    presence_id:
+      name: presence_id
+      in: query
+      required: true
+      description: ""
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: 3
+    blocklevel:
+      name: blocklevel
+      in: query
+      required: true
+      description: "1=lobby ban, 2=mute"
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example:
+        - 1
+        - 2
+    presencePropertyDef_id:
+      name: presencePropertyDef_id
+      in: query
+      required: true
+      description: ""
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: 1409823
+    propertyValue:
+      name: value
+      in: query
+      required: true
+      description: ""
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: -2
