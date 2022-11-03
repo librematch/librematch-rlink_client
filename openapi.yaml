@@ -626,6 +626,271 @@ paths:
       responses:
         "200":
           description: OK
+  /game/advertisement/host:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/advertisementid"
+        - $ref: "#/components/parameters/appBinaryChecksum"
+        - $ref: "#/components/parameters/automatchPoll_id"
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/dataChecksum"
+        - $ref: "#/components/parameters/description"
+        - $ref: "#/components/parameters/hostid"
+        - $ref: "#/components/parameters/isObservable"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/mapname"
+        - $ref: "#/components/parameters/matchtype"
+        - $ref: "#/components/parameters/maxplayers"
+        - $ref: "#/components/parameters/modDLLChecksum"
+        - $ref: "#/components/parameters/modDLLFile"
+        - $ref: "#/components/parameters/modName"
+        - $ref: "#/components/parameters/modVersion"
+        - $ref: "#/components/parameters/observerDelay"
+        - $ref: "#/components/parameters/observerPassword"
+        - $ref: "#/components/parameters/options"
+        - $ref: "#/components/parameters/party"
+        - $ref: "#/components/parameters/password"
+        - $ref: "#/components/parameters/passworded"
+        - $ref: "#/components/parameters/race"
+        - $ref: "#/components/parameters/relayRegion"
+        - $ref: "#/components/parameters/serviceType"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/slotinfo"
+        - $ref: "#/components/parameters/state"
+        - $ref: "#/components/parameters/statgroup"
+        - $ref: "#/components/parameters/team"
+        - $ref: "#/components/parameters/versionFlags"
+        - $ref: "#/components/parameters/visible"
+      responses:
+        "200":
+          description: OK
+  /game/advertisement/update:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/advertisementid"
+        - $ref: "#/components/parameters/appBinaryChecksum"
+        - $ref: "#/components/parameters/automatchPoll_id"
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/dataChecksum"
+        - $ref: "#/components/parameters/description"
+        - $ref: "#/components/parameters/hostid"
+        - $ref: "#/components/parameters/isObservable"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/mapname"
+        - $ref: "#/components/parameters/matchtype"
+        - $ref: "#/components/parameters/maxplayers"
+        - $ref: "#/components/parameters/modDLLChecksum"
+        - $ref: "#/components/parameters/modDLLFile"
+        - $ref: "#/components/parameters/modName"
+        - $ref: "#/components/parameters/modVersion"
+        - $ref: "#/components/parameters/observerDelay"
+        - $ref: "#/components/parameters/observerPassword"
+        - $ref: "#/components/parameters/options"
+        - $ref: "#/components/parameters/password"
+        - $ref: "#/components/parameters/passworded"
+        - $ref: "#/components/parameters/race"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/slotinfo"
+        - $ref: "#/components/parameters/state"
+        - $ref: "#/components/parameters/team"
+        - $ref: "#/components/parameters/versionFlags"
+        - $ref: "#/components/parameters/visible"
+      responses:
+        "200":
+          description: OK
+  /game/advertisement/join:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/advertisementid"
+        - $ref: "#/components/parameters/appBinaryChecksum"
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/dataChecksum"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/modDLLChecksum"
+        - $ref: "#/components/parameters/modDLLFile"
+        - $ref: "#/components/parameters/modName"
+        - $ref: "#/components/parameters/modVersion"
+        - $ref: "#/components/parameters/party"
+        - $ref: "#/components/parameters/password"
+        - $ref: "#/components/parameters/race"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/statgroup"
+        - $ref: "#/components/parameters/team"
+        - $ref: "#/components/parameters/versionFlags"
+      responses:
+        "200":
+          description: OK
+  /game/advertisement/startObserving:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/advertisementid"
+        - $ref: "#/components/parameters/appBinaryChecksum"
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/dataChecksum"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/modDLLChecksum"
+        - $ref: "#/components/parameters/modDLLFile"
+        - $ref: "#/components/parameters/modName"
+        - $ref: "#/components/parameters/modVersion"
+        - $ref: "#/components/parameters/password"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/versionFlags"
+        - $ref: "#/components/parameters/withPartySessionID"
+      responses:
+        "200":
+          description: OK
+  /game/advertisement/stopObserving:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/advertisementid"
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/advertisement/updatePlatformLobbyID:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/matchID"
+        - $ref: "#/components/parameters/platformlobbyID"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/advertisement/updateState:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/advertisementid"
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/advertisement/updateTags:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/advertisementid"
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/numericTagNames"
+        - $ref: "#/components/parameters/numericTagValues"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/stringTagNames"
+        - $ref: "#/components/parameters/stringTagValues"
+      responses:
+        "200":
+          description: OK
+  /game/advertisement/leave:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/advertisementid"
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/automatch/getAutomatchMap:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/automatch2/getAutomatchMap:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/automatch2/polling:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/appBinCRC"
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/dataCRC"
+        - $ref: "#/components/parameters/factionIDs"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/matchTypes"
+        - $ref: "#/components/parameters/modDLLChecksum"
+        - $ref: "#/components/parameters/modDLLFile"
+        - $ref: "#/components/parameters/modName"
+        - $ref: "#/components/parameters/modVersion"
+        - $ref: "#/components/parameters/options"
+        - $ref: "#/components/parameters/partySessionID"
+        - $ref: "#/components/parameters/raceInfoKey"
+        - $ref: "#/components/parameters/raceInfoProfileID"
+        - $ref: "#/components/parameters/raceInfoRaceID"
+        - $ref: "#/components/parameters/relayPingTimes"
+        - $ref: "#/components/parameters/relayRegion"
+        - $ref: "#/components/parameters/relayRegions"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/versionFlags"
+        - $ref: "#/components/parameters/vetoMapKey"
+        - $ref: "#/components/parameters/vetoMaps"
+      responses:
+        "200":
+          description: OK
+  /game/automatch2/stoppolling:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/commit"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/ownerProfileID"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/automatch2/updateStatus:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/matchID"
+        - $ref: "#/components/parameters/result"
+        - $ref: "#/components/parameters/resultCode"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
 components:
   schemas:
     Result:
@@ -1291,3 +1556,488 @@ components:
       schema:
         type: array
       example: [123e88e6-88e1-4aa7-ab3c-a2975fc0b04d]
+    advertisementid:
+      name: advertisementid
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: -1
+    automatchPoll_id:
+      name: automatchPoll_id
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: -1
+    description:
+      name: description
+      in: query
+      required: true
+      description: "Lobby title"
+      schema:
+        type: string
+      example:
+        - SESSION_MATCH_KEY
+        - Test
+    hostid:
+      name: hostid
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: 1
+    isObservable:
+      name: isObservable
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: 1
+    mapname:
+      name: mapname
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: string
+      example: "no_map"
+    matchtype:
+      name: matchtype
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: 19
+    maxplayers:
+      name: maxplayers
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: 8
+    observerDelay:
+      name: observerDelay
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: 180
+    observerPassword:
+      name: observerPassword
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: string
+      example: "unknown password"
+    options:
+      name: options
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: string
+      example: "opts"
+    party:
+      name: party
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: -1
+    password:
+      name: password
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: string
+      example: "test"
+    passworded:
+      name: passworded
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example:
+        - 0
+        - 1
+    race:
+      name: race
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: 2039321
+    relayRegion:
+      name: relayRegion
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: string
+      example:
+        - "australiasoutheast"
+        - "brazilsouth"
+        - "koreacentral"
+        - "ukwest"
+        - "southeastasia"
+        - "westus2"
+        - "westindia"
+        - "westeurope"
+        - "eastus"
+    serviceType:
+      name: serviceType
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: 0
+    slotinfo:
+      name: slotinfo
+      in: query
+      required: true
+      description: "zlib compressed"
+      schema:
+        type: string
+      example: eNrtjkEKwjAQRT3LrKNYl10XoWBBqjtxMaQTHGySkoxCEe8uiaDewE127zMP5lUbdXrAFLzhkVpn/IoHqJeVgigo7F3bvKcQ2sRrBQb17yWgpi+7647uNGYxrQ5FX47z9FGELe0pbANa6g7Z49gTDnPm9PYWM1oSbFAQaoCnKpWlslSWyr9XnhcvuymdYw==
+    state:
+      name: state
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: -1
+    statgroup:
+      name: statgroup
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: -1
+    team:
+      name: team
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: -1
+    visible:
+      name: visible
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: 0
+    withPartySessionID:
+      name: withPartySessionID
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: 50865084
+    matchID:
+      name: matchID
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: 50865084
+    platformlobbyID:
+      name: platformlobbyID
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: 109775243868575631
+    numericTagNames:
+      name: numericTagNames
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: array
+      example:
+        ["CheatsEnabled", "Dataset", "TreatyLength", "Ranked", "Password"]
+    numericTagValues:
+      name: numericTagValues
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: array
+      example: [0, 1, 0, 0, 0]
+    stringTagNames:
+      name: stringTagNames
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: array
+      example: ["GameType", "MapStyleType", "Speed", "VictoryType", "Server"]
+    stringTagValues:
+      name: stringTagValues
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: array
+      example: ["0", "0", "2", "9", "westeurope"]
+    appBinCRC:
+      name: appBinCRC
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: 9876
+    dataCRC:
+      name: dataCRC
+      in: query
+      required: true
+      description: "backwards appBinCRC?"
+      schema:
+        type: integer
+      example: 6789
+    factionIDs:
+      name: factionIDs
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: array
+      example: [0, 0, 0, 0]
+    matchTypes:
+      name: matchTypes
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: array
+      example: [20, 21, 22, 23]
+    partySessionID:
+      name: partySessionID
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: 50865084
+    raceInfoKey:
+      name: raceInfoKey
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: array
+      example: [0, 1, 2, 3]
+    raceInfoProfileID:
+      name: raceInfoProfileID
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: array
+      example: [233334, 233334, 233334, 233334]
+    raceInfoRaceID:
+      name: raceInfoRaceID
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: array
+      example: [2039321, 2039321, 2039321, 2039321]
+    relayPingTimes:
+      name: relayPingTimes
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: array
+      example: [264, 220, 253, 45, 187, 191, 153, 45, 119]
+    relayRegions:
+      name: relayRegions
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: array
+      example:
+        [
+          "australiasoutheast",
+          "brazilsouth",
+          "koreacentral",
+          "ukwest",
+          "southeastasia",
+          "westus2",
+          "westindia",
+          "westeurope",
+          "eastus",
+        ]
+    vetoMapKey:
+      name: vetoMapKey
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: array
+      example:
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+        ]
+    vetoMaps:
+      name: vetoMaps
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: array
+      example:
+        [
+          "hideout_tiny",
+          "hideout_small",
+          "hideout_medium",
+          "hideout_large",
+          "archipelago_medium",
+          "high_view_small",
+          "archipelago_large",
+          "high_view_medium",
+          "archipelago_gigantic",
+          "high_view_large",
+          "archipelago_small",
+          "high_view_tiny",
+          "hideout_tiny",
+          "hideout_small",
+          "hideout_medium",
+          "hideout_large",
+          "archipelago_medium",
+          "high_view_small",
+          "archipelago_large",
+          "high_view_medium",
+          "archipelago_gigantic",
+          "high_view_large",
+          "archipelago_small",
+          "high_view_tiny",
+          "hideout_tiny",
+          "hideout_small",
+          "hideout_medium",
+          "hideout_large",
+          "archipelago_medium",
+          "high_view_small",
+          "archipelago_large",
+          "high_view_medium",
+          "archipelago_gigantic",
+          "high_view_large",
+          "archipelago_small",
+          "high_view_tiny",
+          "hideout_tiny",
+          "hideout_small",
+          "hideout_medium",
+          "hideout_large",
+          "archipelago_medium",
+          "high_view_small",
+          "archipelago_large",
+          "high_view_medium",
+          "archipelago_gigantic",
+          "high_view_large",
+          "archipelago_small",
+          "high_view_tiny",
+        ]
+    commit:
+      name: commit
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: 0
+    ownerProfileID:
+      name: ownerProfileID
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: 233334
+    result:
+      name: result
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: 1
+    resultCode:
+      name: resultCode
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: 0
