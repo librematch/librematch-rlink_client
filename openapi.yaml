@@ -25,7 +25,9 @@ paths:
           explode: true
           schema:
             type: string
-          example: age2
+          example:
+            - age2
+            - age1
         - name: profile_ids
           in: query
           required: false
@@ -191,6 +193,7 @@ paths:
       responses:
         "200":
           description: Definition generated from Swagger Inspector
+
   /community/achievement/getAvailableAchievements:
     get:
       parameters:
@@ -413,6 +416,216 @@ paths:
       responses:
         "200":
           description: Definition generated from Swagger Inspector
+  /game/account/FindProfiles:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/name"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/account/getProfileName:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/profile_ids"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/account/getProfileProperty:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/profile_id"
+        - $ref: "#/components/parameters/property_id"
+      responses:
+        "200":
+          description: OK
+  /game/account/FindProfilesByPlatformID:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/platformIDs"
+      responses:
+        "200":
+          description: OK
+  /game/account/setAvatarMetadata:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/metaData"
+      responses:
+        "200":
+          description: OK
+  /game/account/setLanguage:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/title"
+        - $ref: "#/components/parameters/language"
+      responses:
+        "200":
+          description: OK
+  /game/Achievement/getAchievements:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/profileIDs"
+      responses:
+        "200":
+          description: OK
+  /game/Achievement/getAvailableAchievements:
+    get:
+      description: "No authentication needed"
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/signature"
+      responses:
+        "200":
+          description: OK
+  /game/achievement/syncStats:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/accountType"
+        - $ref: "#/components/parameters/auth"
+      responses:
+        "200":
+          description: OK
+  /game/advertisement/findObservableAdvertisements:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/appBinaryChecksum"
+        - $ref: "#/components/parameters/count"
+        - $ref: "#/components/parameters/dataChecksum"
+        - $ref: "#/components/parameters/desc"
+        - $ref: "#/components/parameters/modDLLChecksum"
+        - $ref: "#/components/parameters/modDLLFile"
+        - $ref: "#/components/parameters/modName"
+        - $ref: "#/components/parameters/modVersion"
+        - $ref: "#/components/parameters/observerGroupID"
+        - $ref: "#/components/parameters/sortOrder"
+        - $ref: "#/components/parameters/start"
+        - $ref: "#/components/parameters/versionFlags"
+      responses:
+        "200":
+          description: OK
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/appBinaryChecksum"
+        - $ref: "#/components/parameters/count"
+        - $ref: "#/components/parameters/dataChecksum"
+        - $ref: "#/components/parameters/desc"
+        - $ref: "#/components/parameters/modDLLChecksum"
+        - $ref: "#/components/parameters/modDLLFile"
+        - $ref: "#/components/parameters/modName"
+        - $ref: "#/components/parameters/modVersion"
+        - $ref: "#/components/parameters/observerGroupID"
+        - $ref: "#/components/parameters/sortOrder"
+        - $ref: "#/components/parameters/start"
+        - $ref: "#/components/parameters/versionFlags"
+      responses:
+        "200":
+          description: OK
+  /game/advertisement/findAdvertisements:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/appBinaryChecksum"
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/dataChecksum"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/matchType_id"
+        - $ref: "#/components/parameters/modDLLChecksum"
+        - $ref: "#/components/parameters/modDLLFile"
+        - $ref: "#/components/parameters/modName"
+        - $ref: "#/components/parameters/modVersion"
+        - $ref: "#/components/parameters/profile_ids"
+        - $ref: "#/components/parameters/race_ids"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/statGroup_ids"
+        - $ref: "#/components/parameters/versionFlags"
+      responses:
+        "200":
+          description: OK
+  /game/advertisement/getAdvertisements:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/match_ids"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/advertisement/getLanAdvertisements:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/appBinaryChecksum"
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/dataChecksum"
+        - $ref: "#/components/parameters/lanServerGuids"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/matchType_id"
+        - $ref: "#/components/parameters/modDLLChecksum"
+        - $ref: "#/components/parameters/modDLLFile"
+        - $ref: "#/components/parameters/modName"
+        - $ref: "#/components/parameters/modVersion"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/versionFlags"
+      responses:
+        "200":
+          description: OK
 components:
   schemas:
     Result:
@@ -781,3 +994,300 @@ components:
           type: array
           items:
             $ref: "#/components/schemas/LeaderboardStats"
+  parameters:
+    callNum:
+      name: callNum
+      in: query
+      required: true
+      schema:
+        type: integer
+      example: 148
+      description: ""
+    connect_id:
+      name: connect_id
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: string
+      example: bgoo2n1murnn43kzdnnfc9fhp2no19
+    lastCallTime:
+      name: lastCallTime
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: string
+      example: 918824
+    name:
+      name: name
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: string
+      example:
+    sessionID:
+      name: sessionID
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: string
+      example: bgoo2n1murnn43kzdnnfc9fhp2no19
+    profile_ids:
+      name: profile_ids
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: array
+      example: [196240]
+    profileIDs:
+      name: profileIDs
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: array
+      example: [196240, 196241]
+    profile_id:
+      name: profile_id
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: 196240
+    property_id:
+      name: property_id
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: string
+      example:
+        - appearOffline
+    platformIDs:
+      name: platformIDs
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: array
+      example:
+        - [
+            76561197960287614,
+            76561197978627567,
+            76561197978943286,
+            76561198000229224,
+            76561197972009043,
+            76561197964180873,
+            76561197966000898,
+            76561197976722725,
+          ]
+    metaData:
+      name: metaData
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: object
+      example: { "sharedHistory": 0 }
+    titleCom:
+      name: title
+      in: query
+      required: false
+      style: form
+      explode: true
+      schema:
+        type: string
+      example:
+        - age2
+        - age1
+    title:
+      name: title
+      in: query
+      required: false
+      style: form
+      explode: true
+      schema:
+        type: string
+      example:
+        - age1
+        - age2
+        - age3
+        - age4
+    language:
+      name: language
+      in: query
+      required: false
+      style: form
+      explode: true
+      schema:
+        type: string
+      example:
+        - en
+        - de
+        - es
+        - fr
+    signature:
+      name: signature
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: string
+      example: wqFWpWL7ZV67HZ7b1kXEAtWofi34DFHX/HoiyJm46ooePlthNsS5F2TQiLHzUOSYuV/VGDmpk1Dr7r6E/OukY/lDE4MgrRQBkOTvV8HAnqJIAcqDTiZN9l1bimxn14vrnnNaBcOZyOvnkZD5oVahECESHlxgEewOhTdkOxLAuXLA+QxXYBlswaperH95/wGhUg11NN0AG2L/6ej929D5NIqDGlVrmp1oBRNYTqRhbvOgjyII0XElAvKwaR+bYKGqchd8RU4WGwPsrhN/5IKl4E7SpJH9UAWV4bH9v6lVwJqz8NGCawmq1p+V22G239k/c7x6chtyOJBPG9N220ot5A==
+    accountType:
+      name: accountType
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: string
+      example: STEAM
+    auth:
+      name: auth
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: string
+      example: STEAM
+    appBinaryChecksum:
+      name: appBinaryChecksum
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: 24916
+    count:
+      name: count
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: 20
+    dataChecksum:
+      name: dataChecksum
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: -638535971
+    desc:
+      name: desc
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: 0
+    modDLLChecksum:
+      name: modDLLChecksum
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: 0
+    modDLLFile:
+      name: modDLLFile
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: string
+      example: INVALID
+    modName:
+      name: modName
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: string
+      example: INVALID
+    modVersion:
+      name: modVersion
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: string
+      example: INVALID
+    observerGroupID:
+      name: observerGroupID
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: 0
+    sortOrder:
+      name: sortOrder
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: 0
+    start:
+      name: start
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: 0
+    versionFlags:
+      name: versionFlags
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: 0
+    matchType_id:
+      name: matchType_id
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: 0
+    race_ids:
+      name: race_ids
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: array
+      example: [1, 2]
+    statGroup_ids:
+      name: statGroup_ids
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: array
+      example: [12, 34]
+    match_ids:
+      name: match_ids
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: array
+      example: [132, 123]
+    lanServerGuids:
+      name: lanServerGuids
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: array
+      example: [123e88e6-88e1-4aa7-ab3c-a2975fc0b04d]
