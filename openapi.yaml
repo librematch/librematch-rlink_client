@@ -1021,6 +1021,62 @@ paths:
       responses:
         "200":
           description: OK
+  /game/item/moveCharges:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/charges"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/deletes"
+        - $ref: "#/components/parameters/fromItemIDs"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/toItemIDs"
+      responses:
+        "200":
+          description: OK
+  /game/item/moveItem:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/itemIDs"
+        - $ref: "#/components/parameters/itemLocationIDs"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/posIDs"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/slotIDs"
+      responses:
+        "200":
+          description: OK
+  /game/item/openItemPack:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/choices"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/itemInstance_id"
+        - $ref: "#/components/parameters/itemLocation_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/item/signItems:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/crc"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
 components:
   schemas:
     Result:
@@ -2773,3 +2829,102 @@ components:
       schema:
         type: integer
       example: [0, 0, 0, 0, 0, 0]
+    charges:
+      name: charges
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: [1]
+    deletes:
+      name: deletes
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: [1]
+    fromItemIDs:
+      name: fromItemIDs
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: [449911778]
+    toItemIDs:
+      name: toItemIDs
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: [449911716]
+    itemLocationIDs:
+      name: itemLocationIDs
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: [0, 2]
+    posIDs:
+      name: posIDs
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: [-1, -1]
+    slotIDs:
+      name: slotIDs
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: [-1, -1]
+    choices:
+      name: choices
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: []
+    itemInstance_id:
+      name: itemInstance_id
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: 449956852
+    itemLocation_id:
+      name: itemLocation_id
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: 0
+    crc:
+      name: crc
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: 3611078805
