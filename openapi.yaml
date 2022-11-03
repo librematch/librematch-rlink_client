@@ -713,6 +713,18 @@ paths:
       responses:
         "200":
           description: OK
+  /game/clan/getClan:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/names"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
 components:
   schemas:
     Result:
@@ -1095,6 +1107,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: string
       example: bgoo2n1murnn43kzdnnfc9fhp2no19
@@ -1103,6 +1117,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: string
       example: 918824
@@ -1120,6 +1136,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: string
       example: bgoo2n1murnn43kzdnnfc9fhp2no19
@@ -1128,6 +1146,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: array
       example: [196240]
@@ -1136,6 +1156,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: array
       example: [196240, 196241]
@@ -1144,6 +1166,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: 196240
@@ -1152,6 +1176,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: string
       example:
@@ -1161,6 +1187,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: array
       example:
@@ -1179,6 +1207,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: object
       example: { "sharedHistory": 0 }
@@ -1224,6 +1254,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: string
       example: wqFWpWL7ZV67HZ7b1kXEAtWofi34DFHX/HoiyJm46ooePlthNsS5F2TQiLHzUOSYuV/VGDmpk1Dr7r6E/OukY/lDE4MgrRQBkOTvV8HAnqJIAcqDTiZN9l1bimxn14vrnnNaBcOZyOvnkZD5oVahECESHlxgEewOhTdkOxLAuXLA+QxXYBlswaperH95/wGhUg11NN0AG2L/6ej929D5NIqDGlVrmp1oBRNYTqRhbvOgjyII0XElAvKwaR+bYKGqchd8RU4WGwPsrhN/5IKl4E7SpJH9UAWV4bH9v6lVwJqz8NGCawmq1p+V22G239k/c7x6chtyOJBPG9N220ot5A==
@@ -1232,6 +1264,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: string
       example: STEAM
@@ -1240,6 +1274,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: string
       example: STEAM
@@ -1248,6 +1284,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: 24916
@@ -1256,6 +1294,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: 200
@@ -1264,6 +1304,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: -638535971
@@ -1272,6 +1314,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: 0
@@ -1280,6 +1324,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: 0
@@ -1288,6 +1334,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: string
       example: INVALID
@@ -1296,6 +1344,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: string
       example: INVALID
@@ -1304,6 +1354,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: string
       example: INVALID
@@ -1312,6 +1364,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: 0
@@ -1320,6 +1374,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: 0
@@ -1328,6 +1384,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: 0
@@ -1336,6 +1394,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: 0
@@ -1344,6 +1404,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: 0
@@ -1352,38 +1414,48 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
-        type: array
+        type: integer
       example: [1, 2]
     statGroup_ids:
       name: statGroup_ids
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
-        type: array
+        type: integer
       example: [12, 34]
     match_ids:
       name: match_ids
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
-        type: array
+        type: integer
       example: [132, 123]
     lanServerGuids:
       name: lanServerGuids
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
-        type: array
+        type: string
       example: [123e88e6-88e1-4aa7-ab3c-a2975fc0b04d]
     advertisementid:
       name: advertisementid
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: -1
@@ -1392,6 +1464,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: -1
@@ -1410,6 +1484,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: 1
@@ -1418,6 +1494,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: 1
@@ -1426,6 +1504,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: string
       example: "no_map"
@@ -1434,6 +1514,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: 19
@@ -1442,6 +1524,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: 8
@@ -1450,6 +1534,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: 180
@@ -1458,6 +1544,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: string
       example: "unknown password"
@@ -1466,6 +1554,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: string
       example: "opts"
@@ -1474,6 +1564,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: -1
@@ -1482,6 +1574,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: string
       example: "test"
@@ -1490,6 +1584,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example:
@@ -1500,6 +1596,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: 2039321
@@ -1508,6 +1606,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: string
       example:
@@ -1525,6 +1625,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: 0
@@ -1541,6 +1643,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: -1
@@ -1549,6 +1653,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: -1
@@ -1557,6 +1663,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: -1
@@ -1565,6 +1673,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: 0
@@ -1573,6 +1683,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: 50865084
@@ -1581,6 +1693,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: 50865084
@@ -1589,6 +1703,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: 109775243868575631
@@ -1597,8 +1713,10 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
-        type: array
+        type: string
       example:
         ["CheatsEnabled", "Dataset", "TreatyLength", "Ranked", "Password"]
     numericTagValues:
@@ -1606,30 +1724,38 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
-        type: array
+        type: integer
       example: [0, 1, 0, 0, 0]
     stringTagNames:
       name: stringTagNames
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
-        type: array
+        type: string
       example: ["GameType", "MapStyleType", "Speed", "VictoryType", "Server"]
     stringTagValues:
       name: stringTagValues
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
-        type: array
+        type: string
       example: ["0", "0", "2", "9", "westeurope"]
     appBinCRC:
       name: appBinCRC
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: 9876
@@ -1646,22 +1772,28 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
-        type: array
+        type: integer
       example: [0, 0, 0, 0]
     matchTypes:
       name: matchTypes
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
-        type: array
+        type: integer
       example: [20, 21, 22, 23]
     partySessionID:
       name: partySessionID
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: 50865084
@@ -1670,40 +1802,50 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
-        type: array
+        type: integer
       example: [0, 1, 2, 3]
     raceInfoProfileID:
       name: raceInfoProfileID
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
-        type: array
+        type: integer
       example: [233334, 233334, 233334, 233334]
     raceInfoRaceID:
       name: raceInfoRaceID
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
-        type: array
+        type: integer
       example: [2039321, 2039321, 2039321, 2039321]
     relayPingTimes:
       name: relayPingTimes
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
-        type: array
+        type: integer
       example: [264, 220, 253, 45, 187, 191, 153, 45, 119]
     relayRegions:
       name: relayRegions
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
-        type: array
+        type: string
       example:
         [
           "australiasoutheast",
@@ -1721,8 +1863,10 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
-        type: array
+        type: integer
       example:
         [
           0,
@@ -1779,8 +1923,10 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
-        type: array
+        type: string
       example:
         [
           "hideout_tiny",
@@ -1837,6 +1983,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: 0
@@ -1845,6 +1993,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: 233334
@@ -1853,6 +2003,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: 1
@@ -1861,6 +2013,8 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: 0
@@ -1869,22 +2023,28 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
-        type: array
+        type: integer
       example: [646542981]
     updateAmounts:
       name: updateAmounts
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
-        type: array
+        type: integer
       example: [1]
     messageID:
       name: messageID
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
         type: integer
       example: 70218256
@@ -1893,8 +2053,10 @@ components:
       in: query
       required: true
       description: ""
+      style: form
+      explode: true
       schema:
-        type: array
+        type: integer
       example: [0, 1, 2]
     tags:
       name: tags
@@ -1902,8 +2064,9 @@ components:
       style: form
       required: true
       description: ""
+      explode: true
       schema:
-        type: array
+        type: string
       example: []
     profileidsCom:
       name: profileids
@@ -1912,8 +2075,8 @@ components:
       style: form
       explode: true
       schema:
-        type: array
-      example: "[196240]"
+        type: integer
+      example: [196240]
     profile_idsCom:
       name: profile_ids
       in: query
@@ -1922,7 +2085,7 @@ components:
       explode: true
       schema:
         type: string
-      example: '["192640"]'
+      example: ["192640"]
     profile_namesCom:
       name: profile_names
       in: query
@@ -1939,8 +2102,8 @@ components:
       style: form
       explode: true
       schema:
-        type: string
-      example: "1"
+        type: integer
+      example: 1
     platformCom:
       name: platform
       in: query
@@ -1957,8 +2120,8 @@ components:
       style: form
       explode: true
       schema:
-        type: string
-      example: "3"
+        type: integer
+      example: 3
     aliasesCom:
       name: aliases
       in: query
@@ -1986,3 +2149,12 @@ components:
       schema:
         type: string
       example: /ISteamUser/GetPlayerSummaries/v0002/
+    names:
+      name: names
+      in: query
+      required: false
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: [“Liiit”]
