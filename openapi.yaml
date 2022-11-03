@@ -10,40 +10,10 @@ paths:
   /community/external/proxysteamuserrequest:
     get:
       parameters:
-        - name: request
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: string
-          example: /ISteamUser/GetPlayerSummaries/v0002/
-        - name: title
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: string
-          example:
-            - age2
-            - age1
-        - name: profile_ids
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: string
-          example: '["192640"]'
-        - name: profileNames
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: string
-          example: '["/steam/76561197984749679"]'
+        - $ref: "#/components/parameters/SteamRequestCom"
+        - $ref: "#/components/parameters/titleCom"
+        - $ref: "#/components/parameters/profile_idsCom"
+        - $ref: "#/components/parameters/profileNamesCom"
       responses:
         "200":
           description: Definition generated from Swagger Inspector
@@ -54,40 +24,10 @@ paths:
   /community/leaderboard/GetPersonalStat:
     get:
       parameters:
-        - name: title
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: string
-          example:
-            - age2
-            - age1
-        - name: profile_ids
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: string
-          example: '["192640"]'
-        - name: profile_names
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: string
-          example: "[%22/steam/76561197984749679%22]"
-        - name: aliases
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: string
-          example: "[BlackRock]"
+        - $ref: "#/components/parameters/titleCom"
+        - $ref: "#/components/parameters/profile_idsCom"
+        - $ref: "#/components/parameters/profile_namesCom"
+        - $ref: "#/components/parameters/aliasesCom"
       responses:
         "200":
           description: Definition generated from Swagger Inspector
@@ -98,30 +38,9 @@ paths:
   /community/leaderboard/getRecentMatchHistory:
     get:
       parameters:
-        - name: title
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: string
-          example: age2
-        - name: profile_ids
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: string
-          example: '["192640"]'
-        - name: profile_names
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: string
-          example: "[%22/steam/76561197984749679%22]"
+        - $ref: "#/components/parameters/titleCom"
+        - $ref: "#/components/parameters/profile_idsCom"
+        - $ref: "#/components/parameters/profile_namesCom"
       responses:
         "200":
           description: Definition generated from Swagger Inspector
@@ -132,64 +51,23 @@ paths:
   /community/advertisement/findAdvertisements:
     get:
       parameters:
-        - name: title
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: string
-          example:
-            - age2
-            - age1
+        - $ref: "#/components/parameters/titleCom"
       responses:
         "200":
           description: Definition generated from Swagger Inspector
   /community/leaderboard/GetAvatarStatForProfile:
     get:
       parameters:
-        - name: title
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: string
-          example:
-            - age2
-            - age1
-        - name: profile_names
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: string
-          example: "[%22/steam/76561197984749679%22]"
+        - $ref: "#/components/parameters/titleCom"
+        - $ref: "#/components/parameters/profile_namesCom"
       responses:
         "200":
           description: Definition generated from Swagger Inspector
   /community/achievement/getAchievements:
     get:
       parameters:
-        - name: title
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: string
-          example:
-            - age2
-            - age1
-        - name: profileids
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: array
-          example: "[196240]"
+        - $ref: "#/components/parameters/titleCom"
+        - $ref: "#/components/parameters/profileidsCom"
       responses:
         "200":
           description: Definition generated from Swagger Inspector
@@ -197,222 +75,68 @@ paths:
   /community/achievement/getAvailableAchievements:
     get:
       parameters:
-        - name: title
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: string
-          example:
-            - age2
-            - age1
+        - $ref: "#/components/parameters/titleCom"
       responses:
         "200":
           description: Definition generated from Swagger Inspector
   /community/news:
     get:
       parameters:
-        - name: title
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: string
-          example:
-            - age2
-            - age1
+        - $ref: "#/components/parameters/titleCom"
       responses:
         "200":
           description: Definition generated from Swagger Inspector
   /community/clan/find:
     get:
       parameters:
-        - name: title
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: string
-          example:
-            - age2
-            - age1
-        - name: joinPolicies
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: array
-          example:
-            - [0, 1, 2]
-        - name: name
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: string
-          example: "GL"
-        - name: tags
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: array
-        - name: start
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: string
-          example: "1"
-        - name: count
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: string
-          example: "200"
+        - $ref: "#/components/parameters/titleCom"
+        - $ref: "#/components/parameters/joinPolicies"
+        - $ref: "#/components/parameters/name"
+        - $ref: "#/components/parameters/tags"
+        - $ref: "#/components/parameters/start"
+        - $ref: "#/components/parameters/count"
       responses:
         "200":
           description: Definition generated from Swagger Inspector
   /community/clan/getClanInfoFull:
     get:
       parameters:
-        - name: title
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: string
-          example:
-            - age2
-            - age1
-        - name: name
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: string
-          example: "GL"
+        - $ref: "#/components/parameters/titleCom"
+        - $ref: "#/components/parameters/name"
       responses:
         "200":
           description: Definition generated from Swagger Inspector
   /community/CommunityEvent/getAvailableCommunityEvents:
     get:
       parameters:
-        - name: title
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: string
-          example:
-            - age2
-            - age1
+        - $ref: "#/components/parameters/titleCom"
       responses:
         "200":
           description: Definition generated from Swagger Inspector
   /community/item/getInventoryByProfileIDs:
     get:
       parameters:
-        - name: title
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: string
-          example:
-            - age2
-            - age1
-        - name: profileids
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: array
-          example: "[196240]"
+        - $ref: "#/components/parameters/titleCom"
+        - $ref: "#/components/parameters/profileidsCom"
       responses:
         "200":
           description: Definition generated from Swagger Inspector
   /community/leaderboard/getAvailableLeaderboards:
     get:
       parameters:
-        - name: title
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: string
-          example:
-            - age2
-            - age1
+        - $ref: "#/components/parameters/titleCom"
       responses:
         "200":
           description: Definition generated from Swagger Inspector
   /community/leaderboard/getLeaderboard2:
     get:
       parameters:
-        - name: title
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: string
-          example: age2
-        - name: leaderboard_id
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: string
-          example: "3"
-        - name: start
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: string
-          example: "1"
-        - name: count
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: string
-          example: "200"
-        - name: sortBy
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: string
-          example: "1"
-        - name: platform
-          in: query
-          required: false
-          style: form
-          explode: true
-          schema:
-            type: string
-          example: PC_STEAM
+        - $ref: "#/components/parameters/titleCom"
+        - $ref: "#/components/parameters/leaderboard_id"
+        - $ref: "#/components/parameters/start"
+        - $ref: "#/components/parameters/count"
+        - $ref: "#/components/parameters/sortBy"
+        - $ref: "#/components/parameters/platformCom"
       responses:
         "200":
           description: Definition generated from Swagger Inspector
@@ -891,6 +615,104 @@ paths:
       responses:
         "200":
           description: OK
+  /game/Challenge/getChallengeProgress:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/Challenge/getChallengeProgressByProfileID:
+    get:
+      description: "TODO: Request not available in Wiki, this is guessed"
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/profile_id"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/Challenge/getChallenges:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/signature"
+      responses:
+        "200":
+          description: OK
+  /game/challenge/updateProgressBatched:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/progressIDs"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/updateAmounts"
+      responses:
+        "200":
+          description: OK
+  /game/chat/getChatChannels:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/chat/getOfflineMessages:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/chat/deleteOfflineMessage:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/messageID"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/clan/find:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/count"
+        - $ref: "#/components/parameters/joinPolicies"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/name"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/start"
+        - $ref: "#/components/parameters/tags"
+      responses:
+        "200":
+          description: OK
 components:
   schemas:
     Result:
@@ -1289,6 +1111,7 @@ components:
       in: query
       required: true
       description: ""
+      style: form
       schema:
         type: string
       example:
@@ -1435,7 +1258,7 @@ components:
       description: ""
       schema:
         type: integer
-      example: 20
+      example: 200
     dataChecksum:
       name: dataChecksum
       in: query
@@ -2041,3 +1864,125 @@ components:
       schema:
         type: integer
       example: 0
+    progressIDs:
+      name: progressIDs
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: array
+      example: [646542981]
+    updateAmounts:
+      name: updateAmounts
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: array
+      example: [1]
+    messageID:
+      name: messageID
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: integer
+      example: 70218256
+    joinPolicies:
+      name: joinPolicies
+      in: query
+      required: true
+      description: ""
+      schema:
+        type: array
+      example: [0, 1, 2]
+    tags:
+      name: tags
+      in: query
+      style: form
+      required: true
+      description: ""
+      schema:
+        type: array
+      example: []
+    profileidsCom:
+      name: profileids
+      in: query
+      required: false
+      style: form
+      explode: true
+      schema:
+        type: array
+      example: "[196240]"
+    profile_idsCom:
+      name: profile_ids
+      in: query
+      required: false
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: '["192640"]'
+    profile_namesCom:
+      name: profile_names
+      in: query
+      required: false
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: "[%22/steam/76561197984749679%22]"
+    sortBy:
+      name: sortBy
+      in: query
+      required: false
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: "1"
+    platformCom:
+      name: platform
+      in: query
+      required: false
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: PC_STEAM
+    leaderboard_id:
+      name: leaderboard_id
+      in: query
+      required: false
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: "3"
+    aliasesCom:
+      name: aliases
+      in: query
+      required: false
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: "[BlackRock]"
+    profileNamesCom:
+      name: profileNames
+      in: query
+      required: false
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: '["/steam/76561197984749679"]'
+    SteamRequestCom:
+      name: request
+      in: query
+      required: false
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: /ISteamUser/GetPlayerSummaries/v0002/
