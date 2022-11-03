@@ -725,6 +725,191 @@ paths:
       responses:
         "200":
           description: OK
+  /game/clan/getClanInfoFull:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/name"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/clan/apply:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/clanList_name"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/clan/disband:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/clan/create:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/chat"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/cost"
+        - $ref: "#/components/parameters/demote"
+        - $ref: "#/components/parameters/description"
+        - $ref: "#/components/parameters/disband"
+        - $ref: "#/components/parameters/editInfo"
+        - $ref: "#/components/parameters/editPermission"
+        - $ref: "#/components/parameters/fullName"
+        - $ref: "#/components/parameters/icon"
+        - $ref: "#/components/parameters/invite"
+        - $ref: "#/components/parameters/itemPrice_id"
+        - $ref: "#/components/parameters/joinPolicy"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/locStringID"
+        - $ref: "#/components/parameters/messageOfTheDay"
+        - $ref: "#/components/parameters/metadata"
+        - $ref: "#/components/parameters/name"
+        - $ref: "#/components/parameters/paymentitem"
+        - $ref: "#/components/parameters/permissionName"
+        - $ref: "#/components/parameters/promote"
+        - $ref: "#/components/parameters/rank"
+        - $ref: "#/components/parameters/remove"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/tags"
+      responses:
+        "200":
+          description: OK
+  /game/clan/update:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/clanList_id"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/description"
+        - $ref: "#/components/parameters/icon"
+        - $ref: "#/components/parameters/joinPolicy"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/messageOfTheDay"
+        - $ref: "#/components/parameters/metadata"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/tags"
+      responses:
+        "200":
+          description: OK
+  /game/cloud/getFileURL:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/names"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/names"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/cloud/getTempCredentials:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/key"
+      responses:
+        "200":
+          description: OK
+  /game/CommunityEvent/getAvailableCommunityEvents:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/CommunityEvent/getEventChallengeProgress:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/event_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/CommunityEvent/getEventStats:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/event_id"
+        - $ref: "#/components/parameters/group_type"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/member_id"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/invitation/cancelInvitation:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/gatheringid"
+        - $ref: "#/components/parameters/inviteeid"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/invitation/extendInvitation:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/gatheringid"
+        - $ref: "#/components/parameters/gatheringpassword"
+        - $ref: "#/components/parameters/inviteeid"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
 components:
   schemas:
     Result:
@@ -2058,6 +2243,16 @@ components:
       schema:
         type: integer
       example: [0, 1, 2]
+    joinPolicy:
+      name: joinPolicy
+      in: query
+      required: true
+      description: ""
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: 1
     tags:
       name: tags
       in: query
@@ -2152,9 +2347,252 @@ components:
     names:
       name: names
       in: query
-      required: false
+      required: true
       style: form
       explode: true
       schema:
         type: string
       example: [“Liiit”]
+    clanList_name:
+      name: clanList_name
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: TURK
+    chat:
+      name: chat
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: [""]
+    cost:
+      name: cost
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: 0
+    demote:
+      name: demote
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: [""]
+    disband:
+      name: disband
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: [""]
+    editInfo:
+      name: editInfo
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: [""]
+    editPermission:
+      name: editPermission
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: [""]
+    fullName:
+      name: fullName
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: Rusty
+    icon:
+      name: icon
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: CR-001
+    invite:
+      name: invite
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: [""]
+    itemPrice_id:
+      name: itemPrice_id
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: -1
+    locStringID:
+      name: locStringID
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: []
+    messageOfTheDay:
+      name: messageOfTheDay
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: string
+      example:
+    metadata:
+      name: metadata
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: string
+      example:
+    paymentitem:
+      name: paymentitem
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: -1
+    permissionName:
+      name: permissionName
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: []
+    promote:
+      name: promote
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: []
+    rank:
+      name: rank
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: []
+    remove:
+      name: remove
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: []
+    clanList_id:
+      name: clanList_id
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: 110061
+    event_id:
+      name: event_id
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: 22
+    member_id:
+      name: member_id
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: 11190194
+    group_type:
+      name: group_type
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: 1
+    gatheringid:
+      name: gatheringid
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: 186430525
+    inviteeid:
+      name: inviteeid
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: 421346
+    gatheringpassword:
+      name: gatheringpassword
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: "password!"
+    key:
+      name: key
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: /cloudfiles/game/6b861a867ce5f4e66131c929fe13db8baa40b5bb412255adcc225e6604ff703f
