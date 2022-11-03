@@ -9,6 +9,7 @@ servers:
 paths:
   /community/external/proxysteamuserrequest:
     get:
+      operationId: community_proxy_steam_user_request
       parameters:
         - $ref: "#/components/parameters/SteamRequestCom"
         - $ref: "#/components/parameters/titleCom"
@@ -23,6 +24,7 @@ paths:
                 $ref: "#/components/schemas/Model3"
   /community/leaderboard/GetPersonalStat:
     get:
+      operationId: community_get_personal_stat
       parameters:
         - $ref: "#/components/parameters/titleCom"
         - $ref: "#/components/parameters/profile_idsCom"
@@ -37,6 +39,7 @@ paths:
                 $ref: "#/components/schemas/Model4"
   /community/leaderboard/getRecentMatchHistory:
     get:
+      operationId: community_get_recent_match_history
       parameters:
         - $ref: "#/components/parameters/titleCom"
         - $ref: "#/components/parameters/profile_idsCom"
@@ -50,6 +53,7 @@ paths:
                 $ref: "#/components/schemas/Model2"
   /community/advertisement/findAdvertisements:
     get:
+      operationId: community_find_advertisements
       parameters:
         - $ref: "#/components/parameters/titleCom"
       responses:
@@ -57,6 +61,7 @@ paths:
           description: Definition generated from Swagger Inspector
   /community/leaderboard/GetAvatarStatForProfile:
     get:
+      operationId: community_get_avatar_stat_for_profile
       parameters:
         - $ref: "#/components/parameters/titleCom"
         - $ref: "#/components/parameters/profile_namesCom"
@@ -65,6 +70,7 @@ paths:
           description: Definition generated from Swagger Inspector
   /community/achievement/getAchievements:
     get:
+      operationId: community_get_achievements
       parameters:
         - $ref: "#/components/parameters/titleCom"
         - $ref: "#/components/parameters/profileidsCom"
@@ -74,6 +80,7 @@ paths:
 
   /community/achievement/getAvailableAchievements:
     get:
+      operationId: community_get_available_achievements
       parameters:
         - $ref: "#/components/parameters/titleCom"
       responses:
@@ -81,6 +88,7 @@ paths:
           description: Definition generated from Swagger Inspector
   /community/news:
     get:
+      operationId: community_news
       parameters:
         - $ref: "#/components/parameters/titleCom"
       responses:
@@ -88,6 +96,7 @@ paths:
           description: Definition generated from Swagger Inspector
   /community/clan/find:
     get:
+      operationId: community_clan_find
       parameters:
         - $ref: "#/components/parameters/titleCom"
         - $ref: "#/components/parameters/joinPolicies"
@@ -100,6 +109,7 @@ paths:
           description: Definition generated from Swagger Inspector
   /community/clan/getClanInfoFull:
     get:
+      operationId: community_get_clan_info_full
       parameters:
         - $ref: "#/components/parameters/titleCom"
         - $ref: "#/components/parameters/name"
@@ -108,6 +118,7 @@ paths:
           description: Definition generated from Swagger Inspector
   /community/CommunityEvent/getAvailableCommunityEvents:
     get:
+      operationId: community_get_available_community_events
       parameters:
         - $ref: "#/components/parameters/titleCom"
       responses:
@@ -115,6 +126,7 @@ paths:
           description: Definition generated from Swagger Inspector
   /community/item/getInventoryByProfileIDs:
     get:
+      operationId: community_get_inventory_by_profile_ids
       parameters:
         - $ref: "#/components/parameters/titleCom"
         - $ref: "#/components/parameters/profileidsCom"
@@ -123,6 +135,7 @@ paths:
           description: Definition generated from Swagger Inspector
   /community/leaderboard/getAvailableLeaderboards:
     get:
+      operationId: community_get_available_leaderboards
       parameters:
         - $ref: "#/components/parameters/titleCom"
       responses:
@@ -130,6 +143,7 @@ paths:
           description: Definition generated from Swagger Inspector
   /community/leaderboard/getLeaderboard2:
     get:
+      operationId: community_get_leaderboard2
       parameters:
         - $ref: "#/components/parameters/titleCom"
         - $ref: "#/components/parameters/leaderboard_id"
@@ -142,6 +156,7 @@ paths:
           description: Definition generated from Swagger Inspector
   /game/account/FindProfiles:
     get:
+      operationId: game_account_find_profiles
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -154,6 +169,7 @@ paths:
           description: OK
   /game/account/getProfileName:
     get:
+      operationId: game_account_get_profile_name
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -166,6 +182,7 @@ paths:
           description: OK
   /game/account/getProfileProperty:
     get:
+      operationId: game_account_get_profile_property
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -179,6 +196,7 @@ paths:
           description: OK
   /game/account/FindProfilesByPlatformID:
     get:
+      operationId: game_account_find_profiles_by_platform_id
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -191,6 +209,7 @@ paths:
           description: OK
   /game/account/setAvatarMetadata:
     post:
+      operationId: game_account_set_avatar_metadata
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -203,6 +222,7 @@ paths:
           description: OK
   /game/account/setLanguage:
     post:
+      operationId: game_account_set_language
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -216,6 +236,7 @@ paths:
           description: OK
   /game/Achievement/getAchievements:
     get:
+      operationId: game_achievement_get_achievements
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -228,6 +249,7 @@ paths:
           description: OK
   /game/Achievement/getAvailableAchievements:
     get:
+      operationId: game_achievement_get_available_achievements
       description: "No authentication needed"
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -240,6 +262,7 @@ paths:
           description: OK
   /game/achievement/syncStats:
     post:
+      operationId: game_achievement_sync_stats
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -253,6 +276,7 @@ paths:
           description: OK
   /game/advertisement/findObservableAdvertisements:
     get:
+      operationId: game_advertisement_find_observable_advertisements_get
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -275,6 +299,7 @@ paths:
         "200":
           description: OK
     post:
+      operationId: game_advertisement_find_observable_advertisements_post
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -298,6 +323,7 @@ paths:
           description: OK
   /game/advertisement/findAdvertisements:
     get:
+      operationId: game_advertisement_find_advertisements
       description: ""
       parameters:
         - $ref: "#/components/parameters/appBinaryChecksum"
@@ -320,6 +346,7 @@ paths:
           description: OK
   /game/advertisement/getAdvertisements:
     get:
+      operationId: game_advertisement_get_advertisements
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -332,6 +359,7 @@ paths:
           description: OK
   /game/advertisement/getLanAdvertisements:
     get:
+      operationId: game_advertisement_get_lan_advertisements
       description: ""
       parameters:
         - $ref: "#/components/parameters/appBinaryChecksum"
@@ -352,6 +380,7 @@ paths:
           description: OK
   /game/advertisement/host:
     post:
+      operationId: game_advertisement_host
       description: ""
       parameters:
         - $ref: "#/components/parameters/advertisementid"
@@ -392,6 +421,7 @@ paths:
           description: OK
   /game/advertisement/update:
     post:
+      operationId: game_advertisement_update
       description: ""
       parameters:
         - $ref: "#/components/parameters/advertisementid"
@@ -428,6 +458,7 @@ paths:
           description: OK
   /game/advertisement/join:
     post:
+      operationId: game_advertisement_join
       description: ""
       parameters:
         - $ref: "#/components/parameters/advertisementid"
@@ -452,6 +483,7 @@ paths:
           description: OK
   /game/advertisement/startObserving:
     post:
+      operationId: game_advertisement_start_observing
       description: ""
       parameters:
         - $ref: "#/components/parameters/advertisementid"
@@ -473,6 +505,7 @@ paths:
           description: OK
   /game/advertisement/stopObserving:
     post:
+      operationId: game_advertisement_stop_observing
       description: ""
       parameters:
         - $ref: "#/components/parameters/advertisementid"
@@ -485,6 +518,7 @@ paths:
           description: OK
   /game/advertisement/updatePlatformLobbyID:
     post:
+      operationId: game_advertisement_update_platform_lobby_id
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -498,6 +532,7 @@ paths:
           description: OK
   /game/advertisement/updateState:
     post:
+      operationId: game_advertisement_update_state
       description: ""
       parameters:
         - $ref: "#/components/parameters/advertisementid"
@@ -510,6 +545,7 @@ paths:
           description: OK
   /game/advertisement/updateTags:
     post:
+      operationId: game_advertisement_update_tags
       description: ""
       parameters:
         - $ref: "#/components/parameters/advertisementid"
@@ -526,6 +562,7 @@ paths:
           description: OK
   /game/advertisement/leave:
     post:
+      operationId: game_advertisement_leave
       description: ""
       parameters:
         - $ref: "#/components/parameters/advertisementid"
@@ -538,6 +575,7 @@ paths:
           description: OK
   /game/automatch/getAutomatchMap:
     get:
+      operationId: game_automatch_get_automatch_map
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -549,6 +587,7 @@ paths:
           description: OK
   /game/automatch2/getAutomatchMap:
     get:
+      operationId: game_automatch2_get_automatch_map
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -560,6 +599,7 @@ paths:
           description: OK
   /game/automatch2/polling:
     post:
+      operationId: game_automatch2_polling
       description: ""
       parameters:
         - $ref: "#/components/parameters/appBinCRC"
@@ -590,6 +630,7 @@ paths:
           description: OK
   /game/automatch2/stoppolling:
     post:
+      operationId: game_automatch2_stop_polling
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -603,6 +644,7 @@ paths:
           description: OK
   /game/automatch2/updateStatus:
     post:
+      operationId: game_automatch2_update_status
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -617,6 +659,7 @@ paths:
           description: OK
   /game/Challenge/getChallengeProgress:
     get:
+      operationId: game_challenge_get_challenge_progress
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -628,6 +671,7 @@ paths:
           description: OK
   /game/Challenge/getChallengeProgressByProfileID:
     get:
+      operationId: game_challenge_get_challenge_progress_by_profile_id
       description: "TODO: Request not available in Wiki, this is guessed"
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -640,6 +684,7 @@ paths:
           description: OK
   /game/Challenge/getChallenges:
     get:
+      operationId: game_challenge_get_challenges
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -652,6 +697,7 @@ paths:
           description: OK
   /game/challenge/updateProgressBatched:
     post:
+      operationId: game_challenge_update_progress_batched
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -665,6 +711,7 @@ paths:
           description: OK
   /game/chat/getChatChannels:
     get:
+      operationId: game_chat_get_chat_channels
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -676,6 +723,7 @@ paths:
           description: OK
   /game/chat/getOfflineMessages:
     get:
+      operationId: game_chat_get_offline_messages
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -687,6 +735,7 @@ paths:
           description: OK
   /game/chat/deleteOfflineMessage:
     post:
+      operationId: game_chat_delete_offline_message
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -699,6 +748,7 @@ paths:
           description: OK
   /game/clan/find:
     get:
+      operationId: game_clan_find
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -715,6 +765,7 @@ paths:
           description: OK
   /game/clan/getClan:
     get:
+      operationId: game_clan_get_clan
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -727,6 +778,7 @@ paths:
           description: OK
   /game/clan/getClanInfoFull:
     get:
+      operationId: game_clan_get_clan_info_full
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -739,6 +791,7 @@ paths:
           description: OK
   /game/clan/apply:
     post:
+      operationId: game_clan_apply
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -751,6 +804,7 @@ paths:
           description: OK
   /game/clan/disband:
     post:
+      operationId: game_clan_disband
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -762,6 +816,7 @@ paths:
           description: OK
   /game/clan/create:
     post:
+      operationId: game_clan_create
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -795,6 +850,7 @@ paths:
           description: OK
   /game/clan/update:
     post:
+      operationId: game_clan_update
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -813,6 +869,7 @@ paths:
           description: OK
   /game/cloud/getFileURL:
     get:
+      operationId: game_cloud_get_file_url
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -836,6 +893,7 @@ paths:
           description: OK
   /game/cloud/getTempCredentials:
     get:
+      operationId: game_cloud_get_temp_credentials
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -848,6 +906,7 @@ paths:
           description: OK
   /game/CommunityEvent/getAvailableCommunityEvents:
     get:
+      operationId: game_community_event_get_available_community_events
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -859,6 +918,7 @@ paths:
           description: OK
   /game/CommunityEvent/getEventChallengeProgress:
     get:
+      operationId: game_community_event_get_event_challenge_progress
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -871,6 +931,7 @@ paths:
           description: OK
   /game/CommunityEvent/getEventStats:
     get:
+      operationId: game_community_event_get_event_stats
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -885,6 +946,7 @@ paths:
           description: OK
   /game/invitation/cancelInvitation:
     post:
+      operationId: game_invitation_cancel_invitation
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -898,6 +960,7 @@ paths:
           description: OK
   /game/invitation/extendInvitation:
     post:
+      operationId: game_invitation_extend_invitation
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -912,6 +975,7 @@ paths:
           description: OK
   /game/item/getInventoryByProfileIDs:
     get:
+      operationId: game_item_get_inventory_by_profile_ids
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -924,6 +988,7 @@ paths:
           description: OK
   /game/item/getItemBundleItemsJson:
     get:
+      operationId: game_item_get_item_bundle_items_json
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -936,6 +1001,7 @@ paths:
           description: OK
   /game/item/getItemDefinitionsJson:
     get:
+      operationId: game_item_get_item_definitions_json
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -948,6 +1014,7 @@ paths:
           description: OK
   /game/item/getItemLoadouts:
     get:
+      operationId: game_item_get_item_loadouts
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -959,6 +1026,7 @@ paths:
           description: OK
   /game/item/getItemPrices:
     get:
+      operationId: game_item_get_item_prices
       description: ""
       parameters:
         - $ref: "#/components/parameters/accountType"
@@ -974,6 +1042,7 @@ paths:
           description: OK
   /game/item/getLevelRewardsTableJson:
     get:
+      operationId: game_item_get_level_rewards_table_json
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -986,6 +1055,7 @@ paths:
           description: OK
   /game/item/getPersonalizedSaleItems:
     get:
+      operationId: game_item_get_personalized_sale_items
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -997,6 +1067,7 @@ paths:
           description: OK
   /game/item/getScheduledSaleAndItems:
     get:
+      operationId: game_item_get_scheduled_sale_and_items
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -1009,6 +1080,7 @@ paths:
           description: OK
   /game/item/detachItems:
     post:
+      operationId: game_item_detach_items
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -1023,6 +1095,7 @@ paths:
           description: OK
   /game/item/moveCharges:
     post:
+      operationId: game_item_move_charges
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -1038,6 +1111,7 @@ paths:
           description: OK
   /game/item/moveItem:
     post:
+      operationId: game_item_move_item
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -1053,6 +1127,7 @@ paths:
           description: OK
   /game/item/openItemPack:
     post:
+      operationId: game_item_open_item_pack
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -1067,6 +1142,7 @@ paths:
           description: OK
   /game/item/signItems:
     post:
+      operationId: game_item_sign_item
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -1079,6 +1155,7 @@ paths:
           description: OK
   /game/item/updateItemAttributes:
     post:
+      operationId: game_item_update_item_attributes
       description: ""
       parameters:
         - $ref: "#/components/parameters/attributeKeys"
@@ -1094,6 +1171,7 @@ paths:
           description: OK
   /game/Leaderboard/getRecentMatchHistory:
     get:
+      operationId: game_leaderboard_get_recent_match_history_get
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -1105,6 +1183,7 @@ paths:
         "200":
           description: OK
     post:
+      operationId: game_leaderboard_get_recent_match_history_post
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -1117,6 +1196,7 @@ paths:
           description: OK
   /game/Leaderboard/getAvailableLeaderboards:
     get:
+      operationId: game_leaderboard_get_available_leaderboards
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -1128,6 +1208,7 @@ paths:
           description: OK
   /game/Leaderboard/getLeaderBoard:
     get:
+      operationId: game_leaderboard_get_leaderboard
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -1143,6 +1224,7 @@ paths:
           description: OK
   /game/Leaderboard/getPartyStat:
     get:
+      operationId: game_leaderboard_get_party_stat
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -1155,6 +1237,7 @@ paths:
           description: OK
   /game/Leaderboard/getPersonalStat:
     get:
+      operationId: game_leaderboard_get_personal_stat
       description: "TODO: No request documented in Wiki, guessed parameters"
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -1166,6 +1249,7 @@ paths:
           description: OK
   /game/Leaderboard/getRecentMatchSinglePlayerHistory:
     get:
+      operationId: game_leaderboard_get_recent_match_single_player_history
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -1178,6 +1262,7 @@ paths:
           description: OK
   /game/Leaderboard/getStatGroupsByProfileIDs:
     get:
+      operationId: game_leaderboard_get_stat_groups_by_profile_ids
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -1190,6 +1275,7 @@ paths:
           description: OK
   /game/Leaderboard/getStatsForLeaderboardByProfileName:
     get:
+      operationId: game_leaderboard_get_stats_for_leaderboard_by_profile_name
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -1203,6 +1289,7 @@ paths:
           description: OK
   /game/leaderboard/setAvatarStatValues:
     post:
+      operationId: game_leaderboard_set_avatar_stat_values
       description: ""
       parameters:
         - $ref: "#/components/parameters/avatarStat_ids"
@@ -1217,6 +1304,7 @@ paths:
           description: OK
   /game/login/logout:
     post:
+      operationId: game_login_logout
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -1228,6 +1316,7 @@ paths:
           description: OK
   /game/login/readSession:
     post:
+      operationId: game_login_read_session
       description: ""
       parameters:
         - $ref: "#/components/parameters/ack"
@@ -1238,6 +1327,7 @@ paths:
           description: OK
   /game/login/platformlogin:
     post:
+      operationId: game_login_platform_login
       description: ""
       parameters:
         - $ref: "#/components/parameters/accountType"
@@ -1266,6 +1356,7 @@ paths:
           description: OK
   /game/news/getNews:
     get:
+      operationId: game_news_get_news
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -1277,6 +1368,7 @@ paths:
           description: OK
   /game/party/createOrReportSinglePlayer:
     post:
+      operationId: game_party_create_or_report_single_player
       description: ""
       parameters:
         - $ref: "#/components/parameters/appbincrc"
@@ -1308,6 +1400,7 @@ paths:
           description: OK
   /game/party/reportMatch:
     post:
+      operationId: game_party_report_match
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -1329,6 +1422,7 @@ paths:
           description: OK
   /game/playerreport/reportuser:
     post:
+      operationId: game_playerreport_report_user
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -1345,6 +1439,7 @@ paths:
           description: OK
   /game/party/sendMatchChat:
     post:
+      operationId: game_party_send_match_chat
       description: ""
       parameters:
         - $ref: "#/components/parameters/broadcast"
@@ -1362,6 +1457,7 @@ paths:
           description: OK
   /game/party/finalizeReplayUpload:
     post:
+      operationId: game_party_finalize_replay_upload
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -1379,6 +1475,7 @@ paths:
           description: OK
   /game/party/peerAdd:
     post:
+      operationId: game_party_peer_add
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -1395,6 +1492,7 @@ paths:
           description: OK
   /game/party/peerUpdate:
     post:
+      operationId: game_party_peer_update
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -1411,6 +1509,7 @@ paths:
           description: OK
   /game/relationship/getPresenceData:
     get:
+      operationId: game_relationship_get_presence_data
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -1422,6 +1521,7 @@ paths:
           description: OK
   /game/relationship/getRelationships:
     get:
+      operationId: game_relationship_get_relationships
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -1433,6 +1533,7 @@ paths:
           description: OK
   /game/relationship/clearRelationship:
     post:
+      operationId: game_relationship_clear_relationship
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -1446,6 +1547,7 @@ paths:
           description: OK
   /game/relationship/ignore:
     post:
+      operationId: game_relationship_ignore
       description: ""
       parameters:
         - $ref: "#/components/parameters/blocklevel"
@@ -1460,6 +1562,7 @@ paths:
           description: OK
   /game/relationship/setPresence:
     post:
+      operationId: game_relationship_set_presence
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -1472,6 +1575,7 @@ paths:
           description: OK
   /game/relationship/setPresenceProperty:
     post:
+      operationId: game_relationship_set_presence_property
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
