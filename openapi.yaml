@@ -1306,6 +1306,60 @@ paths:
       responses:
         "200":
           description: OK
+  /game/party/reportMatch:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/checkSums"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/countersZip"
+        - $ref: "#/components/parameters/itemUpdates"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/match_id"
+        - $ref: "#/components/parameters/profile_ids"
+        - $ref: "#/components/parameters/race_ids"
+        - $ref: "#/components/parameters/results"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/simplayerIDs"
+        - $ref: "#/components/parameters/teamIDs"
+        - $ref: "#/components/parameters/xpGained"
+      responses:
+        "200":
+          description: OK
+  /game/playerreport/reportuser:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/comment"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/metadata"
+        - $ref: "#/components/parameters/reportReason"
+        - $ref: "#/components/parameters/reportType"
+        - $ref: "#/components/parameters/reportee_profile_id"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/party/sendMatchChat:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/broadcast"
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/from_profile_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/match_id"
+        - $ref: "#/components/parameters/message"
+        - $ref: "#/components/parameters/messageTypeID"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/to_profile_id"
+      responses:
+        "200":
+          description: OK
   /game/party/finalizeReplayUpload:
     post:
       description: ""
@@ -2810,7 +2864,7 @@ components:
       explode: true
       schema:
         type: string
-      example: [“Liiit”]
+      example: ["Liiit"]
     clanList_name:
       name: clanList_name
       in: query
@@ -2935,8 +2989,8 @@ components:
       style: form
       explode: true
       schema:
-        type: string
-      example:
+        type: object
+      example: { "location": 4, "clanTag": "KAOS", "clanName": "KAOS" }
     paymentitem:
       name: paymentitem
       in: query
@@ -3602,6 +3656,26 @@ components:
       schema:
         type: integer
       example: 186444398
+    checkSums:
+      name: checkSums
+      in: query
+      required: true
+      description: ""
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: [0, 0]
+    simplayerIDs:
+      name: simplayerIDs
+      in: query
+      required: true
+      description: ""
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: [1, 7]
     isNonParticipants:
       name: isNonParticipants
       in: query
@@ -3632,3 +3706,95 @@ components:
       schema:
         type: string
       example: https://rl0aoelivemk2blob.blob.core.windows.net/cloudfiles/436432/aoelive_/age2/replay/windows/4.0.0/0/M_186444398_8b31ed6602350cce7ee1736393cab532712c579e545fdd41995117491b1ae319.gz
+    broadcast:
+      name: broadcast
+      in: query
+      required: true
+      description: "aoe4: 1, aoe2de: 0"
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example:
+        - 0
+        - 1
+    message:
+      name: message
+      in: query
+      required: true
+      description: ""
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: 0*gg
+    messageTypeID:
+      name: messageTypeID
+      in: query
+      required: true
+      description: ""
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: 0
+    from_profile_id:
+      name: from_profile_id
+      in: query
+      required: true
+      description: ""
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: 0
+    to_profile_id:
+      name: to_profile_id
+      in: query
+      required: true
+      description: ""
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: 0
+    comment:
+      name: comment
+      in: query
+      required: true
+      description: ""
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: misclick
+    reportReason:
+      name: reportReason
+      in: query
+      required: true
+      description: "7=all reasons"
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: 7
+    reportType:
+      name: reportType
+      in: query
+      required: true
+      description: ""
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example:
+    reportee_profile_id:
+      name: reportee_profile_id
+      in: query
+      required: true
+      description: ""
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: 209072
