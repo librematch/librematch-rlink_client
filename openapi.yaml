@@ -1,5 +1,5 @@
 ---
-openapi: 3.0.0
+openapi: 3.0.3
 info:
   title: Relic Link API
   description: ""
@@ -1077,6 +1077,284 @@ paths:
       responses:
         "200":
           description: OK
+  /game/item/updateItemAttributes:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/attributeKeys"
+        - $ref: "#/components/parameters/attributeValues"
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/itemInstance_ids"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/xpGains"
+      responses:
+        "200":
+          description: OK
+  /game/Leaderboard/getRecentMatchHistory:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/profile_ids"
+      responses:
+        "200":
+          description: OK
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/profile_ids"
+      responses:
+        "200":
+          description: OK
+  /game/Leaderboard/getAvailableLeaderboards:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/Leaderboard/getLeaderBoard:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/leaderboard_id"
+        - $ref: "#/components/parameters/start"
+        - $ref: "#/components/parameters/sortBy"
+        - $ref: "#/components/parameters/count"
+      responses:
+        "200":
+          description: OK
+  /game/Leaderboard/getPartyStat:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/statsids"
+      responses:
+        "200":
+          description: OK
+  /game/Leaderboard/getPersonalStat:
+    get:
+      description: "TODO: No request documented in Wiki, guessed parameters"
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/Leaderboard/getRecentMatchSinglePlayerHistory:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/profile_ids"
+      responses:
+        "200":
+          description: OK
+  /game/Leaderboard/getStatGroupsByProfileIDs:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/profileids"
+      responses:
+        "200":
+          description: OK
+  /game/Leaderboard/getStatsForLeaderboardByProfileName:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/leaderboard_id"
+        - $ref: "#/components/parameters/profileids"
+      responses:
+        "200":
+          description: OK
+  /game/leaderboard/setAvatarStatValues:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/avatarStat_ids"
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/updateTypes"
+        - $ref: "#/components/parameters/values"
+      responses:
+        "200":
+          description: OK
+  /game/login/logout:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/login/readSession:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/ack"
+        - $ref: "#/components/parameters/pollNum"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/login/platformlogin:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/accountType"
+        - $ref: "#/components/parameters/activeMatchId"
+        - $ref: "#/components/parameters/alias"
+        - $ref: "#/components/parameters/appID"
+        - $ref: "#/components/parameters/authLogin"
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/clientLibVersion"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/country"
+        - $ref: "#/components/parameters/installationType"
+        - $ref: "#/components/parameters/language"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/macAddress"
+        - $ref: "#/components/parameters/majorVersion"
+        - $ref: "#/components/parameters/minorVersion"
+        - $ref: "#/components/parameters/platformUserID"
+        - $ref: "#/components/parameters/startGameToken"
+        - $ref: "#/components/parameters/storeLicenseToken"
+        - $ref: "#/components/parameters/syncHash"
+        - $ref: "#/components/parameters/timeoutOverride"
+        - $ref: "#/components/parameters/title"
+      responses:
+        "200":
+          description: OK
+  /game/news/getNews:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/party/createOrReportSinglePlayer:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/appbincrc"
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/countersZip"
+        - $ref: "#/components/parameters/createMatchKey"
+        - $ref: "#/components/parameters/datacrc"
+        - $ref: "#/components/parameters/isComplete"
+        - $ref: "#/components/parameters/itemUpdates"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/mapname"
+        - $ref: "#/components/parameters/matchKey"
+        - $ref: "#/components/parameters/matchTypeID"
+        - $ref: "#/components/parameters/modDLLChecksum"
+        - $ref: "#/components/parameters/modDLLFile"
+        - $ref: "#/components/parameters/modName"
+        - $ref: "#/components/parameters/modVersion"
+        - $ref: "#/components/parameters/options"
+        - $ref: "#/components/parameters/race_ids"
+        - $ref: "#/components/parameters/results"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/slotInfo"
+        - $ref: "#/components/parameters/teamIDs"
+        - $ref: "#/components/parameters/versionFlags"
+        - $ref: "#/components/parameters/xpGained"
+      responses:
+        "200":
+          description: OK
+  /game/party/finalizeReplayUpload:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/errorString"
+        - $ref: "#/components/parameters/finalizeResult"
+        - $ref: "#/components/parameters/isSinglePlayer"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/match_id"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/size"
+        - $ref: "#/components/parameters/url"
+      responses:
+        "200":
+          description: OK
+  /game/party/peerAdd:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/match_id"
+        - $ref: "#/components/parameters/profile_ids"
+        - $ref: "#/components/parameters/race_ids"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/statGroup_ids"
+        - $ref: "#/components/parameters/teamIDs"
+      responses:
+        "200":
+          description: OK
+  /game/party/peerUpdate:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/isNonParticipants"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/match_id"
+        - $ref: "#/components/parameters/profile_ids"
+        - $ref: "#/components/parameters/race_ids"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/teamIDs"
+      responses:
+        "200":
+          description: OK
 components:
   schemas:
     Result:
@@ -1452,6 +1730,7 @@ components:
       required: true
       schema:
         type: integer
+        default: 0
       example: 148
       description: ""
     connect_id:
@@ -1631,6 +1910,16 @@ components:
       schema:
         type: string
       example: STEAM
+    authLogin:
+      name: auth
+      in: query
+      required: true
+      description: ""
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: CAEQ8r/r2AwYBSBLKoABBvLEPiLC/jFgMWrApLt1wEVq/gNVsjg/mrmECUAQM5669cvmj8SxWM9wLNBzjZCyVJqlocVi/4hIU7il2ToQoiiLOiWuURy2ebX/AEcd8jS/iqMGZW6qIdoT9eumDueQOyKw4cH26mSVc3/bLRi2sf0vThM2dkt3eQ4Mnfr5xQs=
     appBinaryChecksum:
       name: appBinaryChecksum
       in: query
@@ -1860,7 +2149,9 @@ components:
       explode: true
       schema:
         type: string
-      example: "no_map"
+      example:
+        - "no_map"
+        - "ang_chp1_hastings"
     matchtype:
       name: matchtype
       in: query
@@ -2772,7 +3063,8 @@ components:
       schema:
         type: string
       example:
-        - us
+        - US
+        - DE
     currency:
       name: currency
       in: query
@@ -2928,3 +3220,415 @@ components:
       schema:
         type: integer
       example: 3611078805
+    attributeKeys:
+      name: attributeKeys
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: [["is_new"]]
+    itemInstance_ids:
+      name: itemInstance_ids
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: [449911889]
+    attributeValues:
+      name: attributeValues
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: [["0"]]
+    xpGains:
+      name: xpGains
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: [0]
+    xpGained:
+      name: xpGained
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: [0]
+    statsids:
+      name: statsids
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: [1, 2]
+    profileids:
+      name: profileids
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: [2132331, 31323213]
+    avatarStat_ids:
+      name: avatarStat_ids
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: [156]
+    updateTypes:
+      name: updateTypes
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: [2]
+    values:
+      name: values
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: [687]
+    ack:
+      name: ack
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: 0
+    pollNum:
+      name: pollNum
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: 0
+    activeMatchId:
+      name: activeMatchId
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+        default: -1
+      example: -1
+    appID:
+      name: appID
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: 1466860
+    alias:
+      name: alias
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: "Name"
+    installationType:
+      name: installationType
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: windows
+    macAddress:
+      name: macAddress
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: D4-BA-A1-43-29-19
+    clientLibVersion:
+      name: clientLibVersion
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: 176
+    majorVersion:
+      name: majorVersion
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: "4.0.0"
+    minorVersion:
+      name: minorVersion
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: 24916
+    platformUserID:
+      name: platformUserID
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: 765613333337299
+    startGameToken:
+      name: startGameToken
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: string
+      example:
+    storeLicenseToken:
+      name: storeLicenseToken
+      in: query
+      required: false
+      style: form
+      explode: true
+      schema:
+        type: string
+      example:
+    syncHash:
+      name: syncHash
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: [0, 0]
+    timeoutOverride:
+      name: timeoutOverride
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+        default: 0
+      example: 0
+    appbincrc:
+      name: appbincrc
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: 24916
+    countersZip:
+      name: countersZip
+      in: query
+      required: true
+      description: "zlib-compressed"
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: H4sIAAAAAAAACouOBQApu0wNAgAAAA==
+    createMatchKey:
+      name: createMatchKey
+      in: query
+      required: true
+      description: ""
+      style: form
+      explode: true
+      schema:
+        type: integer
+        default: 1
+      example: 1
+    datacrc:
+      name: datacrc
+      in: query
+      required: true
+      description: ""
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: -638535971
+    isComplete:
+      name: isComplete
+      in: query
+      required: true
+      description: ""
+      style: form
+      explode: true
+      schema:
+        type: integer
+        default: 0
+      example: 0
+    itemUpdates:
+      name: itemUpdates
+      in: query
+      required: true
+      description: ""
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: []
+    matchKey:
+      name: matchKey
+      in: query
+      required: true
+      description: ""
+      style: form
+      explode: true
+      schema:
+        type: string
+      example:
+    matchTypeID:
+      name: matchTypeID
+      in: query
+      required: true
+      description: ""
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: 17
+    results:
+      name: results
+      in: query
+      required: true
+      description: ""
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: []
+    slotInfo:
+      name: slotInfo
+      in: query
+      required: true
+      description: "zlib-compressed"
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: eNrtVltvo0YU7m/xc7aCwSRLpH0wdgZj2Thg7lUfGMDiMmAaMDau+t97BpzEmzRdrdqXSH5AzJwznDmX7/tsHt389ueoetptUxqr5Xb3axqN7pEwvhXGN6O6CZp0V6qz0T1/M2rioGBL7ma0DcJnB+yegjBmS4T4u/GY7ct8GbcxPXvLfBU0YWJ2VX/sC4uVFvFj/ISfgiJebfpzaW3EQdT1a3bxvu6XRdwEs6AJRvejuFs0LqJ7A+HG36i3q+khJbZUkdKnpDTasKQb38F5/Oo7EAWLvrt4tW96e+c5Yk4Qb0YK7iIstyGiXOBIezXbHZdTuEfQOM9dgE0sLUU6Ba5RETRO1yk3+BHf+lhOPNQ8hnPmE09qVt2pxYud7YnrcjXYtsSRckvBWcD5tedE4Nsd3sQ5WYKRRHO7/w5qTcJCWxhT9VbNjZXmSMslJ/3hc7aroWS/xrTSkH6w+QfpcaPWasnyNfiwG2oP0bGN4Nul+QD3G3syZfbxYTWbwCNL7tCHJLBlGpZaSwpcQ40i5JWq6dlnHVvPMdrI1dN1pndrUxe1LIS31dfkIelEHBt6pL3twTZUMMzFMD2UUDjT13GeXw53cKss59amJ8CbH/ptiKFiwT2yNOzlBHrPWfNFRRzcsdmp6dd22X1toxMnnXM8eA7dR1ijkMveV350zugCh4MZqr1/KYRD717ztfx+5h/GSaEfpW/LEIdPwjJ/E2txzt2gnsPLRDlWgLOMYVXNsaxb8JgvsWC+vKg7UJ/CsDfM/XkuzGe7chkWOPfdVbqmTTTgBXfEpTYpKMdm7fADvnxFWhPB2JxxXcUF6+VD7wtcDewatQoMPZIaMqem7xypB3n60xeu7DxXmxJFygJk57YVzV4wKsi151Ia5oATReLDlOFqIU0m376N/rp5rx+M4Rfa8eVCPPgPxYMTb+++Fw/038QD/f/iMf0c4vFv5PYVu/Bcu46wlAFIGTFKkg4kgPWKIJwTweb+kaRIg1p5Gik0MwW5r5mBsO/tM2GRtvMdnm4sEI2y7nvMQKbNVFGb5Ug7wXvIj4tdmbJatptLkn5Eru+ICgBmdRk/OmeFBW1Y3b2/k4RHk0svBcZW7A7q+TCOxwiIbJ3FgZmKb2Odc+cAI43uHGsQj72HgHzpQrYY4a2H11juooktnAbOsYI76SWBe59tH3xhkcCM3ouBI1bR/FIIjNYsJO6Z1IFb0Rf8IXoCe+bbiwR61BLnKFrIrqFnkCcT8
+    teamIDs:
+      name: teamIDs
+      in: query
+      required: true
+      description: ""
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: []
+    errorString:
+      name: errorString
+      in: query
+      required: true
+      description: ""
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: []
+    finalizeResult:
+      name: finalizeResult
+      in: query
+      required: true
+      description: ""
+      style: form
+      explode: true
+      schema:
+        type: integer
+        default: 1
+      example: 1
+    isSinglePlayer:
+      name: isSinglePlayer
+      in: query
+      required: true
+      description: ""
+      style: form
+      explode: true
+      schema:
+        type: integer
+        default: 0
+      example:
+        - 0
+        - 1
+    match_id:
+      name: match_id
+      in: query
+      required: true
+      description: ""
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: 186444398
+    isNonParticipants:
+      name: isNonParticipants
+      in: query
+      required: true
+      description: ""
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: [0, 0]
+    size:
+      name: size
+      in: query
+      required: true
+      description: ""
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: 340242
+    url:
+      name: url
+      in: query
+      required: true
+      description: ""
+      style: form
+      explode: true
+      schema:
+        type: string
+      example: https://rl0aoelivemk2blob.blob.core.windows.net/cloudfiles/436432/aoelive_/age2/replay/windows/4.0.0/0/M_186444398_8b31ed6602350cce7ee1736393cab532712c579e545fdd41995117491b1ae319.gz
