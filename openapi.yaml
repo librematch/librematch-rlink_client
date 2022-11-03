@@ -910,6 +910,117 @@ paths:
       responses:
         "200":
           description: OK
+  /game/item/getInventoryByProfileIDs:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/profileIDs"
+      responses:
+        "200":
+          description: OK
+  /game/item/getItemBundleItemsJson:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/signature"
+      responses:
+        "200":
+          description: OK
+  /game/item/getItemDefinitionsJson:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/signature"
+      responses:
+        "200":
+          description: OK
+  /game/item/getItemLoadouts:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/item/getItemPrices:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/accountType"
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/country"
+        - $ref: "#/components/parameters/currency"
+        - $ref: "#/components/parameters/saleVersion"
+      responses:
+        "200":
+          description: OK
+  /game/item/getLevelRewardsTableJson:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/signature"
+      responses:
+        "200":
+          description: OK
+  /game/item/getPersonalizedSaleItems:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
+  /game/item/getScheduledSaleAndItems:
+    get:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+        - $ref: "#/components/parameters/saleType"
+      responses:
+        "200":
+          description: OK
+  /game/item/detachItems:
+    post:
+      description: ""
+      parameters:
+        - $ref: "#/components/parameters/callNum"
+        - $ref: "#/components/parameters/connect_id"
+        - $ref: "#/components/parameters/itemCharges"
+        - $ref: "#/components/parameters/itemIDs"
+        - $ref: "#/components/parameters/itemLocations"
+        - $ref: "#/components/parameters/lastCallTime"
+        - $ref: "#/components/parameters/sessionID"
+      responses:
+        "200":
+          description: OK
 components:
   schemas:
     Result:
@@ -2594,5 +2705,71 @@ components:
       style: form
       explode: true
       schema:
-        type: integer
+        type: string
       example: /cloudfiles/game/6b861a867ce5f4e66131c929fe13db8baa40b5bb412255adcc225e6604ff703f
+    country:
+      name: country
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: string
+      example:
+        - us
+    currency:
+      name: currency
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: string
+      example:
+        - usd
+    saleVersion:
+      name: saleVersion
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: -1
+    saleType:
+      name: saleType
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: 1
+    itemCharges:
+      name: itemCharges
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: [1, 1, 1, 1, 1, 1]
+    itemIDs:
+      name: itemIDs
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example:
+        [449911890, 449911890, 449911888, 449911890, 449911888, 449911889]
+    itemLocations:
+      name: itemLocations
+      in: query
+      required: true
+      style: form
+      explode: true
+      schema:
+        type: integer
+      example: [0, 0, 0, 0, 0, 0]
