@@ -18,10 +18,10 @@ paths:
       responses:
         "200":
           description: Definition generated from Swagger Inspector
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/Model3"
+          # content:
+          #   application/json:
+          #     schema:
+          #       $ref: "#/components/schemas/Model3"
   /community/leaderboard/GetPersonalStat:
     get:
       operationId: community_get_personal_stat
@@ -33,10 +33,10 @@ paths:
       responses:
         "200":
           description: Definition generated from Swagger Inspector
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/Model4"
+          # content:
+          #   application/json:
+          #     schema:
+          #       $ref: "#/components/schemas/Model4"
   /community/leaderboard/getRecentMatchHistory:
     get:
       operationId: community_get_recent_match_history
@@ -47,10 +47,10 @@ paths:
       responses:
         "200":
           description: Definition generated from Swagger Inspector
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/Model2"
+          # content:
+          #   application/json:
+          #     schema:
+          #       $ref: "#/components/schemas/Model2"
   /community/advertisement/findAdvertisements:
     get:
       operationId: community_find_advertisements
@@ -869,7 +869,7 @@ paths:
           description: OK
   /game/cloud/getFileURL:
     get:
-      operationId: game_cloud_get_file_url
+      operationId: game_cloud_get_file_url_get
       description: ""
       parameters:
         - $ref: "#/components/parameters/callNum"
@@ -882,6 +882,7 @@ paths:
           description: OK
     post:
       description: ""
+      operationId: game_cloud_get_file_url_post
       parameters:
         - $ref: "#/components/parameters/callNum"
         - $ref: "#/components/parameters/connect_id"
@@ -1588,373 +1589,373 @@ paths:
         "200":
           description: OK
 components:
-  schemas:
-    Result:
-      properties:
-        code:
-          type: integer
-          format: int32
-        message:
-          type: string
-    Model0:
-      properties:
-        result:
-          $ref: "#/components/schemas/Result"
-    Model1_Result:
-      properties:
-        code:
-          type: integer
-          format: int32
-        message:
-          type: string
-    Members:
-      properties:
-        profile_id:
-          type: integer
-          format: int32
-        name:
-          type: string
-        alias:
-          type: string
-        personal_statgroup_id:
-          type: integer
-          format: int32
-        xp:
-          type: integer
-          format: int32
-        level:
-          type: integer
-          format: int32
-        leaderboardregion_id:
-          type: integer
-          format: int32
-        country:
-          type: string
-    StatGroups:
-      properties:
-        id:
-          type: integer
-          format: int32
-        name:
-          type: string
-        type:
-          type: integer
-          format: int32
-        members:
-          type: array
-          items:
-            $ref: "#/components/schemas/Members"
-    Model1:
-      properties:
-        result:
-          $ref: "#/components/schemas/Model1_Result"
-        statGroups:
-          type: array
-          items:
-            $ref: "#/components/schemas/StatGroups"
-        leaderboardStats:
-          type: array
-          items: {}
-    Model2_Result:
-      properties:
-        code:
-          type: integer
-          format: int32
-        message:
-          type: string
-    Matchhistoryreportresults:
-      properties:
-        matchhistory_id:
-          type: integer
-          format: int32
-        profile_id:
-          type: integer
-          format: int32
-        resulttype:
-          type: integer
-          format: int32
-        teamid:
-          type: integer
-          format: int32
-        race_id:
-          type: integer
-          format: int32
-        xpgained:
-          type: integer
-          format: int32
-        counters:
-          type: string
-        matchstartdate:
-          type: integer
-          format: int32
-    Matchurls:
-      properties:
-        profile_id:
-          type: integer
-          format: int32
-        url:
-          type: string
-        size:
-          type: integer
-          format: int32
-        datatype:
-          type: integer
-          format: int32
-    MatchHistoryStats:
-      properties:
-        id:
-          type: integer
-          format: int32
-        creator_profile_id:
-          type: integer
-          format: int32
-        mapname:
-          type: string
-        maxplayers:
-          type: integer
-          format: int32
-        matchtype_id:
-          type: integer
-          format: int32
-        options:
-          type: string
-        slotinfo:
-          type: string
-        description:
-          type: string
-        startgametime:
-          type: integer
-          format: int32
-        completiontime:
-          type: integer
-          format: int32
-        observertotal:
-          type: integer
-          format: int32
-        matchhistoryreportresults:
-          type: array
-          items:
-            $ref: "#/components/schemas/Matchhistoryreportresults"
-        matchhistoryitems:
-          type: array
-          items: {}
-        matchurls:
-          type: array
-          items:
-            $ref: "#/components/schemas/Matchurls"
-    Profiles:
-      properties:
-        profile_id:
-          type: integer
-          format: int32
-        name:
-          type: string
-        alias:
-          type: string
-        personal_statgroup_id:
-          type: integer
-          format: int32
-        xp:
-          type: integer
-          format: int32
-        level:
-          type: integer
-          format: int32
-        leaderboardregion_id:
-          type: integer
-          format: int32
-        country:
-          type: string
-    Model2:
-      properties:
-        result:
-          $ref: "#/components/schemas/Model2_Result"
-        matchHistoryStats:
-          type: array
-          items:
-            $ref: "#/components/schemas/MatchHistoryStats"
-        profiles:
-          type: array
-          items:
-            $ref: "#/components/schemas/Profiles"
-    Model3_Result:
-      properties:
-        code:
-          type: integer
-          format: int32
-        message:
-          type: string
-    Avatars:
-      properties:
-        profile_id:
-          type: integer
-          format: int32
-        name:
-          type: string
-        alias:
-          type: string
-        personal_statgroup_id:
-          type: integer
-          format: int32
-        xp:
-          type: integer
-          format: int32
-        level:
-          type: integer
-          format: int32
-        leaderboardregion_id:
-          type: integer
-          format: int32
-        country:
-          type: string
-    Players:
-      properties:
-        steamid:
-          type: string
-        communityvisibilitystate:
-          type: integer
-          format: int32
-        profilestate:
-          type: integer
-          format: int32
-        personaname:
-          type: string
-        commentpermission:
-          type: integer
-          format: int32
-        profileurl:
-          type: string
-        avatar:
-          type: string
-        avatarmedium:
-          type: string
-        avatarfull:
-          type: string
-        avatarhash:
-          type: string
-        personastate:
-          type: integer
-          format: int32
-    Response:
-      properties:
-        players:
-          type: array
-          items:
-            $ref: "#/components/schemas/Players"
-    SteamResults:
-      properties:
-        response:
-          $ref: "#/components/schemas/Response"
-    Model3:
-      properties:
-        result:
-          $ref: "#/components/schemas/Model3_Result"
-        avatars:
-          type: array
-          items:
-            $ref: "#/components/schemas/Avatars"
-        steamResults:
-          $ref: "#/components/schemas/SteamResults"
-    Model4_Result:
-      properties:
-        code:
-          type: integer
-          format: int32
-        message:
-          type: string
-    Model4_StatGroups_Members:
-      properties:
-        profile_id:
-          type: integer
-          format: int32
-        name:
-          type: string
-        alias:
-          type: string
-        personal_statgroup_id:
-          type: integer
-          format: int32
-        xp:
-          type: integer
-          format: int32
-        level:
-          type: integer
-          format: int32
-        leaderboardregion_id:
-          type: integer
-          format: int32
-        country:
-          type: string
-    Model4_StatGroups:
-      properties:
-        id:
-          type: integer
-          format: int32
-        name:
-          type: string
-        type:
-          type: integer
-          format: int32
-        members:
-          type: array
-          items:
-            $ref: "#/components/schemas/Model4_StatGroups_Members"
-    LeaderboardStats:
-      properties:
-        statgroup_id:
-          type: integer
-          format: int32
-        leaderboard_id:
-          type: integer
-          format: int32
-        wins:
-          type: integer
-          format: int32
-        losses:
-          type: integer
-          format: int32
-        streak:
-          type: integer
-          format: int32
-        disputes:
-          type: integer
-          format: int32
-        drops:
-          type: integer
-          format: int32
-        rank:
-          type: integer
-          format: int32
-        ranktotal:
-          type: integer
-          format: int32
-        ranklevel:
-          type: integer
-          format: int32
-        rating:
-          type: integer
-          format: int32
-        regionrank:
-          type: integer
-          format: int32
-        regionranktotal:
-          type: integer
-          format: int32
-        lastmatchdate:
-          type: integer
-          format: int32
-    Model4:
-      properties:
-        result:
-          $ref: "#/components/schemas/Model4_Result"
-        statGroups:
-          type: array
-          items:
-            $ref: "#/components/schemas/Model4_StatGroups"
-        leaderboardStats:
-          type: array
-          items:
-            $ref: "#/components/schemas/LeaderboardStats"
+  # schemas:
+  #   Result:
+  #     properties:
+  #       code:
+  #         type: integer
+  #         format: int32
+  #       message:
+  #         type: string
+  #   Model0:
+  #     properties:
+  #       result:
+  #         $ref: "#/components/schemas/Result"
+  #   Model1_Result:
+  #     properties:
+  #       code:
+  #         type: integer
+  #         format: int32
+  #       message:
+  #         type: string
+  #   Members:
+  #     properties:
+  #       profile_id:
+  #         type: integer
+  #         format: int32
+  #       name:
+  #         type: string
+  #       alias:
+  #         type: string
+  #       personal_statgroup_id:
+  #         type: integer
+  #         format: int32
+  #       xp:
+  #         type: integer
+  #         format: int32
+  #       level:
+  #         type: integer
+  #         format: int32
+  #       leaderboardregion_id:
+  #         type: integer
+  #         format: int32
+  #       country:
+  #         type: string
+  #   StatGroups:
+  #     properties:
+  #       id:
+  #         type: integer
+  #         format: int32
+  #       name:
+  #         type: string
+  #       type:
+  #         type: integer
+  #         format: int32
+  #       members:
+  #         type: array
+  #         items:
+  #           $ref: "#/components/schemas/Members"
+  #   Model1:
+  #     properties:
+  #       result:
+  #         $ref: "#/components/schemas/Model1_Result"
+  #       statGroups:
+  #         type: array
+  #         items:
+  #           $ref: "#/components/schemas/StatGroups"
+  #       leaderboardStats:
+  #         type: array
+  #         items: {}
+  #   Model2_Result:
+  #     properties:
+  #       code:
+  #         type: integer
+  #         format: int32
+  #       message:
+  #         type: string
+  #   Matchhistoryreportresults:
+  #     properties:
+  #       matchhistory_id:
+  #         type: integer
+  #         format: int32
+  #       profile_id:
+  #         type: integer
+  #         format: int32
+  #       resulttype:
+  #         type: integer
+  #         format: int32
+  #       teamid:
+  #         type: integer
+  #         format: int32
+  #       race_id:
+  #         type: integer
+  #         format: int32
+  #       xpgained:
+  #         type: integer
+  #         format: int32
+  #       counters:
+  #         type: string
+  #       matchstartdate:
+  #         type: integer
+  #         format: int32
+  #   Matchurls:
+  #     properties:
+  #       profile_id:
+  #         type: integer
+  #         format: int32
+  #       url:
+  #         type: string
+  #       size:
+  #         type: integer
+  #         format: int32
+  #       datatype:
+  #         type: integer
+  #         format: int32
+  #   MatchHistoryStats:
+  #     properties:
+  #       id:
+  #         type: integer
+  #         format: int32
+  #       creator_profile_id:
+  #         type: integer
+  #         format: int32
+  #       mapname:
+  #         type: string
+  #       maxplayers:
+  #         type: integer
+  #         format: int32
+  #       matchtype_id:
+  #         type: integer
+  #         format: int32
+  #       options:
+  #         type: string
+  #       slotinfo:
+  #         type: string
+  #       description:
+  #         type: string
+  #       startgametime:
+  #         type: integer
+  #         format: int32
+  #       completiontime:
+  #         type: integer
+  #         format: int32
+  #       observertotal:
+  #         type: integer
+  #         format: int32
+  #       matchhistoryreportresults:
+  #         type: array
+  #         items:
+  #           $ref: "#/components/schemas/Matchhistoryreportresults"
+  #       matchhistoryitems:
+  #         type: array
+  #         items: {}
+  #       matchurls:
+  #         type: array
+  #         items:
+  #           $ref: "#/components/schemas/Matchurls"
+  #   Profiles:
+  #     properties:
+  #       profile_id:
+  #         type: integer
+  #         format: int32
+  #       name:
+  #         type: string
+  #       alias:
+  #         type: string
+  #       personal_statgroup_id:
+  #         type: integer
+  #         format: int32
+  #       xp:
+  #         type: integer
+  #         format: int32
+  #       level:
+  #         type: integer
+  #         format: int32
+  #       leaderboardregion_id:
+  #         type: integer
+  #         format: int32
+  #       country:
+  #         type: string
+  #   Model2:
+  #     properties:
+  #       result:
+  #         $ref: "#/components/schemas/Model2_Result"
+  #       matchHistoryStats:
+  #         type: array
+  #         items:
+  #           $ref: "#/components/schemas/MatchHistoryStats"
+  #       profiles:
+  #         type: array
+  #         items:
+  #           $ref: "#/components/schemas/Profiles"
+  #   Model3_Result:
+  #     properties:
+  #       code:
+  #         type: integer
+  #         format: int32
+  #       message:
+  #         type: string
+  #   Avatars:
+  #     properties:
+  #       profile_id:
+  #         type: integer
+  #         format: int32
+  #       name:
+  #         type: string
+  #       alias:
+  #         type: string
+  #       personal_statgroup_id:
+  #         type: integer
+  #         format: int32
+  #       xp:
+  #         type: integer
+  #         format: int32
+  #       level:
+  #         type: integer
+  #         format: int32
+  #       leaderboardregion_id:
+  #         type: integer
+  #         format: int32
+  #       country:
+  #         type: string
+  #   Players:
+  #     properties:
+  #       steamid:
+  #         type: string
+  #       communityvisibilitystate:
+  #         type: integer
+  #         format: int32
+  #       profilestate:
+  #         type: integer
+  #         format: int32
+  #       personaname:
+  #         type: string
+  #       commentpermission:
+  #         type: integer
+  #         format: int32
+  #       profileurl:
+  #         type: string
+  #       avatar:
+  #         type: string
+  #       avatarmedium:
+  #         type: string
+  #       avatarfull:
+  #         type: string
+  #       avatarhash:
+  #         type: string
+  #       personastate:
+  #         type: integer
+  #         format: int32
+  #   Response:
+  #     properties:
+  #       players:
+  #         type: array
+  #         items:
+  #           $ref: "#/components/schemas/Players"
+  #   SteamResults:
+  #     properties:
+  #       response:
+  #         $ref: "#/components/schemas/Response"
+  #   Model3:
+  #     properties:
+  #       result:
+  #         $ref: "#/components/schemas/Model3_Result"
+  #       avatars:
+  #         type: array
+  #         items:
+  #           $ref: "#/components/schemas/Avatars"
+  #       steamResults:
+  #         $ref: "#/components/schemas/SteamResults"
+  #   Model4_Result:
+  #     properties:
+  #       code:
+  #         type: integer
+  #         format: int32
+  #       message:
+  #         type: string
+  #   Model4_StatGroups_Members:
+  #     properties:
+  #       profile_id:
+  #         type: integer
+  #         format: int32
+  #       name:
+  #         type: string
+  #       alias:
+  #         type: string
+  #       personal_statgroup_id:
+  #         type: integer
+  #         format: int32
+  #       xp:
+  #         type: integer
+  #         format: int32
+  #       level:
+  #         type: integer
+  #         format: int32
+  #       leaderboardregion_id:
+  #         type: integer
+  #         format: int32
+  #       country:
+  #         type: string
+  #   Model4_StatGroups:
+  #     properties:
+  #       id:
+  #         type: integer
+  #         format: int32
+  #       name:
+  #         type: string
+  #       type:
+  #         type: integer
+  #         format: int32
+  #       members:
+  #         type: array
+  #         items:
+  #           $ref: "#/components/schemas/Model4_StatGroups_Members"
+  #   LeaderboardStats:
+  #     properties:
+  #       statgroup_id:
+  #         type: integer
+  #         format: int32
+  #       leaderboard_id:
+  #         type: integer
+  #         format: int32
+  #       wins:
+  #         type: integer
+  #         format: int32
+  #       losses:
+  #         type: integer
+  #         format: int32
+  #       streak:
+  #         type: integer
+  #         format: int32
+  #       disputes:
+  #         type: integer
+  #         format: int32
+  #       drops:
+  #         type: integer
+  #         format: int32
+  #       rank:
+  #         type: integer
+  #         format: int32
+  #       ranktotal:
+  #         type: integer
+  #         format: int32
+  #       ranklevel:
+  #         type: integer
+  #         format: int32
+  #       rating:
+  #         type: integer
+  #         format: int32
+  #       regionrank:
+  #         type: integer
+  #         format: int32
+  #       regionranktotal:
+  #         type: integer
+  #         format: int32
+  #       lastmatchdate:
+  #         type: integer
+  #         format: int32
+  #   Model4:
+  #     properties:
+  #       result:
+  #         $ref: "#/components/schemas/Model4_Result"
+  #       statGroups:
+  #         type: array
+  #         items:
+  #           $ref: "#/components/schemas/Model4_StatGroups"
+  #       leaderboardStats:
+  #         type: array
+  #         items:
+  #           $ref: "#/components/schemas/LeaderboardStats"
   parameters:
     callNum:
       name: callNum
@@ -2012,7 +2013,7 @@ components:
       style: form
       explode: true
       schema:
-        type: array
+        type: integer
       example: [196240]
     profileIDs:
       name: profileIDs
@@ -2022,7 +2023,7 @@ components:
       style: form
       explode: true
       schema:
-        type: array
+        type: integer
       example: [196240, 196241]
     profile_id:
       name: profile_id
@@ -2053,7 +2054,7 @@ components:
       style: form
       explode: true
       schema:
-        type: array
+        type: integer
       example:
         - [
             76561197960287614,
