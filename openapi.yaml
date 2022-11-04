@@ -3,7 +3,7 @@ openapi: 3.0.3
 info:
   title: Relic Link API
   description: ""
-  version: "2022.11.01"
+  version: "22.11.01"
 servers:
   - url: https://aoe-api.reliclink.com
 paths:
