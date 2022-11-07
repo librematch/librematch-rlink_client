@@ -5,11 +5,11 @@ description = "Relic Link API-Client generated from OpenAPI"
 authors = ["Your Name <you@example.com>"]
 license = "AGPL-3.0-or-later"
 readme = "README.md"
-packages = [{include = "swagger_client"}]
+packages = [{ include = "swagger_client" }]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-certifi = "^14.05.14"
+certifi = "^2022.9.24"
 six = "^1.10"
 python_dateutil = "^2.5.3"
 setuptools = "^21.0.0"
