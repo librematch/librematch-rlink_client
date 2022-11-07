@@ -111,7 +111,7 @@ Method | HTTP request | Description
 [**game_relationship_set_presence_property**](DefaultApi.md#game_relationship_set_presence_property) | **POST** /game/relationship/setPresenceProperty | 
 
 # **community_clan_find**
-> community_clan_find(join_policies, name, tags, start, count, title=title)
+> object community_clan_find(join_policies, name, tags, start, count, title=title)
 
 
 
@@ -133,7 +133,8 @@ count = 56 # int |
 title = 'title_example' # str |  (optional)
 
 try:
-    api_instance.community_clan_find(join_policies, name, tags, start, count, title=title)
+    api_response = api_instance.community_clan_find(join_policies, name, tags, start, count, title=title)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->community_clan_find: %s\n" % e)
 ```
@@ -151,7 +152,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -160,12 +161,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **community_find_advertisements**
-> community_find_advertisements(title=title)
+> object community_find_advertisements(title=title)
 
 
 
@@ -182,7 +183,8 @@ api_instance = swagger_client.DefaultApi()
 title = 'title_example' # str |  (optional)
 
 try:
-    api_instance.community_find_advertisements(title=title)
+    api_response = api_instance.community_find_advertisements(title=title)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->community_find_advertisements: %s\n" % e)
 ```
@@ -195,7 +197,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -204,12 +206,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **community_get_achievements**
-> community_get_achievements(title=title, profileids=profileids)
+> object community_get_achievements(title=title, profileids=profileids)
 
 
 
@@ -227,7 +229,8 @@ title = 'title_example' # str |  (optional)
 profileids = 56 # int |  (optional)
 
 try:
-    api_instance.community_get_achievements(title=title, profileids=profileids)
+    api_response = api_instance.community_get_achievements(title=title, profileids=profileids)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->community_get_achievements: %s\n" % e)
 ```
@@ -241,7 +244,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -250,12 +253,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **community_get_available_achievements**
-> community_get_available_achievements(title=title)
+> object community_get_available_achievements(title=title)
 
 
 
@@ -272,7 +275,8 @@ api_instance = swagger_client.DefaultApi()
 title = 'title_example' # str |  (optional)
 
 try:
-    api_instance.community_get_available_achievements(title=title)
+    api_response = api_instance.community_get_available_achievements(title=title)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->community_get_available_achievements: %s\n" % e)
 ```
@@ -285,7 +289,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -294,12 +298,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **community_get_available_community_events**
-> community_get_available_community_events(title=title)
+> object community_get_available_community_events(title=title)
 
 
 
@@ -316,7 +320,8 @@ api_instance = swagger_client.DefaultApi()
 title = 'title_example' # str |  (optional)
 
 try:
-    api_instance.community_get_available_community_events(title=title)
+    api_response = api_instance.community_get_available_community_events(title=title)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->community_get_available_community_events: %s\n" % e)
 ```
@@ -329,7 +334,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -338,12 +343,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **community_get_available_leaderboards**
-> community_get_available_leaderboards(title=title)
+> object community_get_available_leaderboards(title=title)
 
 
 
@@ -360,7 +365,8 @@ api_instance = swagger_client.DefaultApi()
 title = 'title_example' # str |  (optional)
 
 try:
-    api_instance.community_get_available_leaderboards(title=title)
+    api_response = api_instance.community_get_available_leaderboards(title=title)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->community_get_available_leaderboards: %s\n" % e)
 ```
@@ -373,7 +379,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -382,12 +388,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **community_get_avatar_stat_for_profile**
-> community_get_avatar_stat_for_profile(title=title, profile_names=profile_names)
+> object community_get_avatar_stat_for_profile(title=title, profile_names=profile_names)
 
 
 
@@ -405,7 +411,8 @@ title = 'title_example' # str |  (optional)
 profile_names = 'profile_names_example' # str |  (optional)
 
 try:
-    api_instance.community_get_avatar_stat_for_profile(title=title, profile_names=profile_names)
+    api_response = api_instance.community_get_avatar_stat_for_profile(title=title, profile_names=profile_names)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->community_get_avatar_stat_for_profile: %s\n" % e)
 ```
@@ -419,7 +426,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -428,12 +435,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **community_get_clan_info_full**
-> community_get_clan_info_full(name, title=title)
+> object community_get_clan_info_full(name, title=title)
 
 
 
@@ -451,7 +458,8 @@ name = 'name_example' # str |
 title = 'title_example' # str |  (optional)
 
 try:
-    api_instance.community_get_clan_info_full(name, title=title)
+    api_response = api_instance.community_get_clan_info_full(name, title=title)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->community_get_clan_info_full: %s\n" % e)
 ```
@@ -465,7 +473,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -474,12 +482,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **community_get_inventory_by_profile_ids**
-> community_get_inventory_by_profile_ids(title=title, profileids=profileids)
+> object community_get_inventory_by_profile_ids(title=title, profileids=profileids)
 
 
 
@@ -497,7 +505,8 @@ title = 'title_example' # str |  (optional)
 profileids = 56 # int |  (optional)
 
 try:
-    api_instance.community_get_inventory_by_profile_ids(title=title, profileids=profileids)
+    api_response = api_instance.community_get_inventory_by_profile_ids(title=title, profileids=profileids)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->community_get_inventory_by_profile_ids: %s\n" % e)
 ```
@@ -511,7 +520,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -520,12 +529,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **community_get_leaderboard2**
-> community_get_leaderboard2(start, count, title=title, leaderboard_id=leaderboard_id, sort_by=sort_by, platform=platform)
+> object community_get_leaderboard2(start, count, title=title, leaderboard_id=leaderboard_id, sort_by=sort_by, platform=platform)
 
 
 
@@ -547,7 +556,8 @@ sort_by = 56 # int |  (optional)
 platform = 'platform_example' # str |  (optional)
 
 try:
-    api_instance.community_get_leaderboard2(start, count, title=title, leaderboard_id=leaderboard_id, sort_by=sort_by, platform=platform)
+    api_response = api_instance.community_get_leaderboard2(start, count, title=title, leaderboard_id=leaderboard_id, sort_by=sort_by, platform=platform)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->community_get_leaderboard2: %s\n" % e)
 ```
@@ -565,7 +575,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -574,12 +584,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **community_get_personal_stat**
-> community_get_personal_stat(title=title, profile_ids=profile_ids, profile_names=profile_names, aliases=aliases)
+> object community_get_personal_stat(title=title, profile_ids=profile_ids, profile_names=profile_names, aliases=aliases)
 
 
 
@@ -599,7 +609,8 @@ profile_names = 'profile_names_example' # str |  (optional)
 aliases = 'aliases_example' # str |  (optional)
 
 try:
-    api_instance.community_get_personal_stat(title=title, profile_ids=profile_ids, profile_names=profile_names, aliases=aliases)
+    api_response = api_instance.community_get_personal_stat(title=title, profile_ids=profile_ids, profile_names=profile_names, aliases=aliases)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->community_get_personal_stat: %s\n" % e)
 ```
@@ -615,7 +626,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -624,12 +635,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **community_get_recent_match_history**
-> community_get_recent_match_history(title=title, profile_ids=profile_ids, profile_names=profile_names)
+> object community_get_recent_match_history(title=title, profile_ids=profile_ids, profile_names=profile_names)
 
 
 
@@ -648,7 +659,8 @@ profile_ids = 'profile_ids_example' # str |  (optional)
 profile_names = 'profile_names_example' # str |  (optional)
 
 try:
-    api_instance.community_get_recent_match_history(title=title, profile_ids=profile_ids, profile_names=profile_names)
+    api_response = api_instance.community_get_recent_match_history(title=title, profile_ids=profile_ids, profile_names=profile_names)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->community_get_recent_match_history: %s\n" % e)
 ```
@@ -663,7 +675,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -672,12 +684,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **community_news**
-> community_news(title=title)
+> object community_news(title=title)
 
 
 
@@ -694,7 +706,8 @@ api_instance = swagger_client.DefaultApi()
 title = 'title_example' # str |  (optional)
 
 try:
-    api_instance.community_news(title=title)
+    api_response = api_instance.community_news(title=title)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->community_news: %s\n" % e)
 ```
@@ -707,7 +720,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -716,12 +729,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **community_proxy_steam_user_request**
-> community_proxy_steam_user_request(request=request, title=title, profile_ids=profile_ids, profile_names=profile_names)
+> object community_proxy_steam_user_request(request=request, title=title, profile_ids=profile_ids, profile_names=profile_names)
 
 
 
@@ -741,7 +754,8 @@ profile_ids = 'profile_ids_example' # str |  (optional)
 profile_names = 'profile_names_example' # str |  (optional)
 
 try:
-    api_instance.community_proxy_steam_user_request(request=request, title=title, profile_ids=profile_ids, profile_names=profile_names)
+    api_response = api_instance.community_proxy_steam_user_request(request=request, title=title, profile_ids=profile_ids, profile_names=profile_names)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->community_proxy_steam_user_request: %s\n" % e)
 ```
@@ -757,7 +771,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -766,12 +780,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_account_find_profiles**
-> game_account_find_profiles(call_num, connect_id, last_call_time, name, session_id)
+> object game_account_find_profiles(call_num, connect_id, last_call_time, name, session_id)
 
 
 
@@ -792,7 +806,8 @@ name = 'name_example' # str |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_account_find_profiles(call_num, connect_id, last_call_time, name, session_id)
+    api_response = api_instance.game_account_find_profiles(call_num, connect_id, last_call_time, name, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_account_find_profiles: %s\n" % e)
 ```
@@ -809,7 +824,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -818,12 +833,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_account_find_profiles_by_platform_id**
-> game_account_find_profiles_by_platform_id(call_num, connect_id, last_call_time, session_id, platform_i_ds)
+> object game_account_find_profiles_by_platform_id(call_num, connect_id, last_call_time, session_id, platform_i_ds)
 
 
 
@@ -844,7 +859,8 @@ session_id = 'session_id_example' # str |
 platform_i_ds = 56 # int | 
 
 try:
-    api_instance.game_account_find_profiles_by_platform_id(call_num, connect_id, last_call_time, session_id, platform_i_ds)
+    api_response = api_instance.game_account_find_profiles_by_platform_id(call_num, connect_id, last_call_time, session_id, platform_i_ds)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_account_find_profiles_by_platform_id: %s\n" % e)
 ```
@@ -861,7 +877,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -870,12 +886,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_account_get_profile_name**
-> game_account_get_profile_name(call_num, connect_id, last_call_time, profile_ids, session_id)
+> object game_account_get_profile_name(call_num, connect_id, last_call_time, profile_ids, session_id)
 
 
 
@@ -896,7 +912,8 @@ profile_ids = 56 # int |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_account_get_profile_name(call_num, connect_id, last_call_time, profile_ids, session_id)
+    api_response = api_instance.game_account_get_profile_name(call_num, connect_id, last_call_time, profile_ids, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_account_get_profile_name: %s\n" % e)
 ```
@@ -913,7 +930,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -922,12 +939,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_account_get_profile_property**
-> game_account_get_profile_property(call_num, connect_id, last_call_time, session_id, profile_id, property_id)
+> object game_account_get_profile_property(call_num, connect_id, last_call_time, session_id, profile_id, property_id)
 
 
 
@@ -949,7 +966,8 @@ profile_id = 56 # int |
 property_id = 'property_id_example' # str | 
 
 try:
-    api_instance.game_account_get_profile_property(call_num, connect_id, last_call_time, session_id, profile_id, property_id)
+    api_response = api_instance.game_account_get_profile_property(call_num, connect_id, last_call_time, session_id, profile_id, property_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_account_get_profile_property: %s\n" % e)
 ```
@@ -967,7 +985,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -976,12 +994,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_account_set_avatar_metadata**
-> game_account_set_avatar_metadata(call_num, connect_id, last_call_time, session_id, meta_data)
+> object game_account_set_avatar_metadata(call_num, connect_id, last_call_time, session_id, meta_data)
 
 
 
@@ -1002,7 +1020,8 @@ session_id = 'session_id_example' # str |
 meta_data = NULL # object | 
 
 try:
-    api_instance.game_account_set_avatar_metadata(call_num, connect_id, last_call_time, session_id, meta_data)
+    api_response = api_instance.game_account_set_avatar_metadata(call_num, connect_id, last_call_time, session_id, meta_data)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_account_set_avatar_metadata: %s\n" % e)
 ```
@@ -1019,7 +1038,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -1028,12 +1047,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_account_set_language**
-> game_account_set_language(call_num, connect_id, last_call_time, session_id, title=title, language=language)
+> object game_account_set_language(call_num, connect_id, last_call_time, session_id, title=title, language=language)
 
 
 
@@ -1055,7 +1074,8 @@ title = 'title_example' # str |  (optional)
 language = 'language_example' # str |  (optional)
 
 try:
-    api_instance.game_account_set_language(call_num, connect_id, last_call_time, session_id, title=title, language=language)
+    api_response = api_instance.game_account_set_language(call_num, connect_id, last_call_time, session_id, title=title, language=language)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_account_set_language: %s\n" % e)
 ```
@@ -1073,7 +1093,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -1082,12 +1102,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_achievement_get_achievements**
-> game_achievement_get_achievements(call_num, connect_id, last_call_time, session_id, profile_i_ds)
+> object game_achievement_get_achievements(call_num, connect_id, last_call_time, session_id, profile_i_ds)
 
 
 
@@ -1108,7 +1128,8 @@ session_id = 'session_id_example' # str |
 profile_i_ds = 56 # int | 
 
 try:
-    api_instance.game_achievement_get_achievements(call_num, connect_id, last_call_time, session_id, profile_i_ds)
+    api_response = api_instance.game_achievement_get_achievements(call_num, connect_id, last_call_time, session_id, profile_i_ds)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_achievement_get_achievements: %s\n" % e)
 ```
@@ -1125,7 +1146,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -1134,12 +1155,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_achievement_get_available_achievements**
-> game_achievement_get_available_achievements(call_num, connect_id, last_call_time, session_id, signature)
+> object game_achievement_get_available_achievements(call_num, connect_id, last_call_time, session_id, signature)
 
 
 
@@ -1162,7 +1183,8 @@ session_id = 'session_id_example' # str |
 signature = 'signature_example' # str | 
 
 try:
-    api_instance.game_achievement_get_available_achievements(call_num, connect_id, last_call_time, session_id, signature)
+    api_response = api_instance.game_achievement_get_available_achievements(call_num, connect_id, last_call_time, session_id, signature)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_achievement_get_available_achievements: %s\n" % e)
 ```
@@ -1179,7 +1201,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -1188,12 +1210,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_achievement_sync_stats**
-> game_achievement_sync_stats(call_num, connect_id, last_call_time, session_id, account_type, auth)
+> object game_achievement_sync_stats(call_num, connect_id, last_call_time, session_id, account_type, auth)
 
 
 
@@ -1215,7 +1237,8 @@ account_type = 'account_type_example' # str |
 auth = 'auth_example' # str | 
 
 try:
-    api_instance.game_achievement_sync_stats(call_num, connect_id, last_call_time, session_id, account_type, auth)
+    api_response = api_instance.game_achievement_sync_stats(call_num, connect_id, last_call_time, session_id, account_type, auth)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_achievement_sync_stats: %s\n" % e)
 ```
@@ -1233,7 +1256,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -1242,12 +1265,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_advertisement_find_advertisements**
-> game_advertisement_find_advertisements(app_binary_checksum, call_num, connect_id, data_checksum, last_call_time, match_type_id, mod_dll_checksum, mod_dll_file, mod_name, mod_version, profile_ids, race_ids, session_id, stat_group_ids, version_flags)
+> object game_advertisement_find_advertisements(app_binary_checksum, call_num, connect_id, data_checksum, last_call_time, match_type_id, mod_dll_checksum, mod_dll_file, mod_name, mod_version, profile_ids, race_ids, session_id, stat_group_ids, version_flags)
 
 
 
@@ -1278,7 +1301,8 @@ stat_group_ids = 56 # int |
 version_flags = 56 # int | 
 
 try:
-    api_instance.game_advertisement_find_advertisements(app_binary_checksum, call_num, connect_id, data_checksum, last_call_time, match_type_id, mod_dll_checksum, mod_dll_file, mod_name, mod_version, profile_ids, race_ids, session_id, stat_group_ids, version_flags)
+    api_response = api_instance.game_advertisement_find_advertisements(app_binary_checksum, call_num, connect_id, data_checksum, last_call_time, match_type_id, mod_dll_checksum, mod_dll_file, mod_name, mod_version, profile_ids, race_ids, session_id, stat_group_ids, version_flags)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_advertisement_find_advertisements: %s\n" % e)
 ```
@@ -1305,7 +1329,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -1314,12 +1338,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_advertisement_find_observable_advertisements_get**
-> game_advertisement_find_observable_advertisements_get(call_num, connect_id, last_call_time, session_id, app_binary_checksum, count, data_checksum, desc, mod_dll_checksum, mod_dll_file, mod_name, mod_version, observer_group_id, sort_order, start, version_flags)
+> object game_advertisement_find_observable_advertisements_get(call_num, connect_id, last_call_time, session_id, app_binary_checksum, count, data_checksum, desc, mod_dll_checksum, mod_dll_file, mod_name, mod_version, observer_group_id, sort_order, start, version_flags)
 
 
 
@@ -1351,7 +1375,8 @@ start = 56 # int |
 version_flags = 56 # int | 
 
 try:
-    api_instance.game_advertisement_find_observable_advertisements_get(call_num, connect_id, last_call_time, session_id, app_binary_checksum, count, data_checksum, desc, mod_dll_checksum, mod_dll_file, mod_name, mod_version, observer_group_id, sort_order, start, version_flags)
+    api_response = api_instance.game_advertisement_find_observable_advertisements_get(call_num, connect_id, last_call_time, session_id, app_binary_checksum, count, data_checksum, desc, mod_dll_checksum, mod_dll_file, mod_name, mod_version, observer_group_id, sort_order, start, version_flags)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_advertisement_find_observable_advertisements_get: %s\n" % e)
 ```
@@ -1379,7 +1404,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -1388,12 +1413,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_advertisement_find_observable_advertisements_post**
-> game_advertisement_find_observable_advertisements_post(call_num, connect_id, last_call_time, session_id, app_binary_checksum, count, data_checksum, desc, mod_dll_checksum, mod_dll_file, mod_name, mod_version, observer_group_id, sort_order, start, version_flags)
+> object game_advertisement_find_observable_advertisements_post(call_num, connect_id, last_call_time, session_id, app_binary_checksum, count, data_checksum, desc, mod_dll_checksum, mod_dll_file, mod_name, mod_version, observer_group_id, sort_order, start, version_flags)
 
 
 
@@ -1425,7 +1450,8 @@ start = 56 # int |
 version_flags = 56 # int | 
 
 try:
-    api_instance.game_advertisement_find_observable_advertisements_post(call_num, connect_id, last_call_time, session_id, app_binary_checksum, count, data_checksum, desc, mod_dll_checksum, mod_dll_file, mod_name, mod_version, observer_group_id, sort_order, start, version_flags)
+    api_response = api_instance.game_advertisement_find_observable_advertisements_post(call_num, connect_id, last_call_time, session_id, app_binary_checksum, count, data_checksum, desc, mod_dll_checksum, mod_dll_file, mod_name, mod_version, observer_group_id, sort_order, start, version_flags)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_advertisement_find_observable_advertisements_post: %s\n" % e)
 ```
@@ -1453,7 +1479,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -1462,12 +1488,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_advertisement_get_advertisements**
-> game_advertisement_get_advertisements(call_num, connect_id, last_call_time, match_ids, session_id)
+> object game_advertisement_get_advertisements(call_num, connect_id, last_call_time, match_ids, session_id)
 
 
 
@@ -1488,7 +1514,8 @@ match_ids = 56 # int |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_advertisement_get_advertisements(call_num, connect_id, last_call_time, match_ids, session_id)
+    api_response = api_instance.game_advertisement_get_advertisements(call_num, connect_id, last_call_time, match_ids, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_advertisement_get_advertisements: %s\n" % e)
 ```
@@ -1505,7 +1532,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -1514,12 +1541,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_advertisement_get_lan_advertisements**
-> game_advertisement_get_lan_advertisements(app_binary_checksum, call_num, connect_id, data_checksum, lan_server_guids, last_call_time, match_type_id, mod_dll_checksum, mod_dll_file, mod_name, mod_version, session_id, version_flags)
+> object game_advertisement_get_lan_advertisements(app_binary_checksum, call_num, connect_id, data_checksum, lan_server_guids, last_call_time, match_type_id, mod_dll_checksum, mod_dll_file, mod_name, mod_version, session_id, version_flags)
 
 
 
@@ -1548,7 +1575,8 @@ session_id = 'session_id_example' # str |
 version_flags = 56 # int | 
 
 try:
-    api_instance.game_advertisement_get_lan_advertisements(app_binary_checksum, call_num, connect_id, data_checksum, lan_server_guids, last_call_time, match_type_id, mod_dll_checksum, mod_dll_file, mod_name, mod_version, session_id, version_flags)
+    api_response = api_instance.game_advertisement_get_lan_advertisements(app_binary_checksum, call_num, connect_id, data_checksum, lan_server_guids, last_call_time, match_type_id, mod_dll_checksum, mod_dll_file, mod_name, mod_version, session_id, version_flags)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_advertisement_get_lan_advertisements: %s\n" % e)
 ```
@@ -1573,7 +1601,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -1582,12 +1610,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_advertisement_host**
-> game_advertisement_host(advertisementid, app_binary_checksum, automatch_poll_id, call_num, connect_id, data_checksum, description, hostid, is_observable, last_call_time, mapname, matchtype, maxplayers, mod_dll_checksum, mod_dll_file, mod_name, mod_version, observer_delay, observer_password, options, party, password, passworded, race, relay_region, service_type, session_id, slotinfo, state, statgroup, team, version_flags, visible)
+> object game_advertisement_host(advertisementid, app_binary_checksum, automatch_poll_id, call_num, connect_id, data_checksum, description, hostid, is_observable, last_call_time, mapname, matchtype, maxplayers, mod_dll_checksum, mod_dll_file, mod_name, mod_version, observer_delay, observer_password, options, party, password, passworded, race, relay_region, service_type, session_id, slotinfo, state, statgroup, team, version_flags, visible)
 
 
 
@@ -1636,7 +1664,8 @@ version_flags = 56 # int |
 visible = 56 # int | 
 
 try:
-    api_instance.game_advertisement_host(advertisementid, app_binary_checksum, automatch_poll_id, call_num, connect_id, data_checksum, description, hostid, is_observable, last_call_time, mapname, matchtype, maxplayers, mod_dll_checksum, mod_dll_file, mod_name, mod_version, observer_delay, observer_password, options, party, password, passworded, race, relay_region, service_type, session_id, slotinfo, state, statgroup, team, version_flags, visible)
+    api_response = api_instance.game_advertisement_host(advertisementid, app_binary_checksum, automatch_poll_id, call_num, connect_id, data_checksum, description, hostid, is_observable, last_call_time, mapname, matchtype, maxplayers, mod_dll_checksum, mod_dll_file, mod_name, mod_version, observer_delay, observer_password, options, party, password, passworded, race, relay_region, service_type, session_id, slotinfo, state, statgroup, team, version_flags, visible)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_advertisement_host: %s\n" % e)
 ```
@@ -1681,7 +1710,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -1690,12 +1719,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_advertisement_join**
-> game_advertisement_join(advertisementid, app_binary_checksum, call_num, connect_id, data_checksum, last_call_time, mod_dll_checksum, mod_dll_file, mod_name, mod_version, party, password, race, session_id, statgroup, team, version_flags)
+> object game_advertisement_join(advertisementid, app_binary_checksum, call_num, connect_id, data_checksum, last_call_time, mod_dll_checksum, mod_dll_file, mod_name, mod_version, party, password, race, session_id, statgroup, team, version_flags)
 
 
 
@@ -1728,7 +1757,8 @@ team = 56 # int |
 version_flags = 56 # int | 
 
 try:
-    api_instance.game_advertisement_join(advertisementid, app_binary_checksum, call_num, connect_id, data_checksum, last_call_time, mod_dll_checksum, mod_dll_file, mod_name, mod_version, party, password, race, session_id, statgroup, team, version_flags)
+    api_response = api_instance.game_advertisement_join(advertisementid, app_binary_checksum, call_num, connect_id, data_checksum, last_call_time, mod_dll_checksum, mod_dll_file, mod_name, mod_version, party, password, race, session_id, statgroup, team, version_flags)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_advertisement_join: %s\n" % e)
 ```
@@ -1757,7 +1787,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -1766,12 +1796,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_advertisement_leave**
-> game_advertisement_leave(advertisementid, call_num, connect_id, last_call_time, session_id)
+> object game_advertisement_leave(advertisementid, call_num, connect_id, last_call_time, session_id)
 
 
 
@@ -1792,7 +1822,8 @@ last_call_time = 'last_call_time_example' # str |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_advertisement_leave(advertisementid, call_num, connect_id, last_call_time, session_id)
+    api_response = api_instance.game_advertisement_leave(advertisementid, call_num, connect_id, last_call_time, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_advertisement_leave: %s\n" % e)
 ```
@@ -1809,7 +1840,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -1818,12 +1849,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_advertisement_start_observing**
-> game_advertisement_start_observing(advertisementid, app_binary_checksum, call_num, connect_id, data_checksum, last_call_time, mod_dll_checksum, mod_dll_file, mod_name, mod_version, password, session_id, version_flags, with_party_session_id)
+> object game_advertisement_start_observing(advertisementid, app_binary_checksum, call_num, connect_id, data_checksum, last_call_time, mod_dll_checksum, mod_dll_file, mod_name, mod_version, password, session_id, version_flags, with_party_session_id)
 
 
 
@@ -1853,7 +1884,8 @@ version_flags = 56 # int |
 with_party_session_id = 56 # int | 
 
 try:
-    api_instance.game_advertisement_start_observing(advertisementid, app_binary_checksum, call_num, connect_id, data_checksum, last_call_time, mod_dll_checksum, mod_dll_file, mod_name, mod_version, password, session_id, version_flags, with_party_session_id)
+    api_response = api_instance.game_advertisement_start_observing(advertisementid, app_binary_checksum, call_num, connect_id, data_checksum, last_call_time, mod_dll_checksum, mod_dll_file, mod_name, mod_version, password, session_id, version_flags, with_party_session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_advertisement_start_observing: %s\n" % e)
 ```
@@ -1879,7 +1911,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -1888,12 +1920,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_advertisement_stop_observing**
-> game_advertisement_stop_observing(advertisementid, call_num, connect_id, last_call_time, session_id)
+> object game_advertisement_stop_observing(advertisementid, call_num, connect_id, last_call_time, session_id)
 
 
 
@@ -1914,7 +1946,8 @@ last_call_time = 'last_call_time_example' # str |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_advertisement_stop_observing(advertisementid, call_num, connect_id, last_call_time, session_id)
+    api_response = api_instance.game_advertisement_stop_observing(advertisementid, call_num, connect_id, last_call_time, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_advertisement_stop_observing: %s\n" % e)
 ```
@@ -1931,7 +1964,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -1940,12 +1973,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_advertisement_update**
-> game_advertisement_update(advertisementid, app_binary_checksum, automatch_poll_id, call_num, connect_id, data_checksum, description, hostid, is_observable, last_call_time, mapname, matchtype, maxplayers, mod_dll_checksum, mod_dll_file, mod_name, mod_version, observer_delay, observer_password, options, password, passworded, race, session_id, slotinfo, state, team, version_flags, visible)
+> object game_advertisement_update(advertisementid, app_binary_checksum, automatch_poll_id, call_num, connect_id, data_checksum, description, hostid, is_observable, last_call_time, mapname, matchtype, maxplayers, mod_dll_checksum, mod_dll_file, mod_name, mod_version, observer_delay, observer_password, options, password, passworded, race, session_id, slotinfo, state, team, version_flags, visible)
 
 
 
@@ -1990,7 +2023,8 @@ version_flags = 56 # int |
 visible = 56 # int | 
 
 try:
-    api_instance.game_advertisement_update(advertisementid, app_binary_checksum, automatch_poll_id, call_num, connect_id, data_checksum, description, hostid, is_observable, last_call_time, mapname, matchtype, maxplayers, mod_dll_checksum, mod_dll_file, mod_name, mod_version, observer_delay, observer_password, options, password, passworded, race, session_id, slotinfo, state, team, version_flags, visible)
+    api_response = api_instance.game_advertisement_update(advertisementid, app_binary_checksum, automatch_poll_id, call_num, connect_id, data_checksum, description, hostid, is_observable, last_call_time, mapname, matchtype, maxplayers, mod_dll_checksum, mod_dll_file, mod_name, mod_version, observer_delay, observer_password, options, password, passworded, race, session_id, slotinfo, state, team, version_flags, visible)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_advertisement_update: %s\n" % e)
 ```
@@ -2031,7 +2065,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -2040,12 +2074,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_advertisement_update_platform_lobby_id**
-> game_advertisement_update_platform_lobby_id(call_num, connect_id, last_call_time, match_id, platformlobby_id, session_id)
+> object game_advertisement_update_platform_lobby_id(call_num, connect_id, last_call_time, match_id, platformlobby_id, session_id)
 
 
 
@@ -2067,7 +2101,8 @@ platformlobby_id = 56 # int |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_advertisement_update_platform_lobby_id(call_num, connect_id, last_call_time, match_id, platformlobby_id, session_id)
+    api_response = api_instance.game_advertisement_update_platform_lobby_id(call_num, connect_id, last_call_time, match_id, platformlobby_id, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_advertisement_update_platform_lobby_id: %s\n" % e)
 ```
@@ -2085,7 +2120,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -2094,12 +2129,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_advertisement_update_state**
-> game_advertisement_update_state(advertisementid, call_num, connect_id, last_call_time, session_id)
+> object game_advertisement_update_state(advertisementid, call_num, connect_id, last_call_time, session_id)
 
 
 
@@ -2120,7 +2155,8 @@ last_call_time = 'last_call_time_example' # str |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_advertisement_update_state(advertisementid, call_num, connect_id, last_call_time, session_id)
+    api_response = api_instance.game_advertisement_update_state(advertisementid, call_num, connect_id, last_call_time, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_advertisement_update_state: %s\n" % e)
 ```
@@ -2137,7 +2173,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -2146,12 +2182,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_advertisement_update_tags**
-> game_advertisement_update_tags(advertisementid, call_num, connect_id, last_call_time, numeric_tag_names, numeric_tag_values, session_id, string_tag_names, string_tag_values)
+> object game_advertisement_update_tags(advertisementid, call_num, connect_id, last_call_time, numeric_tag_names, numeric_tag_values, session_id, string_tag_names, string_tag_values)
 
 
 
@@ -2176,7 +2212,8 @@ string_tag_names = 'string_tag_names_example' # str |
 string_tag_values = 'string_tag_values_example' # str | 
 
 try:
-    api_instance.game_advertisement_update_tags(advertisementid, call_num, connect_id, last_call_time, numeric_tag_names, numeric_tag_values, session_id, string_tag_names, string_tag_values)
+    api_response = api_instance.game_advertisement_update_tags(advertisementid, call_num, connect_id, last_call_time, numeric_tag_names, numeric_tag_values, session_id, string_tag_names, string_tag_values)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_advertisement_update_tags: %s\n" % e)
 ```
@@ -2197,7 +2234,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -2206,12 +2243,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_automatch2_get_automatch_map**
-> game_automatch2_get_automatch_map(call_num, connect_id, last_call_time, session_id)
+> object game_automatch2_get_automatch_map(call_num, connect_id, last_call_time, session_id)
 
 
 
@@ -2231,7 +2268,8 @@ last_call_time = 'last_call_time_example' # str |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_automatch2_get_automatch_map(call_num, connect_id, last_call_time, session_id)
+    api_response = api_instance.game_automatch2_get_automatch_map(call_num, connect_id, last_call_time, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_automatch2_get_automatch_map: %s\n" % e)
 ```
@@ -2247,7 +2285,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -2256,12 +2294,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_automatch2_polling**
-> game_automatch2_polling(app_bin_crc, call_num, connect_id, data_crc, faction_i_ds, last_call_time, match_types, mod_dll_checksum, mod_dll_file, mod_name, mod_version, options, party_session_id, race_info_key, race_info_profile_id, race_info_race_id, relay_ping_times, relay_region, relay_regions, session_id, version_flags, veto_map_key, veto_maps)
+> object game_automatch2_polling(app_bin_crc, call_num, connect_id, data_crc, faction_i_ds, last_call_time, match_types, mod_dll_checksum, mod_dll_file, mod_name, mod_version, options, party_session_id, race_info_key, race_info_profile_id, race_info_race_id, relay_ping_times, relay_region, relay_regions, session_id, version_flags, veto_map_key, veto_maps)
 
 
 
@@ -2300,7 +2338,8 @@ veto_map_key = 56 # int |
 veto_maps = 'veto_maps_example' # str | 
 
 try:
-    api_instance.game_automatch2_polling(app_bin_crc, call_num, connect_id, data_crc, faction_i_ds, last_call_time, match_types, mod_dll_checksum, mod_dll_file, mod_name, mod_version, options, party_session_id, race_info_key, race_info_profile_id, race_info_race_id, relay_ping_times, relay_region, relay_regions, session_id, version_flags, veto_map_key, veto_maps)
+    api_response = api_instance.game_automatch2_polling(app_bin_crc, call_num, connect_id, data_crc, faction_i_ds, last_call_time, match_types, mod_dll_checksum, mod_dll_file, mod_name, mod_version, options, party_session_id, race_info_key, race_info_profile_id, race_info_race_id, relay_ping_times, relay_region, relay_regions, session_id, version_flags, veto_map_key, veto_maps)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_automatch2_polling: %s\n" % e)
 ```
@@ -2335,7 +2374,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -2344,12 +2383,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_automatch2_stop_polling**
-> game_automatch2_stop_polling(call_num, commit, connect_id, last_call_time, owner_profile_id, session_id)
+> object game_automatch2_stop_polling(call_num, commit, connect_id, last_call_time, owner_profile_id, session_id)
 
 
 
@@ -2371,7 +2410,8 @@ owner_profile_id = 56 # int |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_automatch2_stop_polling(call_num, commit, connect_id, last_call_time, owner_profile_id, session_id)
+    api_response = api_instance.game_automatch2_stop_polling(call_num, commit, connect_id, last_call_time, owner_profile_id, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_automatch2_stop_polling: %s\n" % e)
 ```
@@ -2389,7 +2429,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -2398,12 +2438,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_automatch2_update_status**
-> game_automatch2_update_status(call_num, connect_id, last_call_time, match_id, result, result_code, session_id)
+> object game_automatch2_update_status(call_num, connect_id, last_call_time, match_id, result, result_code, session_id)
 
 
 
@@ -2426,7 +2466,8 @@ result_code = 56 # int |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_automatch2_update_status(call_num, connect_id, last_call_time, match_id, result, result_code, session_id)
+    api_response = api_instance.game_automatch2_update_status(call_num, connect_id, last_call_time, match_id, result, result_code, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_automatch2_update_status: %s\n" % e)
 ```
@@ -2445,7 +2486,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -2454,12 +2495,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_automatch_get_automatch_map**
-> game_automatch_get_automatch_map(call_num, connect_id, last_call_time, session_id)
+> object game_automatch_get_automatch_map(call_num, connect_id, last_call_time, session_id)
 
 
 
@@ -2479,7 +2520,8 @@ last_call_time = 'last_call_time_example' # str |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_automatch_get_automatch_map(call_num, connect_id, last_call_time, session_id)
+    api_response = api_instance.game_automatch_get_automatch_map(call_num, connect_id, last_call_time, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_automatch_get_automatch_map: %s\n" % e)
 ```
@@ -2495,7 +2537,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -2504,12 +2546,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_challenge_get_challenge_progress**
-> game_challenge_get_challenge_progress(call_num, connect_id, last_call_time, session_id)
+> object game_challenge_get_challenge_progress(call_num, connect_id, last_call_time, session_id)
 
 
 
@@ -2529,7 +2571,8 @@ last_call_time = 'last_call_time_example' # str |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_challenge_get_challenge_progress(call_num, connect_id, last_call_time, session_id)
+    api_response = api_instance.game_challenge_get_challenge_progress(call_num, connect_id, last_call_time, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_challenge_get_challenge_progress: %s\n" % e)
 ```
@@ -2545,7 +2588,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -2554,12 +2597,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_challenge_get_challenge_progress_by_profile_id**
-> game_challenge_get_challenge_progress_by_profile_id(call_num, connect_id, last_call_time, profile_id, session_id)
+> object game_challenge_get_challenge_progress_by_profile_id(call_num, connect_id, last_call_time, profile_id, session_id)
 
 
 
@@ -2582,7 +2625,8 @@ profile_id = 56 # int |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_challenge_get_challenge_progress_by_profile_id(call_num, connect_id, last_call_time, profile_id, session_id)
+    api_response = api_instance.game_challenge_get_challenge_progress_by_profile_id(call_num, connect_id, last_call_time, profile_id, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_challenge_get_challenge_progress_by_profile_id: %s\n" % e)
 ```
@@ -2599,7 +2643,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -2608,12 +2652,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_challenge_get_challenges**
-> game_challenge_get_challenges(call_num, connect_id, last_call_time, session_id, signature)
+> object game_challenge_get_challenges(call_num, connect_id, last_call_time, session_id, signature)
 
 
 
@@ -2634,7 +2678,8 @@ session_id = 'session_id_example' # str |
 signature = 'signature_example' # str | 
 
 try:
-    api_instance.game_challenge_get_challenges(call_num, connect_id, last_call_time, session_id, signature)
+    api_response = api_instance.game_challenge_get_challenges(call_num, connect_id, last_call_time, session_id, signature)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_challenge_get_challenges: %s\n" % e)
 ```
@@ -2651,7 +2696,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -2660,12 +2705,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_challenge_update_progress_batched**
-> game_challenge_update_progress_batched(call_num, connect_id, last_call_time, progress_i_ds, session_id, update_amounts)
+> object game_challenge_update_progress_batched(call_num, connect_id, last_call_time, progress_i_ds, session_id, update_amounts)
 
 
 
@@ -2687,7 +2732,8 @@ session_id = 'session_id_example' # str |
 update_amounts = 56 # int | 
 
 try:
-    api_instance.game_challenge_update_progress_batched(call_num, connect_id, last_call_time, progress_i_ds, session_id, update_amounts)
+    api_response = api_instance.game_challenge_update_progress_batched(call_num, connect_id, last_call_time, progress_i_ds, session_id, update_amounts)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_challenge_update_progress_batched: %s\n" % e)
 ```
@@ -2705,7 +2751,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -2714,12 +2760,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_chat_delete_offline_message**
-> game_chat_delete_offline_message(call_num, connect_id, last_call_time, message_id, session_id)
+> object game_chat_delete_offline_message(call_num, connect_id, last_call_time, message_id, session_id)
 
 
 
@@ -2740,7 +2786,8 @@ message_id = 56 # int |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_chat_delete_offline_message(call_num, connect_id, last_call_time, message_id, session_id)
+    api_response = api_instance.game_chat_delete_offline_message(call_num, connect_id, last_call_time, message_id, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_chat_delete_offline_message: %s\n" % e)
 ```
@@ -2757,7 +2804,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -2766,12 +2813,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_chat_get_chat_channels**
-> game_chat_get_chat_channels(call_num, connect_id, last_call_time, session_id)
+> object game_chat_get_chat_channels(call_num, connect_id, last_call_time, session_id)
 
 
 
@@ -2791,7 +2838,8 @@ last_call_time = 'last_call_time_example' # str |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_chat_get_chat_channels(call_num, connect_id, last_call_time, session_id)
+    api_response = api_instance.game_chat_get_chat_channels(call_num, connect_id, last_call_time, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_chat_get_chat_channels: %s\n" % e)
 ```
@@ -2807,7 +2855,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -2816,12 +2864,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_chat_get_offline_messages**
-> game_chat_get_offline_messages(call_num, connect_id, last_call_time, session_id)
+> object game_chat_get_offline_messages(call_num, connect_id, last_call_time, session_id)
 
 
 
@@ -2841,7 +2889,8 @@ last_call_time = 'last_call_time_example' # str |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_chat_get_offline_messages(call_num, connect_id, last_call_time, session_id)
+    api_response = api_instance.game_chat_get_offline_messages(call_num, connect_id, last_call_time, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_chat_get_offline_messages: %s\n" % e)
 ```
@@ -2857,7 +2906,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -2866,12 +2915,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_clan_apply**
-> game_clan_apply(call_num, clan_list_name, connect_id, last_call_time, session_id)
+> object game_clan_apply(call_num, clan_list_name, connect_id, last_call_time, session_id)
 
 
 
@@ -2892,7 +2941,8 @@ last_call_time = 'last_call_time_example' # str |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_clan_apply(call_num, clan_list_name, connect_id, last_call_time, session_id)
+    api_response = api_instance.game_clan_apply(call_num, clan_list_name, connect_id, last_call_time, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_clan_apply: %s\n" % e)
 ```
@@ -2909,7 +2959,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -2918,12 +2968,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_clan_create**
-> game_clan_create(call_num, chat, connect_id, cost, demote, description, disband, edit_info, edit_permission, full_name, icon, invite, item_price_id, join_policy, last_call_time, loc_string_id, message_of_the_day, metadata, name, paymentitem, permission_name, promote, rank, remove, session_id, tags)
+> object game_clan_create(call_num, chat, connect_id, cost, demote, description, disband, edit_info, edit_permission, full_name, icon, invite, item_price_id, join_policy, last_call_time, loc_string_id, message_of_the_day, metadata, name, paymentitem, permission_name, promote, rank, remove, session_id, tags)
 
 
 
@@ -2965,7 +3015,8 @@ session_id = 'session_id_example' # str |
 tags = 'tags_example' # str | 
 
 try:
-    api_instance.game_clan_create(call_num, chat, connect_id, cost, demote, description, disband, edit_info, edit_permission, full_name, icon, invite, item_price_id, join_policy, last_call_time, loc_string_id, message_of_the_day, metadata, name, paymentitem, permission_name, promote, rank, remove, session_id, tags)
+    api_response = api_instance.game_clan_create(call_num, chat, connect_id, cost, demote, description, disband, edit_info, edit_permission, full_name, icon, invite, item_price_id, join_policy, last_call_time, loc_string_id, message_of_the_day, metadata, name, paymentitem, permission_name, promote, rank, remove, session_id, tags)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_clan_create: %s\n" % e)
 ```
@@ -3003,7 +3054,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -3012,12 +3063,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_clan_disband**
-> game_clan_disband(call_num, connect_id, last_call_time, session_id)
+> object game_clan_disband(call_num, connect_id, last_call_time, session_id)
 
 
 
@@ -3037,7 +3088,8 @@ last_call_time = 'last_call_time_example' # str |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_clan_disband(call_num, connect_id, last_call_time, session_id)
+    api_response = api_instance.game_clan_disband(call_num, connect_id, last_call_time, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_clan_disband: %s\n" % e)
 ```
@@ -3053,7 +3105,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -3062,12 +3114,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_clan_find**
-> game_clan_find(call_num, connect_id, count, join_policies, last_call_time, name, session_id, start, tags)
+> object game_clan_find(call_num, connect_id, count, join_policies, last_call_time, name, session_id, start, tags)
 
 
 
@@ -3092,7 +3144,8 @@ start = 56 # int |
 tags = 'tags_example' # str | 
 
 try:
-    api_instance.game_clan_find(call_num, connect_id, count, join_policies, last_call_time, name, session_id, start, tags)
+    api_response = api_instance.game_clan_find(call_num, connect_id, count, join_policies, last_call_time, name, session_id, start, tags)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_clan_find: %s\n" % e)
 ```
@@ -3113,7 +3166,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -3122,12 +3175,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_clan_get_clan**
-> game_clan_get_clan(call_num, connect_id, last_call_time, names, session_id)
+> object game_clan_get_clan(call_num, connect_id, last_call_time, names, session_id)
 
 
 
@@ -3148,7 +3201,8 @@ names = 'names_example' # str |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_clan_get_clan(call_num, connect_id, last_call_time, names, session_id)
+    api_response = api_instance.game_clan_get_clan(call_num, connect_id, last_call_time, names, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_clan_get_clan: %s\n" % e)
 ```
@@ -3165,7 +3219,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -3174,12 +3228,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_clan_get_clan_info_full**
-> game_clan_get_clan_info_full(call_num, connect_id, last_call_time, name, session_id)
+> object game_clan_get_clan_info_full(call_num, connect_id, last_call_time, name, session_id)
 
 
 
@@ -3200,7 +3254,8 @@ name = 'name_example' # str |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_clan_get_clan_info_full(call_num, connect_id, last_call_time, name, session_id)
+    api_response = api_instance.game_clan_get_clan_info_full(call_num, connect_id, last_call_time, name, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_clan_get_clan_info_full: %s\n" % e)
 ```
@@ -3217,7 +3272,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -3226,12 +3281,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_clan_update**
-> game_clan_update(call_num, clan_list_id, connect_id, description, icon, join_policy, last_call_time, message_of_the_day, metadata, session_id, tags)
+> object game_clan_update(call_num, clan_list_id, connect_id, description, icon, join_policy, last_call_time, message_of_the_day, metadata, session_id, tags)
 
 
 
@@ -3258,7 +3313,8 @@ session_id = 'session_id_example' # str |
 tags = 'tags_example' # str | 
 
 try:
-    api_instance.game_clan_update(call_num, clan_list_id, connect_id, description, icon, join_policy, last_call_time, message_of_the_day, metadata, session_id, tags)
+    api_response = api_instance.game_clan_update(call_num, clan_list_id, connect_id, description, icon, join_policy, last_call_time, message_of_the_day, metadata, session_id, tags)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_clan_update: %s\n" % e)
 ```
@@ -3281,7 +3337,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -3290,12 +3346,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_cloud_get_file_url_get**
-> game_cloud_get_file_url_get(call_num, connect_id, last_call_time, names, session_id)
+> object game_cloud_get_file_url_get(call_num, connect_id, last_call_time, names, session_id)
 
 
 
@@ -3316,7 +3372,8 @@ names = 'names_example' # str |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_cloud_get_file_url_get(call_num, connect_id, last_call_time, names, session_id)
+    api_response = api_instance.game_cloud_get_file_url_get(call_num, connect_id, last_call_time, names, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_cloud_get_file_url_get: %s\n" % e)
 ```
@@ -3333,7 +3390,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -3342,12 +3399,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_cloud_get_file_url_post**
-> game_cloud_get_file_url_post(call_num, connect_id, last_call_time, names, session_id)
+> object game_cloud_get_file_url_post(call_num, connect_id, last_call_time, names, session_id)
 
 
 
@@ -3368,7 +3425,8 @@ names = 'names_example' # str |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_cloud_get_file_url_post(call_num, connect_id, last_call_time, names, session_id)
+    api_response = api_instance.game_cloud_get_file_url_post(call_num, connect_id, last_call_time, names, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_cloud_get_file_url_post: %s\n" % e)
 ```
@@ -3385,7 +3443,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -3394,12 +3452,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_cloud_get_temp_credentials**
-> game_cloud_get_temp_credentials(call_num, connect_id, last_call_time, session_id, key)
+> object game_cloud_get_temp_credentials(call_num, connect_id, last_call_time, session_id, key)
 
 
 
@@ -3420,7 +3478,8 @@ session_id = 'session_id_example' # str |
 key = 'key_example' # str | 
 
 try:
-    api_instance.game_cloud_get_temp_credentials(call_num, connect_id, last_call_time, session_id, key)
+    api_response = api_instance.game_cloud_get_temp_credentials(call_num, connect_id, last_call_time, session_id, key)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_cloud_get_temp_credentials: %s\n" % e)
 ```
@@ -3437,7 +3496,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -3446,12 +3505,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_community_event_get_available_community_events**
-> game_community_event_get_available_community_events(call_num, connect_id, last_call_time, session_id)
+> object game_community_event_get_available_community_events(call_num, connect_id, last_call_time, session_id)
 
 
 
@@ -3471,7 +3530,8 @@ last_call_time = 'last_call_time_example' # str |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_community_event_get_available_community_events(call_num, connect_id, last_call_time, session_id)
+    api_response = api_instance.game_community_event_get_available_community_events(call_num, connect_id, last_call_time, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_community_event_get_available_community_events: %s\n" % e)
 ```
@@ -3487,7 +3547,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -3496,12 +3556,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_community_event_get_event_challenge_progress**
-> game_community_event_get_event_challenge_progress(call_num, connect_id, event_id, last_call_time, session_id)
+> object game_community_event_get_event_challenge_progress(call_num, connect_id, event_id, last_call_time, session_id)
 
 
 
@@ -3522,7 +3582,8 @@ last_call_time = 'last_call_time_example' # str |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_community_event_get_event_challenge_progress(call_num, connect_id, event_id, last_call_time, session_id)
+    api_response = api_instance.game_community_event_get_event_challenge_progress(call_num, connect_id, event_id, last_call_time, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_community_event_get_event_challenge_progress: %s\n" % e)
 ```
@@ -3539,7 +3600,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -3548,12 +3609,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_community_event_get_event_stats**
-> game_community_event_get_event_stats(call_num, connect_id, event_id, group_type, last_call_time, member_id, session_id)
+> object game_community_event_get_event_stats(call_num, connect_id, event_id, group_type, last_call_time, member_id, session_id)
 
 
 
@@ -3576,7 +3637,8 @@ member_id = 56 # int |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_community_event_get_event_stats(call_num, connect_id, event_id, group_type, last_call_time, member_id, session_id)
+    api_response = api_instance.game_community_event_get_event_stats(call_num, connect_id, event_id, group_type, last_call_time, member_id, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_community_event_get_event_stats: %s\n" % e)
 ```
@@ -3595,7 +3657,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -3604,12 +3666,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_invitation_cancel_invitation**
-> game_invitation_cancel_invitation(call_num, connect_id, gatheringid, inviteeid, last_call_time, session_id)
+> object game_invitation_cancel_invitation(call_num, connect_id, gatheringid, inviteeid, last_call_time, session_id)
 
 
 
@@ -3631,7 +3693,8 @@ last_call_time = 'last_call_time_example' # str |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_invitation_cancel_invitation(call_num, connect_id, gatheringid, inviteeid, last_call_time, session_id)
+    api_response = api_instance.game_invitation_cancel_invitation(call_num, connect_id, gatheringid, inviteeid, last_call_time, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_invitation_cancel_invitation: %s\n" % e)
 ```
@@ -3649,7 +3712,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -3658,12 +3721,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_invitation_extend_invitation**
-> game_invitation_extend_invitation(call_num, connect_id, gatheringid, gatheringpassword, inviteeid, last_call_time, session_id)
+> object game_invitation_extend_invitation(call_num, connect_id, gatheringid, gatheringpassword, inviteeid, last_call_time, session_id)
 
 
 
@@ -3686,7 +3749,8 @@ last_call_time = 'last_call_time_example' # str |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_invitation_extend_invitation(call_num, connect_id, gatheringid, gatheringpassword, inviteeid, last_call_time, session_id)
+    api_response = api_instance.game_invitation_extend_invitation(call_num, connect_id, gatheringid, gatheringpassword, inviteeid, last_call_time, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_invitation_extend_invitation: %s\n" % e)
 ```
@@ -3705,7 +3769,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -3714,12 +3778,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_item_detach_items**
-> game_item_detach_items(call_num, connect_id, item_charges, item_i_ds, item_locations, last_call_time, session_id)
+> object game_item_detach_items(call_num, connect_id, item_charges, item_i_ds, item_locations, last_call_time, session_id)
 
 
 
@@ -3742,7 +3806,8 @@ last_call_time = 'last_call_time_example' # str |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_item_detach_items(call_num, connect_id, item_charges, item_i_ds, item_locations, last_call_time, session_id)
+    api_response = api_instance.game_item_detach_items(call_num, connect_id, item_charges, item_i_ds, item_locations, last_call_time, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_item_detach_items: %s\n" % e)
 ```
@@ -3761,7 +3826,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -3770,12 +3835,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_item_get_inventory_by_profile_ids**
-> game_item_get_inventory_by_profile_ids(call_num, connect_id, last_call_time, session_id, profile_i_ds)
+> object game_item_get_inventory_by_profile_ids(call_num, connect_id, last_call_time, session_id, profile_i_ds)
 
 
 
@@ -3796,7 +3861,8 @@ session_id = 'session_id_example' # str |
 profile_i_ds = 56 # int | 
 
 try:
-    api_instance.game_item_get_inventory_by_profile_ids(call_num, connect_id, last_call_time, session_id, profile_i_ds)
+    api_response = api_instance.game_item_get_inventory_by_profile_ids(call_num, connect_id, last_call_time, session_id, profile_i_ds)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_item_get_inventory_by_profile_ids: %s\n" % e)
 ```
@@ -3813,7 +3879,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -3822,12 +3888,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_item_get_item_bundle_items_json**
-> game_item_get_item_bundle_items_json(call_num, connect_id, last_call_time, session_id, signature)
+> object game_item_get_item_bundle_items_json(call_num, connect_id, last_call_time, session_id, signature)
 
 
 
@@ -3848,7 +3914,8 @@ session_id = 'session_id_example' # str |
 signature = 'signature_example' # str | 
 
 try:
-    api_instance.game_item_get_item_bundle_items_json(call_num, connect_id, last_call_time, session_id, signature)
+    api_response = api_instance.game_item_get_item_bundle_items_json(call_num, connect_id, last_call_time, session_id, signature)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_item_get_item_bundle_items_json: %s\n" % e)
 ```
@@ -3865,7 +3932,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -3874,12 +3941,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_item_get_item_definitions_json**
-> game_item_get_item_definitions_json(call_num, connect_id, last_call_time, session_id, signature)
+> object game_item_get_item_definitions_json(call_num, connect_id, last_call_time, session_id, signature)
 
 
 
@@ -3900,7 +3967,8 @@ session_id = 'session_id_example' # str |
 signature = 'signature_example' # str | 
 
 try:
-    api_instance.game_item_get_item_definitions_json(call_num, connect_id, last_call_time, session_id, signature)
+    api_response = api_instance.game_item_get_item_definitions_json(call_num, connect_id, last_call_time, session_id, signature)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_item_get_item_definitions_json: %s\n" % e)
 ```
@@ -3917,7 +3985,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -3926,12 +3994,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_item_get_item_loadouts**
-> game_item_get_item_loadouts(call_num, connect_id, last_call_time, session_id)
+> object game_item_get_item_loadouts(call_num, connect_id, last_call_time, session_id)
 
 
 
@@ -3951,7 +4019,8 @@ last_call_time = 'last_call_time_example' # str |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_item_get_item_loadouts(call_num, connect_id, last_call_time, session_id)
+    api_response = api_instance.game_item_get_item_loadouts(call_num, connect_id, last_call_time, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_item_get_item_loadouts: %s\n" % e)
 ```
@@ -3967,7 +4036,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -3976,12 +4045,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_item_get_item_prices**
-> game_item_get_item_prices(account_type, call_num, connect_id, last_call_time, session_id, country, currency, sale_version)
+> object game_item_get_item_prices(account_type, call_num, connect_id, last_call_time, session_id, country, currency, sale_version)
 
 
 
@@ -4005,7 +4074,8 @@ currency = 'currency_example' # str |
 sale_version = 56 # int | 
 
 try:
-    api_instance.game_item_get_item_prices(account_type, call_num, connect_id, last_call_time, session_id, country, currency, sale_version)
+    api_response = api_instance.game_item_get_item_prices(account_type, call_num, connect_id, last_call_time, session_id, country, currency, sale_version)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_item_get_item_prices: %s\n" % e)
 ```
@@ -4025,7 +4095,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -4034,12 +4104,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_item_get_level_rewards_table_json**
-> game_item_get_level_rewards_table_json(call_num, connect_id, last_call_time, session_id, signature)
+> object game_item_get_level_rewards_table_json(call_num, connect_id, last_call_time, session_id, signature)
 
 
 
@@ -4060,7 +4130,8 @@ session_id = 'session_id_example' # str |
 signature = 'signature_example' # str | 
 
 try:
-    api_instance.game_item_get_level_rewards_table_json(call_num, connect_id, last_call_time, session_id, signature)
+    api_response = api_instance.game_item_get_level_rewards_table_json(call_num, connect_id, last_call_time, session_id, signature)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_item_get_level_rewards_table_json: %s\n" % e)
 ```
@@ -4077,7 +4148,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -4086,12 +4157,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_item_get_personalized_sale_items**
-> game_item_get_personalized_sale_items(call_num, connect_id, last_call_time, session_id)
+> object game_item_get_personalized_sale_items(call_num, connect_id, last_call_time, session_id)
 
 
 
@@ -4111,7 +4182,8 @@ last_call_time = 'last_call_time_example' # str |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_item_get_personalized_sale_items(call_num, connect_id, last_call_time, session_id)
+    api_response = api_instance.game_item_get_personalized_sale_items(call_num, connect_id, last_call_time, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_item_get_personalized_sale_items: %s\n" % e)
 ```
@@ -4127,7 +4199,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -4136,12 +4208,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_item_get_scheduled_sale_and_items**
-> game_item_get_scheduled_sale_and_items(call_num, connect_id, last_call_time, session_id, sale_type)
+> object game_item_get_scheduled_sale_and_items(call_num, connect_id, last_call_time, session_id, sale_type)
 
 
 
@@ -4162,7 +4234,8 @@ session_id = 'session_id_example' # str |
 sale_type = 56 # int | 
 
 try:
-    api_instance.game_item_get_scheduled_sale_and_items(call_num, connect_id, last_call_time, session_id, sale_type)
+    api_response = api_instance.game_item_get_scheduled_sale_and_items(call_num, connect_id, last_call_time, session_id, sale_type)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_item_get_scheduled_sale_and_items: %s\n" % e)
 ```
@@ -4179,7 +4252,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -4188,12 +4261,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_item_move_charges**
-> game_item_move_charges(call_num, charges, connect_id, deletes, from_item_i_ds, last_call_time, session_id, to_item_i_ds)
+> object game_item_move_charges(call_num, charges, connect_id, deletes, from_item_i_ds, last_call_time, session_id, to_item_i_ds)
 
 
 
@@ -4217,7 +4290,8 @@ session_id = 'session_id_example' # str |
 to_item_i_ds = 56 # int | 
 
 try:
-    api_instance.game_item_move_charges(call_num, charges, connect_id, deletes, from_item_i_ds, last_call_time, session_id, to_item_i_ds)
+    api_response = api_instance.game_item_move_charges(call_num, charges, connect_id, deletes, from_item_i_ds, last_call_time, session_id, to_item_i_ds)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_item_move_charges: %s\n" % e)
 ```
@@ -4237,7 +4311,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -4246,12 +4320,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_item_move_item**
-> game_item_move_item(call_num, connect_id, item_i_ds, item_location_i_ds, last_call_time, pos_i_ds, session_id, slot_i_ds)
+> object game_item_move_item(call_num, connect_id, item_i_ds, item_location_i_ds, last_call_time, pos_i_ds, session_id, slot_i_ds)
 
 
 
@@ -4275,7 +4349,8 @@ session_id = 'session_id_example' # str |
 slot_i_ds = 56 # int | 
 
 try:
-    api_instance.game_item_move_item(call_num, connect_id, item_i_ds, item_location_i_ds, last_call_time, pos_i_ds, session_id, slot_i_ds)
+    api_response = api_instance.game_item_move_item(call_num, connect_id, item_i_ds, item_location_i_ds, last_call_time, pos_i_ds, session_id, slot_i_ds)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_item_move_item: %s\n" % e)
 ```
@@ -4295,7 +4370,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -4304,12 +4379,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_item_open_item_pack**
-> game_item_open_item_pack(call_num, choices, connect_id, item_instance_id, item_location_id, last_call_time, session_id)
+> object game_item_open_item_pack(call_num, choices, connect_id, item_instance_id, item_location_id, last_call_time, session_id)
 
 
 
@@ -4332,7 +4407,8 @@ last_call_time = 'last_call_time_example' # str |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_item_open_item_pack(call_num, choices, connect_id, item_instance_id, item_location_id, last_call_time, session_id)
+    api_response = api_instance.game_item_open_item_pack(call_num, choices, connect_id, item_instance_id, item_location_id, last_call_time, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_item_open_item_pack: %s\n" % e)
 ```
@@ -4351,7 +4427,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -4360,12 +4436,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_item_sign_item**
-> game_item_sign_item(call_num, connect_id, crc, last_call_time, session_id)
+> object game_item_sign_item(call_num, connect_id, crc, last_call_time, session_id)
 
 
 
@@ -4386,7 +4462,8 @@ last_call_time = 'last_call_time_example' # str |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_item_sign_item(call_num, connect_id, crc, last_call_time, session_id)
+    api_response = api_instance.game_item_sign_item(call_num, connect_id, crc, last_call_time, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_item_sign_item: %s\n" % e)
 ```
@@ -4403,7 +4480,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -4412,12 +4489,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_item_update_item_attributes**
-> game_item_update_item_attributes(attribute_keys, attribute_values, call_num, connect_id, item_instance_ids, last_call_time, session_id, xp_gains)
+> object game_item_update_item_attributes(attribute_keys, attribute_values, call_num, connect_id, item_instance_ids, last_call_time, session_id, xp_gains)
 
 
 
@@ -4441,7 +4518,8 @@ session_id = 'session_id_example' # str |
 xp_gains = 56 # int | 
 
 try:
-    api_instance.game_item_update_item_attributes(attribute_keys, attribute_values, call_num, connect_id, item_instance_ids, last_call_time, session_id, xp_gains)
+    api_response = api_instance.game_item_update_item_attributes(attribute_keys, attribute_values, call_num, connect_id, item_instance_ids, last_call_time, session_id, xp_gains)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_item_update_item_attributes: %s\n" % e)
 ```
@@ -4461,7 +4539,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -4470,12 +4548,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_leaderboard_get_available_leaderboards**
-> game_leaderboard_get_available_leaderboards(call_num, connect_id, last_call_time, session_id)
+> object game_leaderboard_get_available_leaderboards(call_num, connect_id, last_call_time, session_id)
 
 
 
@@ -4495,7 +4573,8 @@ last_call_time = 'last_call_time_example' # str |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_leaderboard_get_available_leaderboards(call_num, connect_id, last_call_time, session_id)
+    api_response = api_instance.game_leaderboard_get_available_leaderboards(call_num, connect_id, last_call_time, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_leaderboard_get_available_leaderboards: %s\n" % e)
 ```
@@ -4511,7 +4590,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -4520,12 +4599,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_leaderboard_get_leaderboard**
-> game_leaderboard_get_leaderboard(call_num, connect_id, last_call_time, session_id, start, count, leaderboard_id=leaderboard_id, sort_by=sort_by)
+> object game_leaderboard_get_leaderboard(call_num, connect_id, last_call_time, session_id, start, count, leaderboard_id=leaderboard_id, sort_by=sort_by)
 
 
 
@@ -4549,7 +4628,8 @@ leaderboard_id = 56 # int |  (optional)
 sort_by = 56 # int |  (optional)
 
 try:
-    api_instance.game_leaderboard_get_leaderboard(call_num, connect_id, last_call_time, session_id, start, count, leaderboard_id=leaderboard_id, sort_by=sort_by)
+    api_response = api_instance.game_leaderboard_get_leaderboard(call_num, connect_id, last_call_time, session_id, start, count, leaderboard_id=leaderboard_id, sort_by=sort_by)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_leaderboard_get_leaderboard: %s\n" % e)
 ```
@@ -4569,7 +4649,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -4578,12 +4658,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_leaderboard_get_party_stat**
-> game_leaderboard_get_party_stat(call_num, connect_id, last_call_time, session_id, statsids)
+> object game_leaderboard_get_party_stat(call_num, connect_id, last_call_time, session_id, statsids)
 
 
 
@@ -4604,7 +4684,8 @@ session_id = 'session_id_example' # str |
 statsids = 56 # int | 
 
 try:
-    api_instance.game_leaderboard_get_party_stat(call_num, connect_id, last_call_time, session_id, statsids)
+    api_response = api_instance.game_leaderboard_get_party_stat(call_num, connect_id, last_call_time, session_id, statsids)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_leaderboard_get_party_stat: %s\n" % e)
 ```
@@ -4621,7 +4702,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -4630,12 +4711,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_leaderboard_get_personal_stat**
-> game_leaderboard_get_personal_stat(call_num, connect_id, last_call_time, session_id)
+> object game_leaderboard_get_personal_stat(call_num, connect_id, last_call_time, session_id)
 
 
 
@@ -4657,7 +4738,8 @@ last_call_time = 'last_call_time_example' # str |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_leaderboard_get_personal_stat(call_num, connect_id, last_call_time, session_id)
+    api_response = api_instance.game_leaderboard_get_personal_stat(call_num, connect_id, last_call_time, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_leaderboard_get_personal_stat: %s\n" % e)
 ```
@@ -4673,7 +4755,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -4682,12 +4764,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_leaderboard_get_recent_match_history_get**
-> game_leaderboard_get_recent_match_history_get(call_num, connect_id, last_call_time, session_id, profile_ids)
+> object game_leaderboard_get_recent_match_history_get(call_num, connect_id, last_call_time, session_id, profile_ids)
 
 
 
@@ -4708,7 +4790,8 @@ session_id = 'session_id_example' # str |
 profile_ids = 56 # int | 
 
 try:
-    api_instance.game_leaderboard_get_recent_match_history_get(call_num, connect_id, last_call_time, session_id, profile_ids)
+    api_response = api_instance.game_leaderboard_get_recent_match_history_get(call_num, connect_id, last_call_time, session_id, profile_ids)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_leaderboard_get_recent_match_history_get: %s\n" % e)
 ```
@@ -4725,7 +4808,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -4734,12 +4817,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_leaderboard_get_recent_match_history_post**
-> game_leaderboard_get_recent_match_history_post(call_num, connect_id, last_call_time, session_id, profile_ids)
+> object game_leaderboard_get_recent_match_history_post(call_num, connect_id, last_call_time, session_id, profile_ids)
 
 
 
@@ -4760,7 +4843,8 @@ session_id = 'session_id_example' # str |
 profile_ids = 56 # int | 
 
 try:
-    api_instance.game_leaderboard_get_recent_match_history_post(call_num, connect_id, last_call_time, session_id, profile_ids)
+    api_response = api_instance.game_leaderboard_get_recent_match_history_post(call_num, connect_id, last_call_time, session_id, profile_ids)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_leaderboard_get_recent_match_history_post: %s\n" % e)
 ```
@@ -4777,7 +4861,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -4786,12 +4870,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_leaderboard_get_recent_match_single_player_history**
-> game_leaderboard_get_recent_match_single_player_history(call_num, connect_id, last_call_time, session_id, profile_ids)
+> object game_leaderboard_get_recent_match_single_player_history(call_num, connect_id, last_call_time, session_id, profile_ids)
 
 
 
@@ -4812,7 +4896,8 @@ session_id = 'session_id_example' # str |
 profile_ids = 56 # int | 
 
 try:
-    api_instance.game_leaderboard_get_recent_match_single_player_history(call_num, connect_id, last_call_time, session_id, profile_ids)
+    api_response = api_instance.game_leaderboard_get_recent_match_single_player_history(call_num, connect_id, last_call_time, session_id, profile_ids)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_leaderboard_get_recent_match_single_player_history: %s\n" % e)
 ```
@@ -4829,7 +4914,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -4838,12 +4923,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_leaderboard_get_stat_groups_by_profile_ids**
-> game_leaderboard_get_stat_groups_by_profile_ids(call_num, connect_id, last_call_time, session_id, profileids)
+> object game_leaderboard_get_stat_groups_by_profile_ids(call_num, connect_id, last_call_time, session_id, profileids)
 
 
 
@@ -4864,7 +4949,8 @@ session_id = 'session_id_example' # str |
 profileids = 56 # int | 
 
 try:
-    api_instance.game_leaderboard_get_stat_groups_by_profile_ids(call_num, connect_id, last_call_time, session_id, profileids)
+    api_response = api_instance.game_leaderboard_get_stat_groups_by_profile_ids(call_num, connect_id, last_call_time, session_id, profileids)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_leaderboard_get_stat_groups_by_profile_ids: %s\n" % e)
 ```
@@ -4881,7 +4967,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -4890,12 +4976,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_leaderboard_get_stats_for_leaderboard_by_profile_name**
-> game_leaderboard_get_stats_for_leaderboard_by_profile_name(call_num, connect_id, last_call_time, session_id, profileids, leaderboard_id=leaderboard_id)
+> object game_leaderboard_get_stats_for_leaderboard_by_profile_name(call_num, connect_id, last_call_time, session_id, profileids, leaderboard_id=leaderboard_id)
 
 
 
@@ -4917,7 +5003,8 @@ profileids = 56 # int |
 leaderboard_id = 56 # int |  (optional)
 
 try:
-    api_instance.game_leaderboard_get_stats_for_leaderboard_by_profile_name(call_num, connect_id, last_call_time, session_id, profileids, leaderboard_id=leaderboard_id)
+    api_response = api_instance.game_leaderboard_get_stats_for_leaderboard_by_profile_name(call_num, connect_id, last_call_time, session_id, profileids, leaderboard_id=leaderboard_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_leaderboard_get_stats_for_leaderboard_by_profile_name: %s\n" % e)
 ```
@@ -4935,7 +5022,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -4944,12 +5031,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_leaderboard_set_avatar_stat_values**
-> game_leaderboard_set_avatar_stat_values(avatar_stat_ids, call_num, connect_id, last_call_time, session_id, update_types, values)
+> object game_leaderboard_set_avatar_stat_values(avatar_stat_ids, call_num, connect_id, last_call_time, session_id, update_types, values)
 
 
 
@@ -4972,7 +5059,8 @@ update_types = 56 # int |
 values = 56 # int | 
 
 try:
-    api_instance.game_leaderboard_set_avatar_stat_values(avatar_stat_ids, call_num, connect_id, last_call_time, session_id, update_types, values)
+    api_response = api_instance.game_leaderboard_set_avatar_stat_values(avatar_stat_ids, call_num, connect_id, last_call_time, session_id, update_types, values)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_leaderboard_set_avatar_stat_values: %s\n" % e)
 ```
@@ -4991,7 +5079,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -5000,12 +5088,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_login_logout**
-> game_login_logout(call_num, connect_id, last_call_time, session_id)
+> object game_login_logout(call_num, connect_id, last_call_time, session_id)
 
 
 
@@ -5025,7 +5113,8 @@ last_call_time = 'last_call_time_example' # str |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_login_logout(call_num, connect_id, last_call_time, session_id)
+    api_response = api_instance.game_login_logout(call_num, connect_id, last_call_time, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_login_logout: %s\n" % e)
 ```
@@ -5041,7 +5130,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -5050,12 +5139,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_login_platform_login**
-> game_login_platform_login(account_type, active_match_id, alias, app_id, auth, call_num, client_lib_version, connect_id, country, installation_type, last_call_time, mac_address, major_version, minor_version, platform_user_id, start_game_token, sync_hash, timeout_override, language=language, store_license_token=store_license_token, title=title)
+> object game_login_platform_login(account_type, active_match_id, alias, app_id, auth, call_num, client_lib_version, connect_id, country, installation_type, last_call_time, mac_address, major_version, minor_version, platform_user_id, start_game_token, sync_hash, timeout_override, language=language, store_license_token=store_license_token, title=title)
 
 
 
@@ -5092,7 +5181,8 @@ store_license_token = 'store_license_token_example' # str |  (optional)
 title = 'title_example' # str |  (optional)
 
 try:
-    api_instance.game_login_platform_login(account_type, active_match_id, alias, app_id, auth, call_num, client_lib_version, connect_id, country, installation_type, last_call_time, mac_address, major_version, minor_version, platform_user_id, start_game_token, sync_hash, timeout_override, language=language, store_license_token=store_license_token, title=title)
+    api_response = api_instance.game_login_platform_login(account_type, active_match_id, alias, app_id, auth, call_num, client_lib_version, connect_id, country, installation_type, last_call_time, mac_address, major_version, minor_version, platform_user_id, start_game_token, sync_hash, timeout_override, language=language, store_license_token=store_license_token, title=title)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_login_platform_login: %s\n" % e)
 ```
@@ -5125,7 +5215,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -5134,12 +5224,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_login_read_session**
-> game_login_read_session(ack, poll_num, session_id)
+> object game_login_read_session(ack, poll_num, session_id)
 
 
 
@@ -5158,7 +5248,8 @@ poll_num = 56 # int |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_login_read_session(ack, poll_num, session_id)
+    api_response = api_instance.game_login_read_session(ack, poll_num, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_login_read_session: %s\n" % e)
 ```
@@ -5173,7 +5264,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -5182,12 +5273,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_news_get_news**
-> game_news_get_news(call_num, connect_id, last_call_time, session_id)
+> object game_news_get_news(call_num, connect_id, last_call_time, session_id)
 
 
 
@@ -5207,7 +5298,8 @@ last_call_time = 'last_call_time_example' # str |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_news_get_news(call_num, connect_id, last_call_time, session_id)
+    api_response = api_instance.game_news_get_news(call_num, connect_id, last_call_time, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_news_get_news: %s\n" % e)
 ```
@@ -5223,7 +5315,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -5232,12 +5324,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_party_create_or_report_single_player**
-> game_party_create_or_report_single_player(appbincrc, call_num, connect_id, counters_zip, create_match_key, datacrc, is_complete, item_updates, last_call_time, mapname, match_key, match_type_id, mod_dll_checksum, mod_dll_file, mod_name, mod_version, options, race_ids, results, session_id, slot_info, team_i_ds, version_flags, xp_gained)
+> object game_party_create_or_report_single_player(appbincrc, call_num, connect_id, counters_zip, create_match_key, datacrc, is_complete, item_updates, last_call_time, mapname, match_key, match_type_id, mod_dll_checksum, mod_dll_file, mod_name, mod_version, options, race_ids, results, session_id, slot_info, team_i_ds, version_flags, xp_gained)
 
 
 
@@ -5277,7 +5369,8 @@ version_flags = 56 # int |
 xp_gained = 56 # int | 
 
 try:
-    api_instance.game_party_create_or_report_single_player(appbincrc, call_num, connect_id, counters_zip, create_match_key, datacrc, is_complete, item_updates, last_call_time, mapname, match_key, match_type_id, mod_dll_checksum, mod_dll_file, mod_name, mod_version, options, race_ids, results, session_id, slot_info, team_i_ds, version_flags, xp_gained)
+    api_response = api_instance.game_party_create_or_report_single_player(appbincrc, call_num, connect_id, counters_zip, create_match_key, datacrc, is_complete, item_updates, last_call_time, mapname, match_key, match_type_id, mod_dll_checksum, mod_dll_file, mod_name, mod_version, options, race_ids, results, session_id, slot_info, team_i_ds, version_flags, xp_gained)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_party_create_or_report_single_player: %s\n" % e)
 ```
@@ -5313,7 +5406,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -5322,12 +5415,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_party_finalize_replay_upload**
-> game_party_finalize_replay_upload(call_num, connect_id, error_string, finalize_result, is_single_player, last_call_time, match_id, session_id, size, url)
+> object game_party_finalize_replay_upload(call_num, connect_id, error_string, finalize_result, is_single_player, last_call_time, match_id, session_id, size, url)
 
 
 
@@ -5353,7 +5446,8 @@ size = 56 # int |
 url = 'url_example' # str | 
 
 try:
-    api_instance.game_party_finalize_replay_upload(call_num, connect_id, error_string, finalize_result, is_single_player, last_call_time, match_id, session_id, size, url)
+    api_response = api_instance.game_party_finalize_replay_upload(call_num, connect_id, error_string, finalize_result, is_single_player, last_call_time, match_id, session_id, size, url)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_party_finalize_replay_upload: %s\n" % e)
 ```
@@ -5375,7 +5469,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -5384,12 +5478,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_party_peer_add**
-> game_party_peer_add(call_num, connect_id, last_call_time, match_id, profile_ids, race_ids, session_id, stat_group_ids, team_i_ds)
+> object game_party_peer_add(call_num, connect_id, last_call_time, match_id, profile_ids, race_ids, session_id, stat_group_ids, team_i_ds)
 
 
 
@@ -5414,7 +5508,8 @@ stat_group_ids = 56 # int |
 team_i_ds = 56 # int | 
 
 try:
-    api_instance.game_party_peer_add(call_num, connect_id, last_call_time, match_id, profile_ids, race_ids, session_id, stat_group_ids, team_i_ds)
+    api_response = api_instance.game_party_peer_add(call_num, connect_id, last_call_time, match_id, profile_ids, race_ids, session_id, stat_group_ids, team_i_ds)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_party_peer_add: %s\n" % e)
 ```
@@ -5435,7 +5530,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -5444,12 +5539,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_party_peer_update**
-> game_party_peer_update(call_num, connect_id, is_non_participants, last_call_time, match_id, profile_ids, race_ids, session_id, team_i_ds)
+> object game_party_peer_update(call_num, connect_id, is_non_participants, last_call_time, match_id, profile_ids, race_ids, session_id, team_i_ds)
 
 
 
@@ -5474,7 +5569,8 @@ session_id = 'session_id_example' # str |
 team_i_ds = 56 # int | 
 
 try:
-    api_instance.game_party_peer_update(call_num, connect_id, is_non_participants, last_call_time, match_id, profile_ids, race_ids, session_id, team_i_ds)
+    api_response = api_instance.game_party_peer_update(call_num, connect_id, is_non_participants, last_call_time, match_id, profile_ids, race_ids, session_id, team_i_ds)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_party_peer_update: %s\n" % e)
 ```
@@ -5495,7 +5591,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -5504,12 +5600,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_party_report_match**
-> game_party_report_match(call_num, check_sums, connect_id, counters_zip, item_updates, last_call_time, match_id, profile_ids, race_ids, results, session_id, simplayer_i_ds, team_i_ds, xp_gained)
+> object game_party_report_match(call_num, check_sums, connect_id, counters_zip, item_updates, last_call_time, match_id, profile_ids, race_ids, results, session_id, simplayer_i_ds, team_i_ds, xp_gained)
 
 
 
@@ -5539,7 +5635,8 @@ team_i_ds = 56 # int |
 xp_gained = 56 # int | 
 
 try:
-    api_instance.game_party_report_match(call_num, check_sums, connect_id, counters_zip, item_updates, last_call_time, match_id, profile_ids, race_ids, results, session_id, simplayer_i_ds, team_i_ds, xp_gained)
+    api_response = api_instance.game_party_report_match(call_num, check_sums, connect_id, counters_zip, item_updates, last_call_time, match_id, profile_ids, race_ids, results, session_id, simplayer_i_ds, team_i_ds, xp_gained)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_party_report_match: %s\n" % e)
 ```
@@ -5565,7 +5662,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -5574,12 +5671,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_party_send_match_chat**
-> game_party_send_match_chat(broadcast, call_num, connect_id, from_profile_id, last_call_time, match_id, message, message_type_id, session_id, to_profile_id)
+> object game_party_send_match_chat(broadcast, call_num, connect_id, from_profile_id, last_call_time, match_id, message, message_type_id, session_id, to_profile_id)
 
 
 
@@ -5605,7 +5702,8 @@ session_id = 'session_id_example' # str |
 to_profile_id = 56 # int | 
 
 try:
-    api_instance.game_party_send_match_chat(broadcast, call_num, connect_id, from_profile_id, last_call_time, match_id, message, message_type_id, session_id, to_profile_id)
+    api_response = api_instance.game_party_send_match_chat(broadcast, call_num, connect_id, from_profile_id, last_call_time, match_id, message, message_type_id, session_id, to_profile_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_party_send_match_chat: %s\n" % e)
 ```
@@ -5627,7 +5725,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -5636,12 +5734,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_playerreport_report_user**
-> game_playerreport_report_user(call_num, comment, connect_id, last_call_time, metadata, report_reason, report_type, reportee_profile_id, session_id)
+> object game_playerreport_report_user(call_num, comment, connect_id, last_call_time, metadata, report_reason, report_type, reportee_profile_id, session_id)
 
 
 
@@ -5666,7 +5764,8 @@ reportee_profile_id = 56 # int |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_playerreport_report_user(call_num, comment, connect_id, last_call_time, metadata, report_reason, report_type, reportee_profile_id, session_id)
+    api_response = api_instance.game_playerreport_report_user(call_num, comment, connect_id, last_call_time, metadata, report_reason, report_type, reportee_profile_id, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_playerreport_report_user: %s\n" % e)
 ```
@@ -5687,7 +5786,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -5696,12 +5795,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_relationship_clear_relationship**
-> game_relationship_clear_relationship(call_num, connect_id, last_call_time, relation_type, session_id, target_profile_id)
+> object game_relationship_clear_relationship(call_num, connect_id, last_call_time, relation_type, session_id, target_profile_id)
 
 
 
@@ -5723,7 +5822,8 @@ session_id = 'session_id_example' # str |
 target_profile_id = 56 # int | 
 
 try:
-    api_instance.game_relationship_clear_relationship(call_num, connect_id, last_call_time, relation_type, session_id, target_profile_id)
+    api_response = api_instance.game_relationship_clear_relationship(call_num, connect_id, last_call_time, relation_type, session_id, target_profile_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_relationship_clear_relationship: %s\n" % e)
 ```
@@ -5741,7 +5841,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -5750,12 +5850,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_relationship_get_presence_data**
-> game_relationship_get_presence_data(call_num, connect_id, last_call_time, session_id)
+> object game_relationship_get_presence_data(call_num, connect_id, last_call_time, session_id)
 
 
 
@@ -5775,7 +5875,8 @@ last_call_time = 'last_call_time_example' # str |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_relationship_get_presence_data(call_num, connect_id, last_call_time, session_id)
+    api_response = api_instance.game_relationship_get_presence_data(call_num, connect_id, last_call_time, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_relationship_get_presence_data: %s\n" % e)
 ```
@@ -5791,7 +5892,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -5800,12 +5901,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_relationship_get_relationships**
-> game_relationship_get_relationships(call_num, connect_id, last_call_time, session_id)
+> object game_relationship_get_relationships(call_num, connect_id, last_call_time, session_id)
 
 
 
@@ -5825,7 +5926,8 @@ last_call_time = 'last_call_time_example' # str |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_relationship_get_relationships(call_num, connect_id, last_call_time, session_id)
+    api_response = api_instance.game_relationship_get_relationships(call_num, connect_id, last_call_time, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_relationship_get_relationships: %s\n" % e)
 ```
@@ -5841,7 +5943,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -5850,12 +5952,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_relationship_ignore**
-> game_relationship_ignore(blocklevel, call_num, connect_id, last_call_time, relation_type, session_id, target_profile_id)
+> object game_relationship_ignore(blocklevel, call_num, connect_id, last_call_time, relation_type, session_id, target_profile_id)
 
 
 
@@ -5878,7 +5980,8 @@ session_id = 'session_id_example' # str |
 target_profile_id = 56 # int | 
 
 try:
-    api_instance.game_relationship_ignore(blocklevel, call_num, connect_id, last_call_time, relation_type, session_id, target_profile_id)
+    api_response = api_instance.game_relationship_ignore(blocklevel, call_num, connect_id, last_call_time, relation_type, session_id, target_profile_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_relationship_ignore: %s\n" % e)
 ```
@@ -5897,7 +6000,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -5906,12 +6009,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_relationship_set_presence**
-> game_relationship_set_presence(call_num, connect_id, last_call_time, presence_id, session_id)
+> object game_relationship_set_presence(call_num, connect_id, last_call_time, presence_id, session_id)
 
 
 
@@ -5932,7 +6035,8 @@ presence_id = 56 # int |
 session_id = 'session_id_example' # str | 
 
 try:
-    api_instance.game_relationship_set_presence(call_num, connect_id, last_call_time, presence_id, session_id)
+    api_response = api_instance.game_relationship_set_presence(call_num, connect_id, last_call_time, presence_id, session_id)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_relationship_set_presence: %s\n" % e)
 ```
@@ -5949,7 +6053,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -5958,12 +6062,12 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **game_relationship_set_presence_property**
-> game_relationship_set_presence_property(call_num, connect_id, last_call_time, presence_property_def_id, session_id, value)
+> object game_relationship_set_presence_property(call_num, connect_id, last_call_time, presence_property_def_id, session_id, value)
 
 
 
@@ -5985,7 +6089,8 @@ session_id = 'session_id_example' # str |
 value = 56 # int | 
 
 try:
-    api_instance.game_relationship_set_presence_property(call_num, connect_id, last_call_time, presence_property_def_id, session_id, value)
+    api_response = api_instance.game_relationship_set_presence_property(call_num, connect_id, last_call_time, presence_property_def_id, session_id, value)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->game_relationship_set_presence_property: %s\n" % e)
 ```
@@ -6003,7 +6108,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -6012,7 +6117,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
