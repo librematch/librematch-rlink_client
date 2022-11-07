@@ -3,7 +3,7 @@ openapi: 3.0.3
 info:
   title: Relic Link API
   description: ""
-  version: "22.11.01"
+  version: "22.11.02"
 servers:
   - url: https://aoe-api.reliclink.com
 paths:
@@ -17,11 +17,7 @@ paths:
         - $ref: "#/components/parameters/profileNamesCom"
       responses:
         "200":
-          description: Definition generated from Swagger Inspector
-          # content:
-          #   application/json:
-          #     schema:
-          #       $ref: "#/components/schemas/Model3"
+          $ref: "#/components/responses/AnyValue"
   /community/leaderboard/GetPersonalStat:
     get:
       operationId: community_get_personal_stat
@@ -32,10 +28,7 @@ paths:
         - $ref: "#/components/parameters/aliasesCom"
       responses:
         "200":
-          description: Definition generated from Swagger Inspector
-          content: application/json
-          #     schema:
-          #       $ref: "#/components/schemas/Model4"
+          $ref: "#/components/responses/AnyValue"
   /community/leaderboard/getRecentMatchHistory:
     get:
       operationId: community_get_recent_match_history
@@ -45,11 +38,7 @@ paths:
         - $ref: "#/components/parameters/profile_namesCom"
       responses:
         "200":
-          description: Definition generated from Swagger Inspector
-          # content:
-          #   application/json:
-          #     schema:
-          #       $ref: "#/components/schemas/Model2"
+          $ref: "#/components/responses/AnyValue"
   /community/advertisement/findAdvertisements:
     get:
       operationId: community_find_advertisements
@@ -57,7 +46,7 @@ paths:
         - $ref: "#/components/parameters/titleCom"
       responses:
         "200":
-          description: Definition generated from Swagger Inspector
+          $ref: "#/components/responses/AnyValue"
   /community/leaderboard/GetAvatarStatForProfile:
     get:
       operationId: community_get_avatar_stat_for_profile
@@ -66,7 +55,7 @@ paths:
         - $ref: "#/components/parameters/profile_namesCom"
       responses:
         "200":
-          description: Definition generated from Swagger Inspector
+          $ref: "#/components/responses/AnyValue"
   /community/achievement/getAchievements:
     get:
       operationId: community_get_achievements
@@ -75,8 +64,7 @@ paths:
         - $ref: "#/components/parameters/profileidsCom"
       responses:
         "200":
-          description: Definition generated from Swagger Inspector
-
+          $ref: "#/components/responses/AnyValue"
   /community/achievement/getAvailableAchievements:
     get:
       operationId: community_get_available_achievements
@@ -84,7 +72,7 @@ paths:
         - $ref: "#/components/parameters/titleCom"
       responses:
         "200":
-          description: Definition generated from Swagger Inspector
+          $ref: "#/components/responses/AnyValue"
   /community/news:
     get:
       operationId: community_news
@@ -92,7 +80,7 @@ paths:
         - $ref: "#/components/parameters/titleCom"
       responses:
         "200":
-          description: Definition generated from Swagger Inspector
+          $ref: "#/components/responses/AnyValue"
   /community/clan/find:
     get:
       operationId: community_clan_find
@@ -105,7 +93,7 @@ paths:
         - $ref: "#/components/parameters/count"
       responses:
         "200":
-          description: Definition generated from Swagger Inspector
+          $ref: "#/components/responses/AnyValue"
   /community/clan/getClanInfoFull:
     get:
       operationId: community_get_clan_info_full
@@ -114,7 +102,7 @@ paths:
         - $ref: "#/components/parameters/name"
       responses:
         "200":
-          description: Definition generated from Swagger Inspector
+          $ref: "#/components/responses/AnyValue"
   /community/CommunityEvent/getAvailableCommunityEvents:
     get:
       operationId: community_get_available_community_events
@@ -122,7 +110,7 @@ paths:
         - $ref: "#/components/parameters/titleCom"
       responses:
         "200":
-          description: Definition generated from Swagger Inspector
+          $ref: "#/components/responses/AnyValue"
   /community/item/getInventoryByProfileIDs:
     get:
       operationId: community_get_inventory_by_profile_ids
@@ -131,7 +119,7 @@ paths:
         - $ref: "#/components/parameters/profileidsCom"
       responses:
         "200":
-          description: Definition generated from Swagger Inspector
+          $ref: "#/components/responses/AnyValue"
   /community/leaderboard/getAvailableLeaderboards:
     get:
       operationId: community_get_available_leaderboards
@@ -139,7 +127,7 @@ paths:
         - $ref: "#/components/parameters/titleCom"
       responses:
         "200":
-          description: Definition generated from Swagger Inspector
+          $ref: "#/components/responses/AnyValue"
   /community/leaderboard/getLeaderboard2:
     get:
       operationId: community_get_leaderboard2
@@ -152,7 +140,7 @@ paths:
         - $ref: "#/components/parameters/platformCom"
       responses:
         "200":
-          description: Definition generated from Swagger Inspector
+          $ref: "#/components/responses/AnyValue"
   /game/account/FindProfiles:
     get:
       operationId: game_account_find_profiles
