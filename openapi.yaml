@@ -33,8 +33,7 @@ paths:
       responses:
         "200":
           description: Definition generated from Swagger Inspector
-          # content:
-          #   application/json:
+          content: application/json
           #     schema:
           #       $ref: "#/components/schemas/Model4"
   /community/leaderboard/getRecentMatchHistory:
@@ -166,7 +165,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/account/getProfileName:
     get:
       operationId: game_account_get_profile_name
@@ -179,7 +178,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/account/getProfileProperty:
     get:
       operationId: game_account_get_profile_property
@@ -193,7 +192,7 @@ paths:
         - $ref: "#/components/parameters/property_id"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/account/FindProfilesByPlatformID:
     get:
       operationId: game_account_find_profiles_by_platform_id
@@ -206,7 +205,7 @@ paths:
         - $ref: "#/components/parameters/platformIDs"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/account/setAvatarMetadata:
     post:
       operationId: game_account_set_avatar_metadata
@@ -219,7 +218,7 @@ paths:
         - $ref: "#/components/parameters/metaData"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/account/setLanguage:
     post:
       operationId: game_account_set_language
@@ -233,7 +232,7 @@ paths:
         - $ref: "#/components/parameters/language"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/Achievement/getAchievements:
     get:
       operationId: game_achievement_get_achievements
@@ -246,7 +245,7 @@ paths:
         - $ref: "#/components/parameters/profileIDs"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/Achievement/getAvailableAchievements:
     get:
       operationId: game_achievement_get_available_achievements
@@ -259,7 +258,7 @@ paths:
         - $ref: "#/components/parameters/signature"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/achievement/syncStats:
     post:
       operationId: game_achievement_sync_stats
@@ -273,7 +272,7 @@ paths:
         - $ref: "#/components/parameters/auth"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/advertisement/findObservableAdvertisements:
     get:
       operationId: game_advertisement_find_observable_advertisements_get
@@ -297,7 +296,7 @@ paths:
         - $ref: "#/components/parameters/versionFlags"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
     post:
       operationId: game_advertisement_find_observable_advertisements_post
       description: ""
@@ -320,7 +319,7 @@ paths:
         - $ref: "#/components/parameters/versionFlags"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/advertisement/findAdvertisements:
     get:
       operationId: game_advertisement_find_advertisements
@@ -343,7 +342,7 @@ paths:
         - $ref: "#/components/parameters/versionFlags"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/advertisement/getAdvertisements:
     get:
       operationId: game_advertisement_get_advertisements
@@ -356,7 +355,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/advertisement/getLanAdvertisements:
     get:
       operationId: game_advertisement_get_lan_advertisements
@@ -377,7 +376,7 @@ paths:
         - $ref: "#/components/parameters/versionFlags"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/advertisement/host:
     post:
       operationId: game_advertisement_host
@@ -418,7 +417,7 @@ paths:
         - $ref: "#/components/parameters/visible"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/advertisement/update:
     post:
       operationId: game_advertisement_update
@@ -455,7 +454,7 @@ paths:
         - $ref: "#/components/parameters/visible"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/advertisement/join:
     post:
       operationId: game_advertisement_join
@@ -480,7 +479,7 @@ paths:
         - $ref: "#/components/parameters/versionFlags"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/advertisement/startObserving:
     post:
       operationId: game_advertisement_start_observing
@@ -502,7 +501,7 @@ paths:
         - $ref: "#/components/parameters/withPartySessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/advertisement/stopObserving:
     post:
       operationId: game_advertisement_stop_observing
@@ -515,7 +514,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/advertisement/updatePlatformLobbyID:
     post:
       operationId: game_advertisement_update_platform_lobby_id
@@ -529,7 +528,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/advertisement/updateState:
     post:
       operationId: game_advertisement_update_state
@@ -542,7 +541,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/advertisement/updateTags:
     post:
       operationId: game_advertisement_update_tags
@@ -559,7 +558,7 @@ paths:
         - $ref: "#/components/parameters/stringTagValues"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/advertisement/leave:
     post:
       operationId: game_advertisement_leave
@@ -572,7 +571,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/automatch/getAutomatchMap:
     get:
       operationId: game_automatch_get_automatch_map
@@ -584,7 +583,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/automatch2/getAutomatchMap:
     get:
       operationId: game_automatch2_get_automatch_map
@@ -596,7 +595,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/automatch2/polling:
     post:
       operationId: game_automatch2_polling
@@ -627,7 +626,7 @@ paths:
         - $ref: "#/components/parameters/vetoMaps"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/automatch2/stoppolling:
     post:
       operationId: game_automatch2_stop_polling
@@ -641,7 +640,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/automatch2/updateStatus:
     post:
       operationId: game_automatch2_update_status
@@ -656,7 +655,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/Challenge/getChallengeProgress:
     get:
       operationId: game_challenge_get_challenge_progress
@@ -668,7 +667,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/Challenge/getChallengeProgressByProfileID:
     get:
       operationId: game_challenge_get_challenge_progress_by_profile_id
@@ -681,7 +680,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/Challenge/getChallenges:
     get:
       operationId: game_challenge_get_challenges
@@ -694,7 +693,7 @@ paths:
         - $ref: "#/components/parameters/signature"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/challenge/updateProgressBatched:
     post:
       operationId: game_challenge_update_progress_batched
@@ -708,7 +707,7 @@ paths:
         - $ref: "#/components/parameters/updateAmounts"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/chat/getChatChannels:
     get:
       operationId: game_chat_get_chat_channels
@@ -720,7 +719,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/chat/getOfflineMessages:
     get:
       operationId: game_chat_get_offline_messages
@@ -732,7 +731,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/chat/deleteOfflineMessage:
     post:
       operationId: game_chat_delete_offline_message
@@ -745,7 +744,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/clan/find:
     get:
       operationId: game_clan_find
@@ -762,7 +761,7 @@ paths:
         - $ref: "#/components/parameters/tags"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/clan/getClan:
     get:
       operationId: game_clan_get_clan
@@ -775,7 +774,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/clan/getClanInfoFull:
     get:
       operationId: game_clan_get_clan_info_full
@@ -788,7 +787,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/clan/apply:
     post:
       operationId: game_clan_apply
@@ -801,7 +800,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/clan/disband:
     post:
       operationId: game_clan_disband
@@ -813,7 +812,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/clan/create:
     post:
       operationId: game_clan_create
@@ -847,7 +846,7 @@ paths:
         - $ref: "#/components/parameters/tags"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/clan/update:
     post:
       operationId: game_clan_update
@@ -866,7 +865,7 @@ paths:
         - $ref: "#/components/parameters/tags"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/cloud/getFileURL:
     get:
       operationId: game_cloud_get_file_url_get
@@ -879,7 +878,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
     post:
       description: ""
       operationId: game_cloud_get_file_url_post
@@ -891,7 +890,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/cloud/getTempCredentials:
     get:
       operationId: game_cloud_get_temp_credentials
@@ -904,7 +903,7 @@ paths:
         - $ref: "#/components/parameters/key"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/CommunityEvent/getAvailableCommunityEvents:
     get:
       operationId: game_community_event_get_available_community_events
@@ -916,7 +915,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/CommunityEvent/getEventChallengeProgress:
     get:
       operationId: game_community_event_get_event_challenge_progress
@@ -929,7 +928,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/CommunityEvent/getEventStats:
     get:
       operationId: game_community_event_get_event_stats
@@ -944,7 +943,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/invitation/cancelInvitation:
     post:
       operationId: game_invitation_cancel_invitation
@@ -958,7 +957,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/invitation/extendInvitation:
     post:
       operationId: game_invitation_extend_invitation
@@ -973,7 +972,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/item/getInventoryByProfileIDs:
     get:
       operationId: game_item_get_inventory_by_profile_ids
@@ -986,7 +985,7 @@ paths:
         - $ref: "#/components/parameters/profileIDs"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/item/getItemBundleItemsJson:
     get:
       operationId: game_item_get_item_bundle_items_json
@@ -999,7 +998,7 @@ paths:
         - $ref: "#/components/parameters/signature"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/item/getItemDefinitionsJson:
     get:
       operationId: game_item_get_item_definitions_json
@@ -1012,7 +1011,7 @@ paths:
         - $ref: "#/components/parameters/signature"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/item/getItemLoadouts:
     get:
       operationId: game_item_get_item_loadouts
@@ -1024,7 +1023,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/item/getItemPrices:
     get:
       operationId: game_item_get_item_prices
@@ -1040,7 +1039,7 @@ paths:
         - $ref: "#/components/parameters/saleVersion"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/item/getLevelRewardsTableJson:
     get:
       operationId: game_item_get_level_rewards_table_json
@@ -1053,7 +1052,7 @@ paths:
         - $ref: "#/components/parameters/signature"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/item/getPersonalizedSaleItems:
     get:
       operationId: game_item_get_personalized_sale_items
@@ -1065,7 +1064,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/item/getScheduledSaleAndItems:
     get:
       operationId: game_item_get_scheduled_sale_and_items
@@ -1078,7 +1077,7 @@ paths:
         - $ref: "#/components/parameters/saleType"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/item/detachItems:
     post:
       operationId: game_item_detach_items
@@ -1093,7 +1092,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/item/moveCharges:
     post:
       operationId: game_item_move_charges
@@ -1109,7 +1108,7 @@ paths:
         - $ref: "#/components/parameters/toItemIDs"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/item/moveItem:
     post:
       operationId: game_item_move_item
@@ -1125,7 +1124,7 @@ paths:
         - $ref: "#/components/parameters/slotIDs"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/item/openItemPack:
     post:
       operationId: game_item_open_item_pack
@@ -1140,7 +1139,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/item/signItems:
     post:
       operationId: game_item_sign_item
@@ -1153,7 +1152,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/item/updateItemAttributes:
     post:
       operationId: game_item_update_item_attributes
@@ -1169,7 +1168,7 @@ paths:
         - $ref: "#/components/parameters/xpGains"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/Leaderboard/getRecentMatchHistory:
     get:
       operationId: game_leaderboard_get_recent_match_history_get
@@ -1182,7 +1181,7 @@ paths:
         - $ref: "#/components/parameters/profile_ids"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
     post:
       operationId: game_leaderboard_get_recent_match_history_post
       description: ""
@@ -1194,7 +1193,7 @@ paths:
         - $ref: "#/components/parameters/profile_ids"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/Leaderboard/getAvailableLeaderboards:
     get:
       operationId: game_leaderboard_get_available_leaderboards
@@ -1206,7 +1205,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/Leaderboard/getLeaderBoard:
     get:
       operationId: game_leaderboard_get_leaderboard
@@ -1222,7 +1221,7 @@ paths:
         - $ref: "#/components/parameters/count"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/Leaderboard/getPartyStat:
     get:
       operationId: game_leaderboard_get_party_stat
@@ -1235,7 +1234,7 @@ paths:
         - $ref: "#/components/parameters/statsids"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/Leaderboard/getPersonalStat:
     get:
       operationId: game_leaderboard_get_personal_stat
@@ -1247,7 +1246,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/Leaderboard/getRecentMatchSinglePlayerHistory:
     get:
       operationId: game_leaderboard_get_recent_match_single_player_history
@@ -1260,7 +1259,7 @@ paths:
         - $ref: "#/components/parameters/profile_ids"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/Leaderboard/getStatGroupsByProfileIDs:
     get:
       operationId: game_leaderboard_get_stat_groups_by_profile_ids
@@ -1273,7 +1272,7 @@ paths:
         - $ref: "#/components/parameters/profileids"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/Leaderboard/getStatsForLeaderboardByProfileName:
     get:
       operationId: game_leaderboard_get_stats_for_leaderboard_by_profile_name
@@ -1287,7 +1286,7 @@ paths:
         - $ref: "#/components/parameters/profileids"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/leaderboard/setAvatarStatValues:
     post:
       operationId: game_leaderboard_set_avatar_stat_values
@@ -1302,7 +1301,7 @@ paths:
         - $ref: "#/components/parameters/values"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/login/logout:
     post:
       operationId: game_login_logout
@@ -1314,7 +1313,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/login/readSession:
     post:
       operationId: game_login_read_session
@@ -1325,7 +1324,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/login/platformlogin:
     post:
       operationId: game_login_platform_login
@@ -1354,7 +1353,7 @@ paths:
         - $ref: "#/components/parameters/title"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/news/getNews:
     get:
       operationId: game_news_get_news
@@ -1366,7 +1365,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/party/createOrReportSinglePlayer:
     post:
       operationId: game_party_create_or_report_single_player
@@ -1398,7 +1397,7 @@ paths:
         - $ref: "#/components/parameters/xpGained"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/party/reportMatch:
     post:
       operationId: game_party_report_match
@@ -1420,7 +1419,7 @@ paths:
         - $ref: "#/components/parameters/xpGained"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/playerreport/reportuser:
     post:
       operationId: game_playerreport_report_user
@@ -1437,7 +1436,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/party/sendMatchChat:
     post:
       operationId: game_party_send_match_chat
@@ -1455,7 +1454,7 @@ paths:
         - $ref: "#/components/parameters/to_profile_id"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/party/finalizeReplayUpload:
     post:
       operationId: game_party_finalize_replay_upload
@@ -1473,7 +1472,7 @@ paths:
         - $ref: "#/components/parameters/url"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/party/peerAdd:
     post:
       operationId: game_party_peer_add
@@ -1490,7 +1489,7 @@ paths:
         - $ref: "#/components/parameters/teamIDs"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/party/peerUpdate:
     post:
       operationId: game_party_peer_update
@@ -1507,7 +1506,7 @@ paths:
         - $ref: "#/components/parameters/teamIDs"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/relationship/getPresenceData:
     get:
       operationId: game_relationship_get_presence_data
@@ -1519,7 +1518,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/relationship/getRelationships:
     get:
       operationId: game_relationship_get_relationships
@@ -1531,7 +1530,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/relationship/clearRelationship:
     post:
       operationId: game_relationship_clear_relationship
@@ -1545,7 +1544,7 @@ paths:
         - $ref: "#/components/parameters/targetProfileID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/relationship/ignore:
     post:
       operationId: game_relationship_ignore
@@ -1560,7 +1559,7 @@ paths:
         - $ref: "#/components/parameters/targetProfileID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/relationship/setPresence:
     post:
       operationId: game_relationship_set_presence
@@ -1573,7 +1572,7 @@ paths:
         - $ref: "#/components/parameters/sessionID"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
   /game/relationship/setPresenceProperty:
     post:
       operationId: game_relationship_set_presence_property
@@ -1587,8 +1586,14 @@ paths:
         - $ref: "#/components/parameters/propertyValue"
       responses:
         "200":
-          description: OK
+          $ref: "#/components/responses/AnyValue"
 components:
+  responses:
+    AnyValue:
+      description: "Can be anything: string, number, array, object, etc., including `null`"
+      content:
+        application/json:
+          schema: {}
   # schemas:
   #   Result:
   #     properties:
