@@ -1,11 +1,11 @@
 [tool.poetry]
 name = "rlink-client"
-version = "22.11.01"
+version = "22.11.03"
 description = "Relic Link API-Client generated from OpenAPI"
 authors = ["Your Name <you@example.com>"]
 license = "AGPL-3.0-or-later"
 readme = "README.md"
-packages = [{ include = "swagger_client" }]
+packages = [{ include = "rlink_client" }]
 
 [tool.poetry.dependencies]
 python = "^3.11"
