@@ -12,7 +12,7 @@ python = "^3.11"
 certifi = "^2022.9.24"
 six = "^1.10"
 python_dateutil = "^2.5.3"
-setuptools = "^21.0.0"
+setuptools = "^65.5.1"
 urllib3 = "^1.15.1"
 
 [tool.poetry.group.dev.dependencies]
