@@ -3431,7 +3431,7 @@ components:
       name: datacrc
       in: query
       required: true
-      description: ""
+      description: "backwards appBinCRC?"
       style: form
       explode: true
       schema:
