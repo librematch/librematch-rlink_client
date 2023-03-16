@@ -3,7 +3,7 @@ openapi: 3.0.3
 info:
   title: Relic Link API
   description: ""
-  version: "22.11.03"
+  version: "23.03.01"
 servers:
   - url: https://aoe-api.reliclink.com
 paths:
@@ -73,9 +73,9 @@ paths:
       responses:
         "200":
           $ref: "#/components/responses/AnyValue"
-  /community/news:
+  /community/news/getNews:
     get:
-      operationId: community_news
+      operationId: community_news_get_news
       parameters:
         - $ref: "#/components/parameters/titleCom"
       responses:
