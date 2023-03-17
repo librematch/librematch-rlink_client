@@ -7,7 +7,7 @@ Relic Link API-Client generated from OpenAPI
 1. Rename the folder `rlink_client_python` to `rlink_client_python_old`.
 
 2. Run
-`openapi-generator-cli.cmd generate -g python -o rlink_client_python -i openapi.yaml --package-name rlink_client`.
+`openapi-generator-cli.cmd generate -g python -o rlink_client_python -i openapi.yaml --package-name rlink_client --packageVersion <open_api spec version>`.
 
 3. Copy over `rlink_client_python_old/pyproject.toml` to `rlink_client_python/pyproject.toml`.
 
