@@ -1,7 +1,7 @@
 # do not import all endpoints into this module because that uses a lot of memory and stack frames
 # if you need the ability to import all endpoints from this module, import them with
-# from openapi_client.paths.community_clan_find import Api
+# from rlink_client.paths.community_clan_find import Api
 
-from openapi_client.paths import PathValues
+from rlink_client.paths import PathValues
 
 path = PathValues.COMMUNITY_CLAN_FIND

@@ -1,5 +1,5 @@
 <a name="__pageTop"></a>
-# openapi_client.apis.tags.default_api.DefaultApi
+# rlink_client.apis.tags.default_api.DefaultApi
 
 All URIs are relative to *https://aoe-api.reliclink.com*
 
@@ -120,17 +120,17 @@ Method | HTTP request | Description
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -147,7 +147,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->community_clan_find: %s\n" % e)
 
     # example passing only optional values
@@ -164,7 +164,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->community_clan_find: %s\n" % e)
 ```
 ### Parameters
@@ -268,17 +268,17 @@ No authorization required
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -291,7 +291,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->community_find_advertisements: %s\n" % e)
 ```
 ### Parameters
@@ -355,17 +355,17 @@ No authorization required
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -379,7 +379,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->community_get_achievements: %s\n" % e)
 ```
 ### Parameters
@@ -451,17 +451,17 @@ No authorization required
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -474,7 +474,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->community_get_available_achievements: %s\n" % e)
 ```
 ### Parameters
@@ -538,17 +538,17 @@ No authorization required
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -561,7 +561,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->community_get_available_community_events: %s\n" % e)
 ```
 ### Parameters
@@ -625,17 +625,17 @@ No authorization required
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -648,7 +648,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->community_get_available_leaderboards: %s\n" % e)
 ```
 ### Parameters
@@ -712,17 +712,17 @@ No authorization required
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -736,7 +736,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->community_get_avatar_stat_for_profile: %s\n" % e)
 ```
 ### Parameters
@@ -808,17 +808,17 @@ No authorization required
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -831,7 +831,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->community_get_clan_info_full: %s\n" % e)
 
     # example passing only optional values
@@ -844,7 +844,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->community_get_clan_info_full: %s\n" % e)
 ```
 ### Parameters
@@ -916,17 +916,17 @@ No authorization required
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -940,7 +940,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->community_get_inventory_by_profile_ids: %s\n" % e)
 ```
 ### Parameters
@@ -1012,17 +1012,17 @@ No authorization required
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -1036,7 +1036,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->community_get_leaderboard2: %s\n" % e)
 
     # example passing only optional values
@@ -1053,7 +1053,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->community_get_leaderboard2: %s\n" % e)
 ```
 ### Parameters
@@ -1157,17 +1157,17 @@ No authorization required
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -1183,7 +1183,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->community_get_personal_stat: %s\n" % e)
 ```
 ### Parameters
@@ -1271,17 +1271,17 @@ No authorization required
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -1296,7 +1296,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->community_get_recent_match_history: %s\n" % e)
 ```
 ### Parameters
@@ -1376,17 +1376,17 @@ No authorization required
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -1399,7 +1399,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->community_news_get_news: %s\n" % e)
 ```
 ### Parameters
@@ -1463,17 +1463,17 @@ No authorization required
 ### Example
 
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -1489,7 +1489,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->community_proxy_steam_user_request: %s\n" % e)
 ```
 ### Parameters
@@ -1579,12 +1579,12 @@ No authorization required
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -1605,7 +1605,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -1620,7 +1620,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_account_find_profiles: %s\n" % e)
 ```
 ### Parameters
@@ -1702,12 +1702,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -1728,7 +1728,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -1743,7 +1743,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_account_find_profiles_by_platform_id: %s\n" % e)
 ```
 ### Parameters
@@ -1825,12 +1825,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -1851,7 +1851,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -1866,7 +1866,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_account_get_profile_name: %s\n" % e)
 ```
 ### Parameters
@@ -1948,12 +1948,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -1974,7 +1974,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -1990,7 +1990,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_account_get_profile_property: %s\n" % e)
 ```
 ### Parameters
@@ -2080,12 +2080,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -2106,7 +2106,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -2121,7 +2121,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_account_set_avatar_metadata: %s\n" % e)
 ```
 ### Parameters
@@ -2203,12 +2203,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -2229,7 +2229,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -2243,7 +2243,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_account_set_language: %s\n" % e)
 
     # example passing only optional values
@@ -2258,7 +2258,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_account_set_language: %s\n" % e)
 ```
 ### Parameters
@@ -2348,12 +2348,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -2374,7 +2374,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -2389,7 +2389,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_achievement_get_achievements: %s\n" % e)
 ```
 ### Parameters
@@ -2473,12 +2473,12 @@ No authentication needed
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -2499,7 +2499,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -2514,7 +2514,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_achievement_get_available_achievements: %s\n" % e)
 ```
 ### Parameters
@@ -2596,12 +2596,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -2622,7 +2622,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -2638,7 +2638,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_achievement_sync_stats: %s\n" % e)
 ```
 ### Parameters
@@ -2728,12 +2728,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -2754,7 +2754,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -2779,7 +2779,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_advertisement_find_advertisements: %s\n" % e)
 ```
 ### Parameters
@@ -2941,12 +2941,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -2967,7 +2967,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -2993,7 +2993,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_advertisement_find_observable_advertisements_get: %s\n" % e)
 ```
 ### Parameters
@@ -3163,12 +3163,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -3189,7 +3189,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -3215,7 +3215,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_advertisement_find_observable_advertisements_post: %s\n" % e)
 ```
 ### Parameters
@@ -3385,12 +3385,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -3411,7 +3411,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -3426,7 +3426,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_advertisement_get_advertisements: %s\n" % e)
 ```
 ### Parameters
@@ -3508,12 +3508,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -3534,7 +3534,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -3557,7 +3557,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_advertisement_get_lan_advertisements: %s\n" % e)
 ```
 ### Parameters
@@ -3703,12 +3703,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -3729,7 +3729,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -3772,7 +3772,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_advertisement_host: %s\n" % e)
 ```
 ### Parameters
@@ -4078,12 +4078,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -4104,7 +4104,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -4131,7 +4131,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_advertisement_join: %s\n" % e)
 ```
 ### Parameters
@@ -4309,12 +4309,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -4335,7 +4335,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -4350,7 +4350,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_advertisement_leave: %s\n" % e)
 ```
 ### Parameters
@@ -4432,12 +4432,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -4458,7 +4458,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -4482,7 +4482,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_advertisement_start_observing: %s\n" % e)
 ```
 ### Parameters
@@ -4636,12 +4636,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -4662,7 +4662,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -4677,7 +4677,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_advertisement_stop_observing: %s\n" % e)
 ```
 ### Parameters
@@ -4759,12 +4759,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -4785,7 +4785,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -4824,7 +4824,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_advertisement_update: %s\n" % e)
 ```
 ### Parameters
@@ -5098,12 +5098,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -5124,7 +5124,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -5140,7 +5140,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_advertisement_update_platform_lobby_id: %s\n" % e)
 ```
 ### Parameters
@@ -5230,12 +5230,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -5256,7 +5256,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -5271,7 +5271,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_advertisement_update_state: %s\n" % e)
 ```
 ### Parameters
@@ -5353,12 +5353,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -5379,7 +5379,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -5398,7 +5398,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_advertisement_update_tags: %s\n" % e)
 ```
 ### Parameters
@@ -5512,12 +5512,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -5538,7 +5538,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -5552,7 +5552,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_automatch2_get_automatch_map: %s\n" % e)
 ```
 ### Parameters
@@ -5626,12 +5626,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -5652,7 +5652,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -5685,7 +5685,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_automatch2_polling: %s\n" % e)
 ```
 ### Parameters
@@ -5911,12 +5911,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -5937,7 +5937,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -5953,7 +5953,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_automatch2_stop_polling: %s\n" % e)
 ```
 ### Parameters
@@ -6043,12 +6043,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -6069,7 +6069,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -6086,7 +6086,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_automatch2_update_status: %s\n" % e)
 ```
 ### Parameters
@@ -6184,12 +6184,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -6210,7 +6210,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -6224,7 +6224,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_automatch_get_automatch_map: %s\n" % e)
 ```
 ### Parameters
@@ -6298,12 +6298,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -6324,7 +6324,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -6338,7 +6338,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_challenge_get_challenge_progress: %s\n" % e)
 ```
 ### Parameters
@@ -6414,12 +6414,12 @@ TODO: Request not available in Wiki, this is guessed
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -6440,7 +6440,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -6455,7 +6455,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_challenge_get_challenge_progress_by_profile_id: %s\n" % e)
 ```
 ### Parameters
@@ -6537,12 +6537,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -6563,7 +6563,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -6578,7 +6578,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_challenge_get_challenges: %s\n" % e)
 ```
 ### Parameters
@@ -6660,12 +6660,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -6686,7 +6686,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -6702,7 +6702,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_challenge_update_progress_batched: %s\n" % e)
 ```
 ### Parameters
@@ -6792,12 +6792,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -6818,7 +6818,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -6833,7 +6833,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_chat_delete_offline_message: %s\n" % e)
 ```
 ### Parameters
@@ -6915,12 +6915,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -6941,7 +6941,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -6955,7 +6955,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_chat_get_chat_channels: %s\n" % e)
 ```
 ### Parameters
@@ -7029,12 +7029,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -7055,7 +7055,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -7069,7 +7069,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_chat_get_offline_messages: %s\n" % e)
 ```
 ### Parameters
@@ -7143,12 +7143,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -7169,7 +7169,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -7184,7 +7184,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_clan_apply: %s\n" % e)
 ```
 ### Parameters
@@ -7266,12 +7266,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -7292,7 +7292,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -7328,7 +7328,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_clan_create: %s\n" % e)
 ```
 ### Parameters
@@ -7578,12 +7578,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -7604,7 +7604,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -7618,7 +7618,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_clan_disband: %s\n" % e)
 ```
 ### Parameters
@@ -7692,12 +7692,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -7718,7 +7718,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -7737,7 +7737,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_clan_find: %s\n" % e)
 ```
 ### Parameters
@@ -7851,12 +7851,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -7877,7 +7877,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -7892,7 +7892,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_clan_get_clan: %s\n" % e)
 ```
 ### Parameters
@@ -7974,12 +7974,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -8000,7 +8000,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -8015,7 +8015,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_clan_get_clan_info_full: %s\n" % e)
 ```
 ### Parameters
@@ -8097,12 +8097,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -8123,7 +8123,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -8144,7 +8144,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_clan_update: %s\n" % e)
 ```
 ### Parameters
@@ -8274,12 +8274,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -8300,7 +8300,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -8315,7 +8315,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_cloud_get_file_url_get: %s\n" % e)
 ```
 ### Parameters
@@ -8397,12 +8397,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -8423,7 +8423,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -8438,7 +8438,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_cloud_get_file_url_post: %s\n" % e)
 ```
 ### Parameters
@@ -8520,12 +8520,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -8546,7 +8546,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -8561,7 +8561,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_cloud_get_temp_credentials: %s\n" % e)
 ```
 ### Parameters
@@ -8643,12 +8643,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -8669,7 +8669,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -8683,7 +8683,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_community_event_get_available_community_events: %s\n" % e)
 ```
 ### Parameters
@@ -8757,12 +8757,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -8783,7 +8783,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -8798,7 +8798,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_community_event_get_event_challenge_progress: %s\n" % e)
 ```
 ### Parameters
@@ -8880,12 +8880,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -8906,7 +8906,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -8923,7 +8923,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_community_event_get_event_stats: %s\n" % e)
 ```
 ### Parameters
@@ -9021,12 +9021,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -9047,7 +9047,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -9063,7 +9063,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_invitation_cancel_invitation: %s\n" % e)
 ```
 ### Parameters
@@ -9153,12 +9153,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -9179,7 +9179,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -9196,7 +9196,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_invitation_extend_invitation: %s\n" % e)
 ```
 ### Parameters
@@ -9294,12 +9294,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -9320,7 +9320,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -9337,7 +9337,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_item_detach_items: %s\n" % e)
 ```
 ### Parameters
@@ -9435,12 +9435,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -9461,7 +9461,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -9476,7 +9476,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_item_get_inventory_by_profile_ids: %s\n" % e)
 ```
 ### Parameters
@@ -9558,12 +9558,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -9584,7 +9584,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -9599,7 +9599,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_item_get_item_bundle_items_json: %s\n" % e)
 ```
 ### Parameters
@@ -9681,12 +9681,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -9707,7 +9707,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -9722,7 +9722,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_item_get_item_definitions_json: %s\n" % e)
 ```
 ### Parameters
@@ -9804,12 +9804,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -9830,7 +9830,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -9844,7 +9844,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_item_get_item_loadouts: %s\n" % e)
 ```
 ### Parameters
@@ -9918,12 +9918,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -9944,7 +9944,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -9962,7 +9962,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_item_get_item_prices: %s\n" % e)
 ```
 ### Parameters
@@ -10068,12 +10068,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -10094,7 +10094,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -10109,7 +10109,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_item_get_level_rewards_table_json: %s\n" % e)
 ```
 ### Parameters
@@ -10191,12 +10191,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -10217,7 +10217,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -10231,7 +10231,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_item_get_personalized_sale_items: %s\n" % e)
 ```
 ### Parameters
@@ -10305,12 +10305,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -10331,7 +10331,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -10346,7 +10346,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_item_get_scheduled_sale_and_items: %s\n" % e)
 ```
 ### Parameters
@@ -10428,12 +10428,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -10454,7 +10454,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -10472,7 +10472,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_item_move_charges: %s\n" % e)
 ```
 ### Parameters
@@ -10578,12 +10578,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -10604,7 +10604,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -10622,7 +10622,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_item_move_item: %s\n" % e)
 ```
 ### Parameters
@@ -10728,12 +10728,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -10754,7 +10754,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -10771,7 +10771,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_item_open_item_pack: %s\n" % e)
 ```
 ### Parameters
@@ -10869,12 +10869,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -10895,7 +10895,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -10910,7 +10910,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_item_sign_item: %s\n" % e)
 ```
 ### Parameters
@@ -10992,12 +10992,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -11018,7 +11018,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -11036,7 +11036,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_item_update_item_attributes: %s\n" % e)
 ```
 ### Parameters
@@ -11142,12 +11142,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -11168,7 +11168,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -11182,7 +11182,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_leaderboard_get_available_leaderboards: %s\n" % e)
 ```
 ### Parameters
@@ -11256,12 +11256,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -11282,7 +11282,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -11298,7 +11298,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_leaderboard_get_leaderboard: %s\n" % e)
 
     # example passing only optional values
@@ -11315,7 +11315,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_leaderboard_get_leaderboard: %s\n" % e)
 ```
 ### Parameters
@@ -11421,12 +11421,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -11447,7 +11447,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -11462,7 +11462,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_leaderboard_get_party_stat: %s\n" % e)
 ```
 ### Parameters
@@ -11546,12 +11546,12 @@ TODO: No request documented in Wiki, guessed parameters
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -11572,7 +11572,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -11586,7 +11586,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_leaderboard_get_personal_stat: %s\n" % e)
 ```
 ### Parameters
@@ -11660,12 +11660,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -11686,7 +11686,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -11701,7 +11701,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_leaderboard_get_recent_match_history_get: %s\n" % e)
 ```
 ### Parameters
@@ -11783,12 +11783,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -11809,7 +11809,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -11824,7 +11824,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_leaderboard_get_recent_match_history_post: %s\n" % e)
 ```
 ### Parameters
@@ -11906,12 +11906,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -11932,7 +11932,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -11947,7 +11947,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_leaderboard_get_recent_match_single_player_history: %s\n" % e)
 ```
 ### Parameters
@@ -12029,12 +12029,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -12055,7 +12055,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -12070,7 +12070,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_leaderboard_get_stat_groups_by_profile_ids: %s\n" % e)
 ```
 ### Parameters
@@ -12152,12 +12152,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -12178,7 +12178,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -12193,7 +12193,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_leaderboard_get_stats_for_leaderboard_by_profile_name: %s\n" % e)
 
     # example passing only optional values
@@ -12208,7 +12208,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_leaderboard_get_stats_for_leaderboard_by_profile_name: %s\n" % e)
 ```
 ### Parameters
@@ -12298,12 +12298,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -12324,7 +12324,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -12341,7 +12341,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_leaderboard_set_avatar_stat_values: %s\n" % e)
 ```
 ### Parameters
@@ -12439,12 +12439,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -12465,7 +12465,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -12479,7 +12479,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_login_logout: %s\n" % e)
 ```
 ### Parameters
@@ -12552,12 +12552,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 
 * Api Key Authentication (authLogin):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -12572,7 +12572,7 @@ configuration.api_key['authLogin'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['authLogin'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -12601,7 +12601,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_login_platform_login: %s\n" % e)
 
     # example passing only optional values
@@ -12632,7 +12632,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_login_platform_login: %s\n" % e)
 ```
 ### Parameters
@@ -12849,12 +12849,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 
 * Api Key Authentication (sessionID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -12869,7 +12869,7 @@ configuration.api_key['sessionID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['sessionID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -12883,7 +12883,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_login_read_session: %s\n" % e)
 ```
 ### Parameters
@@ -12957,12 +12957,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -12983,7 +12983,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -12997,7 +12997,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_news_get_news: %s\n" % e)
 ```
 ### Parameters
@@ -13071,12 +13071,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -13097,7 +13097,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -13131,7 +13131,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_party_create_or_report_single_player: %s\n" % e)
 ```
 ### Parameters
@@ -13365,12 +13365,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -13391,7 +13391,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -13411,7 +13411,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_party_finalize_replay_upload: %s\n" % e)
 ```
 ### Parameters
@@ -13533,12 +13533,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -13559,7 +13559,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -13578,7 +13578,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_party_peer_add: %s\n" % e)
 ```
 ### Parameters
@@ -13692,12 +13692,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -13718,7 +13718,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -13737,7 +13737,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_party_peer_update: %s\n" % e)
 ```
 ### Parameters
@@ -13851,12 +13851,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -13877,7 +13877,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -13901,7 +13901,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_party_report_match: %s\n" % e)
 ```
 ### Parameters
@@ -14055,12 +14055,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -14081,7 +14081,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -14101,7 +14101,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_party_send_match_chat: %s\n" % e)
 ```
 ### Parameters
@@ -14223,12 +14223,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -14249,7 +14249,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -14268,7 +14268,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_playerreport_report_user: %s\n" % e)
 ```
 ### Parameters
@@ -14382,12 +14382,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -14408,7 +14408,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -14424,7 +14424,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_relationship_clear_relationship: %s\n" % e)
 ```
 ### Parameters
@@ -14514,12 +14514,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -14540,7 +14540,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -14554,7 +14554,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_relationship_get_presence_data: %s\n" % e)
 ```
 ### Parameters
@@ -14628,12 +14628,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -14654,7 +14654,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -14668,7 +14668,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_relationship_get_relationships: %s\n" % e)
 ```
 ### Parameters
@@ -14742,12 +14742,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -14768,7 +14768,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -14785,7 +14785,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_relationship_ignore: %s\n" % e)
 ```
 ### Parameters
@@ -14883,12 +14883,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -14909,7 +14909,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -14924,7 +14924,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_relationship_set_presence: %s\n" % e)
 ```
 ### Parameters
@@ -15006,12 +15006,12 @@ dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal
 * Api Key Authentication (sessionID):
 * Api Key Authentication (connectID):
 ```python
-import openapi_client
-from openapi_client.apis.tags import default_api
+import rlink_client
+from rlink_client.apis.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://aoe-api.reliclink.com
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rlink_client.Configuration(
     host = "https://aoe-api.reliclink.com"
 )
 
@@ -15032,7 +15032,7 @@ configuration.api_key['connectID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['connectID'] = 'Bearer'
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rlink_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -15048,7 +15048,7 @@ with openapi_client.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rlink_client.ApiException as e:
         print("Exception when calling DefaultApi->game_relationship_set_presence_property: %s\n" % e)
 ```
 ### Parameters

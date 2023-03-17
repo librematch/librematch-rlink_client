@@ -11,21 +11,28 @@ from unittest.mock import patch
 
 import urllib3
 
-import openapi_client
-from openapi_client.paths.game_challenge_get_challenge_progress_by_profile_id import get  # noqa: E501
-from openapi_client import configuration, schemas, api_client
+import rlink_client
+from rlink_client.paths.game_challenge_get_challenge_progress_by_profile_id import (
+    get,
+)  # noqa: E501
+from rlink_client import configuration, schemas, api_client
 
 from .. import ApiTestMixin
 
 
-class TestGameChallengeGetChallengeProgressByProfileID(ApiTestMixin, unittest.TestCase):
+class TestGameChallengeGetChallengeProgressByProfileID(
+    ApiTestMixin, unittest.TestCase
+):
     """
     GameChallengeGetChallengeProgressByProfileID unit test stubs
     """
+
     _configuration = configuration.Configuration()
 
     def setUp(self):
-        used_api_client = api_client.ApiClient(configuration=self._configuration)
+        used_api_client = api_client.ApiClient(
+            configuration=self._configuration
+        )
         self.api = get.ApiForget(api_client=used_api_client)  # noqa: E501
 
     def tearDown(self):
@@ -34,7 +41,5 @@ class TestGameChallengeGetChallengeProgressByProfileID(ApiTestMixin, unittest.Te
     response_status = 200
 
 
-
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

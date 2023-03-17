@@ -1,4 +1,4 @@
-from openapi_client.paths.game_relationship_ignore.post import ApiForpost
+from rlink_client.paths.game_relationship_ignore.post import ApiForpost
 
 
 class GameRelationshipIgnore(

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "rlink-client"
-version = "23.03.01"
+version = "23.03.02"
 description = "Relic Link API-Client generated from OpenAPI"
 authors = ["Libre:Match Authors <info@librematch.org>"]
 license = "AGPL-3.0-or-later"

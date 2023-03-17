@@ -1,4 +1,4 @@
-from openapi_client.paths.game_party_peer_update.post import ApiForpost
+from rlink_client.paths.game_party_peer_update.post import ApiForpost
 
 
 class GamePartyPeerUpdate(

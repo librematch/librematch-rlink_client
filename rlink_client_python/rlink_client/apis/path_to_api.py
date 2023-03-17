@@ -1,111 +1,277 @@
 import typing_extensions
 
-from openapi_client.paths import PathValues
-from openapi_client.apis.paths.community_external_proxysteamuserrequest import CommunityExternalProxysteamuserrequest
-from openapi_client.apis.paths.community_leaderboard_get_personal_stat import CommunityLeaderboardGetPersonalStat
-from openapi_client.apis.paths.community_leaderboard_get_recent_match_history import CommunityLeaderboardGetRecentMatchHistory
-from openapi_client.apis.paths.community_advertisement_find_advertisements import CommunityAdvertisementFindAdvertisements
-from openapi_client.apis.paths.community_leaderboard_get_avatar_stat_for_profile import CommunityLeaderboardGetAvatarStatForProfile
-from openapi_client.apis.paths.community_achievement_get_achievements import CommunityAchievementGetAchievements
-from openapi_client.apis.paths.community_achievement_get_available_achievements import CommunityAchievementGetAvailableAchievements
-from openapi_client.apis.paths.community_news_get_news import CommunityNewsGetNews
-from openapi_client.apis.paths.community_clan_find import CommunityClanFind
-from openapi_client.apis.paths.community_clan_get_clan_info_full import CommunityClanGetClanInfoFull
-from openapi_client.apis.paths.community_community_event_get_available_community_events import CommunityCommunityEventGetAvailableCommunityEvents
-from openapi_client.apis.paths.community_item_get_inventory_by_profile_ids import CommunityItemGetInventoryByProfileIDs
-from openapi_client.apis.paths.community_leaderboard_get_available_leaderboards import CommunityLeaderboardGetAvailableLeaderboards
-from openapi_client.apis.paths.community_leaderboard_get_leaderboard2 import CommunityLeaderboardGetLeaderboard2
-from openapi_client.apis.paths.game_account_find_profiles import GameAccountFindProfiles
-from openapi_client.apis.paths.game_account_get_profile_name import GameAccountGetProfileName
-from openapi_client.apis.paths.game_account_get_profile_property import GameAccountGetProfileProperty
-from openapi_client.apis.paths.game_account_find_profiles_by_platform_id import GameAccountFindProfilesByPlatformID
-from openapi_client.apis.paths.game_account_set_avatar_metadata import GameAccountSetAvatarMetadata
-from openapi_client.apis.paths.game_account_set_language import GameAccountSetLanguage
-from openapi_client.apis.paths.game_achievement_get_achievements import GameAchievementGetAchievements
-from openapi_client.apis.paths.game_achievement_get_available_achievements import GameAchievementGetAvailableAchievements
-from openapi_client.apis.paths.game_achievement_sync_stats import GameAchievementSyncStats
-from openapi_client.apis.paths.game_advertisement_find_observable_advertisements import GameAdvertisementFindObservableAdvertisements
-from openapi_client.apis.paths.game_advertisement_find_advertisements import GameAdvertisementFindAdvertisements
-from openapi_client.apis.paths.game_advertisement_get_advertisements import GameAdvertisementGetAdvertisements
-from openapi_client.apis.paths.game_advertisement_get_lan_advertisements import GameAdvertisementGetLanAdvertisements
-from openapi_client.apis.paths.game_advertisement_host import GameAdvertisementHost
-from openapi_client.apis.paths.game_advertisement_update import GameAdvertisementUpdate
-from openapi_client.apis.paths.game_advertisement_join import GameAdvertisementJoin
-from openapi_client.apis.paths.game_advertisement_start_observing import GameAdvertisementStartObserving
-from openapi_client.apis.paths.game_advertisement_stop_observing import GameAdvertisementStopObserving
-from openapi_client.apis.paths.game_advertisement_update_platform_lobby_id import GameAdvertisementUpdatePlatformLobbyID
-from openapi_client.apis.paths.game_advertisement_update_state import GameAdvertisementUpdateState
-from openapi_client.apis.paths.game_advertisement_update_tags import GameAdvertisementUpdateTags
-from openapi_client.apis.paths.game_advertisement_leave import GameAdvertisementLeave
-from openapi_client.apis.paths.game_automatch_get_automatch_map import GameAutomatchGetAutomatchMap
-from openapi_client.apis.paths.game_automatch2_get_automatch_map import GameAutomatch2GetAutomatchMap
-from openapi_client.apis.paths.game_automatch2_polling import GameAutomatch2Polling
-from openapi_client.apis.paths.game_automatch2_stoppolling import GameAutomatch2Stoppolling
-from openapi_client.apis.paths.game_automatch2_update_status import GameAutomatch2UpdateStatus
-from openapi_client.apis.paths.game_challenge_get_challenge_progress import GameChallengeGetChallengeProgress
-from openapi_client.apis.paths.game_challenge_get_challenge_progress_by_profile_id import GameChallengeGetChallengeProgressByProfileID
-from openapi_client.apis.paths.game_challenge_get_challenges import GameChallengeGetChallenges
-from openapi_client.apis.paths.game_challenge_update_progress_batched import GameChallengeUpdateProgressBatched
-from openapi_client.apis.paths.game_chat_get_chat_channels import GameChatGetChatChannels
-from openapi_client.apis.paths.game_chat_get_offline_messages import GameChatGetOfflineMessages
-from openapi_client.apis.paths.game_chat_delete_offline_message import GameChatDeleteOfflineMessage
-from openapi_client.apis.paths.game_clan_find import GameClanFind
-from openapi_client.apis.paths.game_clan_get_clan import GameClanGetClan
-from openapi_client.apis.paths.game_clan_get_clan_info_full import GameClanGetClanInfoFull
-from openapi_client.apis.paths.game_clan_apply import GameClanApply
-from openapi_client.apis.paths.game_clan_disband import GameClanDisband
-from openapi_client.apis.paths.game_clan_create import GameClanCreate
-from openapi_client.apis.paths.game_clan_update import GameClanUpdate
-from openapi_client.apis.paths.game_cloud_get_file_url import GameCloudGetFileURL
-from openapi_client.apis.paths.game_cloud_get_temp_credentials import GameCloudGetTempCredentials
-from openapi_client.apis.paths.game_community_event_get_available_community_events import GameCommunityEventGetAvailableCommunityEvents
-from openapi_client.apis.paths.game_community_event_get_event_challenge_progress import GameCommunityEventGetEventChallengeProgress
-from openapi_client.apis.paths.game_community_event_get_event_stats import GameCommunityEventGetEventStats
-from openapi_client.apis.paths.game_invitation_cancel_invitation import GameInvitationCancelInvitation
-from openapi_client.apis.paths.game_invitation_extend_invitation import GameInvitationExtendInvitation
-from openapi_client.apis.paths.game_item_get_inventory_by_profile_ids import GameItemGetInventoryByProfileIDs
-from openapi_client.apis.paths.game_item_get_item_bundle_items_json import GameItemGetItemBundleItemsJson
-from openapi_client.apis.paths.game_item_get_item_definitions_json import GameItemGetItemDefinitionsJson
-from openapi_client.apis.paths.game_item_get_item_loadouts import GameItemGetItemLoadouts
-from openapi_client.apis.paths.game_item_get_item_prices import GameItemGetItemPrices
-from openapi_client.apis.paths.game_item_get_level_rewards_table_json import GameItemGetLevelRewardsTableJson
-from openapi_client.apis.paths.game_item_get_personalized_sale_items import GameItemGetPersonalizedSaleItems
-from openapi_client.apis.paths.game_item_get_scheduled_sale_and_items import GameItemGetScheduledSaleAndItems
-from openapi_client.apis.paths.game_item_detach_items import GameItemDetachItems
-from openapi_client.apis.paths.game_item_move_charges import GameItemMoveCharges
-from openapi_client.apis.paths.game_item_move_item import GameItemMoveItem
-from openapi_client.apis.paths.game_item_open_item_pack import GameItemOpenItemPack
-from openapi_client.apis.paths.game_item_sign_items import GameItemSignItems
-from openapi_client.apis.paths.game_item_update_item_attributes import GameItemUpdateItemAttributes
-from openapi_client.apis.paths.game_leaderboard_get_recent_match_history import GameLeaderboardGetRecentMatchHistory
-from openapi_client.apis.paths.game_leaderboard_get_available_leaderboards import GameLeaderboardGetAvailableLeaderboards
-from openapi_client.apis.paths.game_leaderboard_get_leader_board import GameLeaderboardGetLeaderBoard
-from openapi_client.apis.paths.game_leaderboard_get_party_stat import GameLeaderboardGetPartyStat
-from openapi_client.apis.paths.game_leaderboard_get_personal_stat import GameLeaderboardGetPersonalStat
-from openapi_client.apis.paths.game_leaderboard_get_recent_match_single_player_history import GameLeaderboardGetRecentMatchSinglePlayerHistory
-from openapi_client.apis.paths.game_leaderboard_get_stat_groups_by_profile_ids import GameLeaderboardGetStatGroupsByProfileIDs
-from openapi_client.apis.paths.game_leaderboard_get_stats_for_leaderboard_by_profile_name import GameLeaderboardGetStatsForLeaderboardByProfileName
-from openapi_client.apis.paths.game_leaderboard_set_avatar_stat_values import GameLeaderboardSetAvatarStatValues
-from openapi_client.apis.paths.game_login_logout import GameLoginLogout
-from openapi_client.apis.paths.game_login_read_session import GameLoginReadSession
-from openapi_client.apis.paths.game_login_platformlogin import GameLoginPlatformlogin
-from openapi_client.apis.paths.game_news_get_news import GameNewsGetNews
-from openapi_client.apis.paths.game_party_create_or_report_single_player import GamePartyCreateOrReportSinglePlayer
-from openapi_client.apis.paths.game_party_report_match import GamePartyReportMatch
-from openapi_client.apis.paths.game_playerreport_reportuser import GamePlayerreportReportuser
-from openapi_client.apis.paths.game_party_send_match_chat import GamePartySendMatchChat
-from openapi_client.apis.paths.game_party_finalize_replay_upload import GamePartyFinalizeReplayUpload
-from openapi_client.apis.paths.game_party_peer_add import GamePartyPeerAdd
-from openapi_client.apis.paths.game_party_peer_update import GamePartyPeerUpdate
-from openapi_client.apis.paths.game_relationship_get_presence_data import GameRelationshipGetPresenceData
-from openapi_client.apis.paths.game_relationship_get_relationships import GameRelationshipGetRelationships
-from openapi_client.apis.paths.game_relationship_clear_relationship import GameRelationshipClearRelationship
-from openapi_client.apis.paths.game_relationship_ignore import GameRelationshipIgnore
-from openapi_client.apis.paths.game_relationship_set_presence import GameRelationshipSetPresence
-from openapi_client.apis.paths.game_relationship_set_presence_property import GameRelationshipSetPresenceProperty
+from rlink_client.paths import PathValues
+from rlink_client.apis.paths.community_external_proxysteamuserrequest import (
+    CommunityExternalProxysteamuserrequest,
+)
+from rlink_client.apis.paths.community_leaderboard_get_personal_stat import (
+    CommunityLeaderboardGetPersonalStat,
+)
+from rlink_client.apis.paths.community_leaderboard_get_recent_match_history import (
+    CommunityLeaderboardGetRecentMatchHistory,
+)
+from rlink_client.apis.paths.community_advertisement_find_advertisements import (
+    CommunityAdvertisementFindAdvertisements,
+)
+from rlink_client.apis.paths.community_leaderboard_get_avatar_stat_for_profile import (
+    CommunityLeaderboardGetAvatarStatForProfile,
+)
+from rlink_client.apis.paths.community_achievement_get_achievements import (
+    CommunityAchievementGetAchievements,
+)
+from rlink_client.apis.paths.community_achievement_get_available_achievements import (
+    CommunityAchievementGetAvailableAchievements,
+)
+from rlink_client.apis.paths.community_news_get_news import CommunityNewsGetNews
+from rlink_client.apis.paths.community_clan_find import CommunityClanFind
+from rlink_client.apis.paths.community_clan_get_clan_info_full import (
+    CommunityClanGetClanInfoFull,
+)
+from rlink_client.apis.paths.community_community_event_get_available_community_events import (
+    CommunityCommunityEventGetAvailableCommunityEvents,
+)
+from rlink_client.apis.paths.community_item_get_inventory_by_profile_ids import (
+    CommunityItemGetInventoryByProfileIDs,
+)
+from rlink_client.apis.paths.community_leaderboard_get_available_leaderboards import (
+    CommunityLeaderboardGetAvailableLeaderboards,
+)
+from rlink_client.apis.paths.community_leaderboard_get_leaderboard2 import (
+    CommunityLeaderboardGetLeaderboard2,
+)
+from rlink_client.apis.paths.game_account_find_profiles import (
+    GameAccountFindProfiles,
+)
+from rlink_client.apis.paths.game_account_get_profile_name import (
+    GameAccountGetProfileName,
+)
+from rlink_client.apis.paths.game_account_get_profile_property import (
+    GameAccountGetProfileProperty,
+)
+from rlink_client.apis.paths.game_account_find_profiles_by_platform_id import (
+    GameAccountFindProfilesByPlatformID,
+)
+from rlink_client.apis.paths.game_account_set_avatar_metadata import (
+    GameAccountSetAvatarMetadata,
+)
+from rlink_client.apis.paths.game_account_set_language import (
+    GameAccountSetLanguage,
+)
+from rlink_client.apis.paths.game_achievement_get_achievements import (
+    GameAchievementGetAchievements,
+)
+from rlink_client.apis.paths.game_achievement_get_available_achievements import (
+    GameAchievementGetAvailableAchievements,
+)
+from rlink_client.apis.paths.game_achievement_sync_stats import (
+    GameAchievementSyncStats,
+)
+from rlink_client.apis.paths.game_advertisement_find_observable_advertisements import (
+    GameAdvertisementFindObservableAdvertisements,
+)
+from rlink_client.apis.paths.game_advertisement_find_advertisements import (
+    GameAdvertisementFindAdvertisements,
+)
+from rlink_client.apis.paths.game_advertisement_get_advertisements import (
+    GameAdvertisementGetAdvertisements,
+)
+from rlink_client.apis.paths.game_advertisement_get_lan_advertisements import (
+    GameAdvertisementGetLanAdvertisements,
+)
+from rlink_client.apis.paths.game_advertisement_host import (
+    GameAdvertisementHost,
+)
+from rlink_client.apis.paths.game_advertisement_update import (
+    GameAdvertisementUpdate,
+)
+from rlink_client.apis.paths.game_advertisement_join import (
+    GameAdvertisementJoin,
+)
+from rlink_client.apis.paths.game_advertisement_start_observing import (
+    GameAdvertisementStartObserving,
+)
+from rlink_client.apis.paths.game_advertisement_stop_observing import (
+    GameAdvertisementStopObserving,
+)
+from rlink_client.apis.paths.game_advertisement_update_platform_lobby_id import (
+    GameAdvertisementUpdatePlatformLobbyID,
+)
+from rlink_client.apis.paths.game_advertisement_update_state import (
+    GameAdvertisementUpdateState,
+)
+from rlink_client.apis.paths.game_advertisement_update_tags import (
+    GameAdvertisementUpdateTags,
+)
+from rlink_client.apis.paths.game_advertisement_leave import (
+    GameAdvertisementLeave,
+)
+from rlink_client.apis.paths.game_automatch_get_automatch_map import (
+    GameAutomatchGetAutomatchMap,
+)
+from rlink_client.apis.paths.game_automatch2_get_automatch_map import (
+    GameAutomatch2GetAutomatchMap,
+)
+from rlink_client.apis.paths.game_automatch2_polling import (
+    GameAutomatch2Polling,
+)
+from rlink_client.apis.paths.game_automatch2_stoppolling import (
+    GameAutomatch2Stoppolling,
+)
+from rlink_client.apis.paths.game_automatch2_update_status import (
+    GameAutomatch2UpdateStatus,
+)
+from rlink_client.apis.paths.game_challenge_get_challenge_progress import (
+    GameChallengeGetChallengeProgress,
+)
+from rlink_client.apis.paths.game_challenge_get_challenge_progress_by_profile_id import (
+    GameChallengeGetChallengeProgressByProfileID,
+)
+from rlink_client.apis.paths.game_challenge_get_challenges import (
+    GameChallengeGetChallenges,
+)
+from rlink_client.apis.paths.game_challenge_update_progress_batched import (
+    GameChallengeUpdateProgressBatched,
+)
+from rlink_client.apis.paths.game_chat_get_chat_channels import (
+    GameChatGetChatChannels,
+)
+from rlink_client.apis.paths.game_chat_get_offline_messages import (
+    GameChatGetOfflineMessages,
+)
+from rlink_client.apis.paths.game_chat_delete_offline_message import (
+    GameChatDeleteOfflineMessage,
+)
+from rlink_client.apis.paths.game_clan_find import GameClanFind
+from rlink_client.apis.paths.game_clan_get_clan import GameClanGetClan
+from rlink_client.apis.paths.game_clan_get_clan_info_full import (
+    GameClanGetClanInfoFull,
+)
+from rlink_client.apis.paths.game_clan_apply import GameClanApply
+from rlink_client.apis.paths.game_clan_disband import GameClanDisband
+from rlink_client.apis.paths.game_clan_create import GameClanCreate
+from rlink_client.apis.paths.game_clan_update import GameClanUpdate
+from rlink_client.apis.paths.game_cloud_get_file_url import GameCloudGetFileURL
+from rlink_client.apis.paths.game_cloud_get_temp_credentials import (
+    GameCloudGetTempCredentials,
+)
+from rlink_client.apis.paths.game_community_event_get_available_community_events import (
+    GameCommunityEventGetAvailableCommunityEvents,
+)
+from rlink_client.apis.paths.game_community_event_get_event_challenge_progress import (
+    GameCommunityEventGetEventChallengeProgress,
+)
+from rlink_client.apis.paths.game_community_event_get_event_stats import (
+    GameCommunityEventGetEventStats,
+)
+from rlink_client.apis.paths.game_invitation_cancel_invitation import (
+    GameInvitationCancelInvitation,
+)
+from rlink_client.apis.paths.game_invitation_extend_invitation import (
+    GameInvitationExtendInvitation,
+)
+from rlink_client.apis.paths.game_item_get_inventory_by_profile_ids import (
+    GameItemGetInventoryByProfileIDs,
+)
+from rlink_client.apis.paths.game_item_get_item_bundle_items_json import (
+    GameItemGetItemBundleItemsJson,
+)
+from rlink_client.apis.paths.game_item_get_item_definitions_json import (
+    GameItemGetItemDefinitionsJson,
+)
+from rlink_client.apis.paths.game_item_get_item_loadouts import (
+    GameItemGetItemLoadouts,
+)
+from rlink_client.apis.paths.game_item_get_item_prices import (
+    GameItemGetItemPrices,
+)
+from rlink_client.apis.paths.game_item_get_level_rewards_table_json import (
+    GameItemGetLevelRewardsTableJson,
+)
+from rlink_client.apis.paths.game_item_get_personalized_sale_items import (
+    GameItemGetPersonalizedSaleItems,
+)
+from rlink_client.apis.paths.game_item_get_scheduled_sale_and_items import (
+    GameItemGetScheduledSaleAndItems,
+)
+from rlink_client.apis.paths.game_item_detach_items import GameItemDetachItems
+from rlink_client.apis.paths.game_item_move_charges import GameItemMoveCharges
+from rlink_client.apis.paths.game_item_move_item import GameItemMoveItem
+from rlink_client.apis.paths.game_item_open_item_pack import (
+    GameItemOpenItemPack,
+)
+from rlink_client.apis.paths.game_item_sign_items import GameItemSignItems
+from rlink_client.apis.paths.game_item_update_item_attributes import (
+    GameItemUpdateItemAttributes,
+)
+from rlink_client.apis.paths.game_leaderboard_get_recent_match_history import (
+    GameLeaderboardGetRecentMatchHistory,
+)
+from rlink_client.apis.paths.game_leaderboard_get_available_leaderboards import (
+    GameLeaderboardGetAvailableLeaderboards,
+)
+from rlink_client.apis.paths.game_leaderboard_get_leader_board import (
+    GameLeaderboardGetLeaderBoard,
+)
+from rlink_client.apis.paths.game_leaderboard_get_party_stat import (
+    GameLeaderboardGetPartyStat,
+)
+from rlink_client.apis.paths.game_leaderboard_get_personal_stat import (
+    GameLeaderboardGetPersonalStat,
+)
+from rlink_client.apis.paths.game_leaderboard_get_recent_match_single_player_history import (
+    GameLeaderboardGetRecentMatchSinglePlayerHistory,
+)
+from rlink_client.apis.paths.game_leaderboard_get_stat_groups_by_profile_ids import (
+    GameLeaderboardGetStatGroupsByProfileIDs,
+)
+from rlink_client.apis.paths.game_leaderboard_get_stats_for_leaderboard_by_profile_name import (
+    GameLeaderboardGetStatsForLeaderboardByProfileName,
+)
+from rlink_client.apis.paths.game_leaderboard_set_avatar_stat_values import (
+    GameLeaderboardSetAvatarStatValues,
+)
+from rlink_client.apis.paths.game_login_logout import GameLoginLogout
+from rlink_client.apis.paths.game_login_read_session import GameLoginReadSession
+from rlink_client.apis.paths.game_login_platformlogin import (
+    GameLoginPlatformlogin,
+)
+from rlink_client.apis.paths.game_news_get_news import GameNewsGetNews
+from rlink_client.apis.paths.game_party_create_or_report_single_player import (
+    GamePartyCreateOrReportSinglePlayer,
+)
+from rlink_client.apis.paths.game_party_report_match import GamePartyReportMatch
+from rlink_client.apis.paths.game_playerreport_reportuser import (
+    GamePlayerreportReportuser,
+)
+from rlink_client.apis.paths.game_party_send_match_chat import (
+    GamePartySendMatchChat,
+)
+from rlink_client.apis.paths.game_party_finalize_replay_upload import (
+    GamePartyFinalizeReplayUpload,
+)
+from rlink_client.apis.paths.game_party_peer_add import GamePartyPeerAdd
+from rlink_client.apis.paths.game_party_peer_update import GamePartyPeerUpdate
+from rlink_client.apis.paths.game_relationship_get_presence_data import (
+    GameRelationshipGetPresenceData,
+)
+from rlink_client.apis.paths.game_relationship_get_relationships import (
+    GameRelationshipGetRelationships,
+)
+from rlink_client.apis.paths.game_relationship_clear_relationship import (
+    GameRelationshipClearRelationship,
+)
+from rlink_client.apis.paths.game_relationship_ignore import (
+    GameRelationshipIgnore,
+)
+from rlink_client.apis.paths.game_relationship_set_presence import (
+    GameRelationshipSetPresence,
+)
+from rlink_client.apis.paths.game_relationship_set_presence_property import (
+    GameRelationshipSetPresenceProperty,
+)
 
 PathToApi = typing_extensions.TypedDict(
-    'PathToApi',
+    "PathToApi",
     {
         PathValues.COMMUNITY_EXTERNAL_PROXYSTEAMUSERREQUEST: CommunityExternalProxysteamuserrequest,
         PathValues.COMMUNITY_LEADERBOARD_GET_PERSONAL_STAT: CommunityLeaderboardGetPersonalStat,
@@ -209,7 +375,7 @@ PathToApi = typing_extensions.TypedDict(
         PathValues.GAME_RELATIONSHIP_IGNORE: GameRelationshipIgnore,
         PathValues.GAME_RELATIONSHIP_SET_PRESENCE: GameRelationshipSetPresence,
         PathValues.GAME_RELATIONSHIP_SET_PRESENCE_PROPERTY: GameRelationshipSetPresenceProperty,
-    }
+    },
 )
 
 path_to_api = PathToApi(

@@ -1,4 +1,4 @@
-from openapi_client.paths.game_relationship_set_presence.post import ApiForpost
+from rlink_client.paths.game_relationship_set_presence.post import ApiForpost
 
 
 class GameRelationshipSetPresence(

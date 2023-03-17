@@ -1,4 +1,4 @@
-from openapi_client.paths.game_relationship_get_relationships.get import ApiForget
+from rlink_client.paths.game_relationship_get_relationships.get import ApiForget
 
 
 class GameRelationshipGetRelationships(

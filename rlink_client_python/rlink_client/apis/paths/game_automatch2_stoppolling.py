@@ -1,4 +1,4 @@
-from openapi_client.paths.game_automatch2_stoppolling.post import ApiForpost
+from rlink_client.paths.game_automatch2_stoppolling.post import ApiForpost
 
 
 class GameAutomatch2Stoppolling(

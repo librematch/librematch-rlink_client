@@ -1,4 +1,4 @@
-from openapi_client.paths.game_login_logout.post import ApiForpost
+from rlink_client.paths.game_login_logout.post import ApiForpost
 
 
 class GameLoginLogout(
