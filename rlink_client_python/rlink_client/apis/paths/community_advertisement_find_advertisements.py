@@ -1,6 +1,4 @@
-from rlink_client.paths.community_advertisement_find_advertisements.get import (
-    ApiForget,
-)
+from rlink_client.paths.community_advertisement_find_advertisements.get import ApiForget
 
 
 class CommunityAdvertisementFindAdvertisements(

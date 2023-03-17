@@ -12,27 +12,20 @@ from unittest.mock import patch
 import urllib3
 
 import rlink_client
-from rlink_client.paths.game_community_event_get_event_challenge_progress import (
-    get,
-)  # noqa: E501
+from rlink_client.paths.game_community_event_get_event_challenge_progress import get  # noqa: E501
 from rlink_client import configuration, schemas, api_client
 
 from .. import ApiTestMixin
 
 
-class TestGameCommunityEventGetEventChallengeProgress(
-    ApiTestMixin, unittest.TestCase
-):
+class TestGameCommunityEventGetEventChallengeProgress(ApiTestMixin, unittest.TestCase):
     """
     GameCommunityEventGetEventChallengeProgress unit test stubs
     """
-
     _configuration = configuration.Configuration()
 
     def setUp(self):
-        used_api_client = api_client.ApiClient(
-            configuration=self._configuration
-        )
+        used_api_client = api_client.ApiClient(configuration=self._configuration)
         self.api = get.ApiForget(api_client=used_api_client)  # noqa: E501
 
     def tearDown(self):
@@ -41,5 +34,7 @@ class TestGameCommunityEventGetEventChallengeProgress(
     response_status = 200
 
 
-if __name__ == "__main__":
+
+
+if __name__ == '__main__':
     unittest.main()

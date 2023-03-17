@@ -22,13 +22,10 @@ class TestGameCloudGetFileURL(ApiTestMixin, unittest.TestCase):
     """
     GameCloudGetFileURL unit test stubs
     """
-
     _configuration = configuration.Configuration()
 
     def setUp(self):
-        used_api_client = api_client.ApiClient(
-            configuration=self._configuration
-        )
+        used_api_client = api_client.ApiClient(configuration=self._configuration)
         self.api = post.ApiForpost(api_client=used_api_client)  # noqa: E501
 
     def tearDown(self):
@@ -37,5 +34,7 @@ class TestGameCloudGetFileURL(ApiTestMixin, unittest.TestCase):
     response_status = 200
 
 
-if __name__ == "__main__":
+
+
+if __name__ == '__main__':
     unittest.main()

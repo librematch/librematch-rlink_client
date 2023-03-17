@@ -1,6 +1,4 @@
-from rlink_client.paths.game_achievement_get_available_achievements.get import (
-    ApiForget,
-)
+from rlink_client.paths.game_achievement_get_available_achievements.get import ApiForget
 
 
 class GameAchievementGetAvailableAchievements(

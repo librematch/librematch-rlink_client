@@ -5,6 +5,7 @@
 README.md
 docs/apis/tags/DefaultApi.md
 git_push.sh
+requirements.txt
 rlink_client/__init__.py
 rlink_client/api_client.py
 rlink_client/apis/__init__.py
@@ -15,7 +16,6 @@ rlink_client/model/__init__.py
 rlink_client/models/__init__.py
 rlink_client/rest.py
 rlink_client/schemas.py
-requirements.txt
 setup.cfg
 setup.py
 test-requirements.txt

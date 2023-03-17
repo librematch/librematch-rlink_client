@@ -33,45 +33,27 @@ ItemInstanceIdsSchema = schemas.IntSchema
 LastCallTimeSchema = schemas.StrSchema
 XpGainsSchema = schemas.IntSchema
 RequestRequiredQueryParams = typing_extensions.TypedDict(
-    "RequestRequiredQueryParams",
+    'RequestRequiredQueryParams',
     {
-        "attributeKeys": typing.Union[
-            AttributeKeysSchema,
-            str,
-        ],
-        "attributeValues": typing.Union[
-            AttributeValuesSchema,
-            str,
-        ],
-        "callNum": typing.Union[
-            CallNumSchema,
-            decimal.Decimal,
-            int,
-        ],
-        "itemInstance_ids": typing.Union[
-            ItemInstanceIdsSchema,
-            decimal.Decimal,
-            int,
-        ],
-        "lastCallTime": typing.Union[
-            LastCallTimeSchema,
-            str,
-        ],
-        "xpGains": typing.Union[
-            XpGainsSchema,
-            decimal.Decimal,
-            int,
-        ],
-    },
+        'attributeKeys': typing.Union[AttributeKeysSchema, str, ],
+        'attributeValues': typing.Union[AttributeValuesSchema, str, ],
+        'callNum': typing.Union[CallNumSchema, decimal.Decimal, int, ],
+        'itemInstance_ids': typing.Union[ItemInstanceIdsSchema, decimal.Decimal, int, ],
+        'lastCallTime': typing.Union[LastCallTimeSchema, str, ],
+        'xpGains': typing.Union[XpGainsSchema, decimal.Decimal, int, ],
+    }
 )
 RequestOptionalQueryParams = typing_extensions.TypedDict(
-    "RequestOptionalQueryParams", {}, total=False
+    'RequestOptionalQueryParams',
+    {
+    },
+    total=False
 )
 
-class RequestQueryParams(
-    RequestRequiredQueryParams, RequestOptionalQueryParams
-):
+
+class RequestQueryParams(RequestRequiredQueryParams, RequestOptionalQueryParams):
     pass
+
 
 request_query_attribute_keys = api_client.QueryParameter(
     name="attributeKeys",
@@ -117,21 +99,27 @@ request_query_xp_gains = api_client.QueryParameter(
 )
 SchemaFor200ResponseBodyApplicationJson = schemas.AnyTypeSchema
 
+
 @dataclass
 class ApiResponseFor200(api_client.ApiResponse):
     response: urllib3.HTTPResponse
-    body: typing.Union[SchemaFor200ResponseBodyApplicationJson,]
+    body: typing.Union[
+        SchemaFor200ResponseBodyApplicationJson,
+    ]
     headers: schemas.Unset = schemas.unset
+
 
 _response_for_200 = api_client.OpenApiResponse(
     response_cls=ApiResponseFor200,
     content={
-        "application/json": api_client.MediaType(
-            schema=SchemaFor200ResponseBodyApplicationJson
-        ),
+        'application/json': api_client.MediaType(
+            schema=SchemaFor200ResponseBodyApplicationJson),
     },
 )
-_all_accept_content_types = ("application/json",)
+_all_accept_content_types = (
+    'application/json',
+)
+
 
 class BaseApi(api_client.Api):
     @typing.overload
@@ -142,7 +130,10 @@ class BaseApi(api_client.Api):
         stream: bool = False,
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
         skip_deserialization: typing_extensions.Literal[False] = ...,
-    ) -> typing.Union[ApiResponseFor200,]: ...
+    ) -> typing.Union[
+        ApiResponseFor200,
+    ]: ...
+
     @typing.overload
     def _game_item_update_item_attributes_oapg(
         self,
@@ -152,6 +143,7 @@ class BaseApi(api_client.Api):
         stream: bool = False,
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
     ) -> api_client.ApiResponseWithoutDeserialization: ...
+
     @typing.overload
     def _game_item_update_item_attributes_oapg(
         self,
@@ -164,6 +156,7 @@ class BaseApi(api_client.Api):
         ApiResponseFor200,
         api_client.ApiResponseWithoutDeserialization,
     ]: ...
+
     def _game_item_update_item_attributes_oapg(
         self,
         query_params: RequestQueryParams = frozendict.frozendict(),
@@ -193,12 +186,8 @@ class BaseApi(api_client.Api):
             if parameter_data is schemas.unset:
                 continue
             if prefix_separator_iterator is None:
-                prefix_separator_iterator = (
-                    parameter.get_prefix_separator_iterator()
-                )
-            serialized_data = parameter.serialize(
-                parameter_data, prefix_separator_iterator
-            )
+                prefix_separator_iterator = parameter.get_prefix_separator_iterator()
+            serialized_data = parameter.serialize(parameter_data, prefix_separator_iterator)
             for serialized_value in serialized_data.values():
                 used_path += serialized_value
 
@@ -206,11 +195,11 @@ class BaseApi(api_client.Api):
         # TODO add cookie handling
         if accept_content_types:
             for accept_content_type in accept_content_types:
-                _headers.add("Accept", accept_content_type)
+                _headers.add('Accept', accept_content_type)
 
         response = self.api_client.call_api(
             resource_path=used_path,
-            method="post".upper(),
+            method='post'.upper(),
             headers=_headers,
             auth_settings=_auth,
             stream=stream,
@@ -218,30 +207,23 @@ class BaseApi(api_client.Api):
         )
 
         if skip_deserialization:
-            api_response = api_client.ApiResponseWithoutDeserialization(
-                response=response
-            )
+            api_response = api_client.ApiResponseWithoutDeserialization(response=response)
         else:
-            response_for_status = _status_code_to_response.get(
-                str(response.status)
-            )
+            response_for_status = _status_code_to_response.get(str(response.status))
             if response_for_status:
-                api_response = response_for_status.deserialize(
-                    response, self.api_client.configuration
-                )
+                api_response = response_for_status.deserialize(response, self.api_client.configuration)
             else:
-                api_response = api_client.ApiResponseWithoutDeserialization(
-                    response=response
-                )
+                api_response = api_client.ApiResponseWithoutDeserialization(response=response)
 
         if not 200 <= response.status <= 299:
             raise exceptions.ApiException(
                 status=response.status,
                 reason=response.reason,
-                api_response=api_response,
+                api_response=api_response
             )
 
         return api_response
+
 
 class GameItemUpdateItemAttributes(BaseApi):
     # this class is used by api classes that refer to endpoints with operationId fn names
@@ -254,7 +236,10 @@ class GameItemUpdateItemAttributes(BaseApi):
         stream: bool = False,
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
         skip_deserialization: typing_extensions.Literal[False] = ...,
-    ) -> typing.Union[ApiResponseFor200,]: ...
+    ) -> typing.Union[
+        ApiResponseFor200,
+    ]: ...
+
     @typing.overload
     def game_item_update_item_attributes(
         self,
@@ -264,6 +249,7 @@ class GameItemUpdateItemAttributes(BaseApi):
         stream: bool = False,
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
     ) -> api_client.ApiResponseWithoutDeserialization: ...
+
     @typing.overload
     def game_item_update_item_attributes(
         self,
@@ -276,6 +262,7 @@ class GameItemUpdateItemAttributes(BaseApi):
         ApiResponseFor200,
         api_client.ApiResponseWithoutDeserialization,
     ]: ...
+
     def game_item_update_item_attributes(
         self,
         query_params: RequestQueryParams = frozendict.frozendict(),
@@ -289,8 +276,9 @@ class GameItemUpdateItemAttributes(BaseApi):
             accept_content_types=accept_content_types,
             stream=stream,
             timeout=timeout,
-            skip_deserialization=skip_deserialization,
+            skip_deserialization=skip_deserialization
         )
+
 
 class ApiForpost(BaseApi):
     # this class is used by api classes that refer to endpoints by path and http method names
@@ -303,7 +291,10 @@ class ApiForpost(BaseApi):
         stream: bool = False,
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
         skip_deserialization: typing_extensions.Literal[False] = ...,
-    ) -> typing.Union[ApiResponseFor200,]: ...
+    ) -> typing.Union[
+        ApiResponseFor200,
+    ]: ...
+
     @typing.overload
     def post(
         self,
@@ -313,6 +304,7 @@ class ApiForpost(BaseApi):
         stream: bool = False,
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
     ) -> api_client.ApiResponseWithoutDeserialization: ...
+
     @typing.overload
     def post(
         self,
@@ -325,6 +317,7 @@ class ApiForpost(BaseApi):
         ApiResponseFor200,
         api_client.ApiResponseWithoutDeserialization,
     ]: ...
+
     def post(
         self,
         query_params: RequestQueryParams = frozendict.frozendict(),
@@ -338,5 +331,7 @@ class ApiForpost(BaseApi):
             accept_content_types=accept_content_types,
             stream=stream,
             timeout=timeout,
-            skip_deserialization=skip_deserialization,
+            skip_deserialization=skip_deserialization
         )
+
+

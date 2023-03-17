@@ -60,162 +60,50 @@ TeamSchema = schemas.IntSchema
 VersionFlagsSchema = schemas.IntSchema
 VisibleSchema = schemas.IntSchema
 RequestRequiredQueryParams = typing_extensions.TypedDict(
-    "RequestRequiredQueryParams",
+    'RequestRequiredQueryParams',
     {
-        "advertisementid": typing.Union[
-            AdvertisementidSchema,
-            decimal.Decimal,
-            int,
-        ],
-        "appBinaryChecksum": typing.Union[
-            AppBinaryChecksumSchema,
-            decimal.Decimal,
-            int,
-        ],
-        "automatchPoll_id": typing.Union[
-            AutomatchPollIdSchema,
-            decimal.Decimal,
-            int,
-        ],
-        "callNum": typing.Union[
-            CallNumSchema,
-            decimal.Decimal,
-            int,
-        ],
-        "dataChecksum": typing.Union[
-            DataChecksumSchema,
-            decimal.Decimal,
-            int,
-        ],
-        "description": typing.Union[
-            DescriptionSchema,
-            str,
-        ],
-        "hostid": typing.Union[
-            HostidSchema,
-            decimal.Decimal,
-            int,
-        ],
-        "isObservable": typing.Union[
-            IsObservableSchema,
-            decimal.Decimal,
-            int,
-        ],
-        "lastCallTime": typing.Union[
-            LastCallTimeSchema,
-            str,
-        ],
-        "mapname": typing.Union[
-            MapnameSchema,
-            str,
-        ],
-        "matchtype": typing.Union[
-            MatchtypeSchema,
-            decimal.Decimal,
-            int,
-        ],
-        "maxplayers": typing.Union[
-            MaxplayersSchema,
-            decimal.Decimal,
-            int,
-        ],
-        "modDLLChecksum": typing.Union[
-            ModDLLChecksumSchema,
-            decimal.Decimal,
-            int,
-        ],
-        "modDLLFile": typing.Union[
-            ModDLLFileSchema,
-            str,
-        ],
-        "modName": typing.Union[
-            ModNameSchema,
-            str,
-        ],
-        "modVersion": typing.Union[
-            ModVersionSchema,
-            str,
-        ],
-        "observerDelay": typing.Union[
-            ObserverDelaySchema,
-            decimal.Decimal,
-            int,
-        ],
-        "observerPassword": typing.Union[
-            ObserverPasswordSchema,
-            str,
-        ],
-        "options": typing.Union[
-            OptionsSchema,
-            str,
-        ],
-        "party": typing.Union[
-            PartySchema,
-            decimal.Decimal,
-            int,
-        ],
-        "password": typing.Union[
-            PasswordSchema,
-            str,
-        ],
-        "passworded": typing.Union[
-            PasswordedSchema,
-            decimal.Decimal,
-            int,
-        ],
-        "race": typing.Union[
-            RaceSchema,
-            decimal.Decimal,
-            int,
-        ],
-        "relayRegion": typing.Union[
-            RelayRegionSchema,
-            str,
-        ],
-        "serviceType": typing.Union[
-            ServiceTypeSchema,
-            decimal.Decimal,
-            int,
-        ],
-        "slotinfo": typing.Union[
-            SlotinfoSchema,
-            str,
-        ],
-        "state": typing.Union[
-            StateSchema,
-            decimal.Decimal,
-            int,
-        ],
-        "statgroup": typing.Union[
-            StatgroupSchema,
-            decimal.Decimal,
-            int,
-        ],
-        "team": typing.Union[
-            TeamSchema,
-            decimal.Decimal,
-            int,
-        ],
-        "versionFlags": typing.Union[
-            VersionFlagsSchema,
-            decimal.Decimal,
-            int,
-        ],
-        "visible": typing.Union[
-            VisibleSchema,
-            decimal.Decimal,
-            int,
-        ],
-    },
+        'advertisementid': typing.Union[AdvertisementidSchema, decimal.Decimal, int, ],
+        'appBinaryChecksum': typing.Union[AppBinaryChecksumSchema, decimal.Decimal, int, ],
+        'automatchPoll_id': typing.Union[AutomatchPollIdSchema, decimal.Decimal, int, ],
+        'callNum': typing.Union[CallNumSchema, decimal.Decimal, int, ],
+        'dataChecksum': typing.Union[DataChecksumSchema, decimal.Decimal, int, ],
+        'description': typing.Union[DescriptionSchema, str, ],
+        'hostid': typing.Union[HostidSchema, decimal.Decimal, int, ],
+        'isObservable': typing.Union[IsObservableSchema, decimal.Decimal, int, ],
+        'lastCallTime': typing.Union[LastCallTimeSchema, str, ],
+        'mapname': typing.Union[MapnameSchema, str, ],
+        'matchtype': typing.Union[MatchtypeSchema, decimal.Decimal, int, ],
+        'maxplayers': typing.Union[MaxplayersSchema, decimal.Decimal, int, ],
+        'modDLLChecksum': typing.Union[ModDLLChecksumSchema, decimal.Decimal, int, ],
+        'modDLLFile': typing.Union[ModDLLFileSchema, str, ],
+        'modName': typing.Union[ModNameSchema, str, ],
+        'modVersion': typing.Union[ModVersionSchema, str, ],
+        'observerDelay': typing.Union[ObserverDelaySchema, decimal.Decimal, int, ],
+        'observerPassword': typing.Union[ObserverPasswordSchema, str, ],
+        'options': typing.Union[OptionsSchema, str, ],
+        'party': typing.Union[PartySchema, decimal.Decimal, int, ],
+        'password': typing.Union[PasswordSchema, str, ],
+        'passworded': typing.Union[PasswordedSchema, decimal.Decimal, int, ],
+        'race': typing.Union[RaceSchema, decimal.Decimal, int, ],
+        'relayRegion': typing.Union[RelayRegionSchema, str, ],
+        'serviceType': typing.Union[ServiceTypeSchema, decimal.Decimal, int, ],
+        'slotinfo': typing.Union[SlotinfoSchema, str, ],
+        'state': typing.Union[StateSchema, decimal.Decimal, int, ],
+        'statgroup': typing.Union[StatgroupSchema, decimal.Decimal, int, ],
+        'team': typing.Union[TeamSchema, decimal.Decimal, int, ],
+        'versionFlags': typing.Union[VersionFlagsSchema, decimal.Decimal, int, ],
+        'visible': typing.Union[VisibleSchema, decimal.Decimal, int, ],
+    }
 )
 RequestOptionalQueryParams = typing_extensions.TypedDict(
-    "RequestOptionalQueryParams", {}, total=False
+    'RequestOptionalQueryParams',
+    {
+    },
+    total=False
 )
 
 
-class RequestQueryParams(
-    RequestRequiredQueryParams, RequestOptionalQueryParams
-):
+class RequestQueryParams(RequestRequiredQueryParams, RequestOptionalQueryParams):
     pass
 
 
@@ -437,8 +325,8 @@ request_query_visible = api_client.QueryParameter(
     explode=True,
 )
 _auth = [
-    "sessionID",
-    "connectID",
+    'sessionID',
+    'connectID',
 ]
 SchemaFor200ResponseBodyApplicationJson = schemas.AnyTypeSchema
 
@@ -446,22 +334,25 @@ SchemaFor200ResponseBodyApplicationJson = schemas.AnyTypeSchema
 @dataclass
 class ApiResponseFor200(api_client.ApiResponse):
     response: urllib3.HTTPResponse
-    body: typing.Union[SchemaFor200ResponseBodyApplicationJson,]
+    body: typing.Union[
+        SchemaFor200ResponseBodyApplicationJson,
+    ]
     headers: schemas.Unset = schemas.unset
 
 
 _response_for_200 = api_client.OpenApiResponse(
     response_cls=ApiResponseFor200,
     content={
-        "application/json": api_client.MediaType(
-            schema=SchemaFor200ResponseBodyApplicationJson
-        ),
+        'application/json': api_client.MediaType(
+            schema=SchemaFor200ResponseBodyApplicationJson),
     },
 )
 _status_code_to_response = {
-    "200": _response_for_200,
+    '200': _response_for_200,
 }
-_all_accept_content_types = ("application/json",)
+_all_accept_content_types = (
+    'application/json',
+)
 
 
 class BaseApi(api_client.Api):
@@ -473,8 +364,9 @@ class BaseApi(api_client.Api):
         stream: bool = False,
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
         skip_deserialization: typing_extensions.Literal[False] = ...,
-    ) -> typing.Union[ApiResponseFor200,]:
-        ...
+    ) -> typing.Union[
+        ApiResponseFor200,
+    ]: ...
 
     @typing.overload
     def _game_advertisement_host_oapg(
@@ -484,8 +376,7 @@ class BaseApi(api_client.Api):
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
         stream: bool = False,
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
-    ) -> api_client.ApiResponseWithoutDeserialization:
-        ...
+    ) -> api_client.ApiResponseWithoutDeserialization: ...
 
     @typing.overload
     def _game_advertisement_host_oapg(
@@ -498,8 +389,7 @@ class BaseApi(api_client.Api):
     ) -> typing.Union[
         ApiResponseFor200,
         api_client.ApiResponseWithoutDeserialization,
-    ]:
-        ...
+    ]: ...
 
     def _game_advertisement_host_oapg(
         self,
@@ -555,12 +445,8 @@ class BaseApi(api_client.Api):
             if parameter_data is schemas.unset:
                 continue
             if prefix_separator_iterator is None:
-                prefix_separator_iterator = (
-                    parameter.get_prefix_separator_iterator()
-                )
-            serialized_data = parameter.serialize(
-                parameter_data, prefix_separator_iterator
-            )
+                prefix_separator_iterator = parameter.get_prefix_separator_iterator()
+            serialized_data = parameter.serialize(parameter_data, prefix_separator_iterator)
             for serialized_value in serialized_data.values():
                 used_path += serialized_value
 
@@ -568,11 +454,11 @@ class BaseApi(api_client.Api):
         # TODO add cookie handling
         if accept_content_types:
             for accept_content_type in accept_content_types:
-                _headers.add("Accept", accept_content_type)
+                _headers.add('Accept', accept_content_type)
 
         response = self.api_client.call_api(
             resource_path=used_path,
-            method="post".upper(),
+            method='post'.upper(),
             headers=_headers,
             auth_settings=_auth,
             stream=stream,
@@ -580,27 +466,19 @@ class BaseApi(api_client.Api):
         )
 
         if skip_deserialization:
-            api_response = api_client.ApiResponseWithoutDeserialization(
-                response=response
-            )
+            api_response = api_client.ApiResponseWithoutDeserialization(response=response)
         else:
-            response_for_status = _status_code_to_response.get(
-                str(response.status)
-            )
+            response_for_status = _status_code_to_response.get(str(response.status))
             if response_for_status:
-                api_response = response_for_status.deserialize(
-                    response, self.api_client.configuration
-                )
+                api_response = response_for_status.deserialize(response, self.api_client.configuration)
             else:
-                api_response = api_client.ApiResponseWithoutDeserialization(
-                    response=response
-                )
+                api_response = api_client.ApiResponseWithoutDeserialization(response=response)
 
         if not 200 <= response.status <= 299:
             raise exceptions.ApiException(
                 status=response.status,
                 reason=response.reason,
-                api_response=api_response,
+                api_response=api_response
             )
 
         return api_response
@@ -617,8 +495,9 @@ class GameAdvertisementHost(BaseApi):
         stream: bool = False,
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
         skip_deserialization: typing_extensions.Literal[False] = ...,
-    ) -> typing.Union[ApiResponseFor200,]:
-        ...
+    ) -> typing.Union[
+        ApiResponseFor200,
+    ]: ...
 
     @typing.overload
     def game_advertisement_host(
@@ -628,8 +507,7 @@ class GameAdvertisementHost(BaseApi):
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
         stream: bool = False,
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
-    ) -> api_client.ApiResponseWithoutDeserialization:
-        ...
+    ) -> api_client.ApiResponseWithoutDeserialization: ...
 
     @typing.overload
     def game_advertisement_host(
@@ -642,8 +520,7 @@ class GameAdvertisementHost(BaseApi):
     ) -> typing.Union[
         ApiResponseFor200,
         api_client.ApiResponseWithoutDeserialization,
-    ]:
-        ...
+    ]: ...
 
     def game_advertisement_host(
         self,
@@ -658,7 +535,7 @@ class GameAdvertisementHost(BaseApi):
             accept_content_types=accept_content_types,
             stream=stream,
             timeout=timeout,
-            skip_deserialization=skip_deserialization,
+            skip_deserialization=skip_deserialization
         )
 
 
@@ -673,8 +550,9 @@ class ApiForpost(BaseApi):
         stream: bool = False,
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
         skip_deserialization: typing_extensions.Literal[False] = ...,
-    ) -> typing.Union[ApiResponseFor200,]:
-        ...
+    ) -> typing.Union[
+        ApiResponseFor200,
+    ]: ...
 
     @typing.overload
     def post(
@@ -684,8 +562,7 @@ class ApiForpost(BaseApi):
         accept_content_types: typing.Tuple[str] = _all_accept_content_types,
         stream: bool = False,
         timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
-    ) -> api_client.ApiResponseWithoutDeserialization:
-        ...
+    ) -> api_client.ApiResponseWithoutDeserialization: ...
 
     @typing.overload
     def post(
@@ -698,8 +575,7 @@ class ApiForpost(BaseApi):
     ) -> typing.Union[
         ApiResponseFor200,
         api_client.ApiResponseWithoutDeserialization,
-    ]:
-        ...
+    ]: ...
 
     def post(
         self,
@@ -714,5 +590,7 @@ class ApiForpost(BaseApi):
             accept_content_types=accept_content_types,
             stream=stream,
             timeout=timeout,
-            skip_deserialization=skip_deserialization,
+            skip_deserialization=skip_deserialization
         )
+
+

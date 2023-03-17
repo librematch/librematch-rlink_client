@@ -1,6 +1,4 @@
-from rlink_client.paths.community_leaderboard_get_avatar_stat_for_profile.get import (
-    ApiForget,
-)
+from rlink_client.paths.community_leaderboard_get_avatar_stat_for_profile.get import ApiForget
 
 
 class CommunityLeaderboardGetAvatarStatForProfile(
