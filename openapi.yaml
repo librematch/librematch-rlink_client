@@ -3,7 +3,7 @@ openapi: 3.0.3
 info:
   title: Relic Link API
   description: ""
-  version: "23.03.02"
+  version: "23.03.03"
 servers:
   - url: https://aoe-api.reliclink.com
 paths:
@@ -1672,6 +1672,8 @@ components:
       description: "Can be anything: string, number, array, object, etc., including `null`"
       content:
         application/json:
+          schema: {}
+        application/json;charset=utf-8:
           schema: {}
   parameters:
     callNum:
