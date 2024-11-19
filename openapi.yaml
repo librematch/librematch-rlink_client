@@ -1,11 +1,11 @@
 ---
 openapi: 3.0.3
 info:
-  title: Relic Link API
+  title: World's Edge API
   description: ""
-  version: "23.03.03"
+  version: "24.11.01"
 servers:
-  - url: https://aoe-api.reliclink.com
+  - url: https://aoe-api.worldsedgelink.com
 paths:
   /community/external/proxysteamuserrequest:
     get:
