@@ -1,6 +1,11 @@
 set windows-shell := ["powershell.exe", "-NoLogo", "-Command"]
 
 generate:
-    Rename-Item -Path "rlink_client_python" -NewName "rlink_client_python_old"
-    openapi-generator-cli.cmd generate -g python -o rlink_client_python -i openapi.yaml --package-name rlink_client
-    Copy-Item -Path "rlink_client_python_old/pyproject.toml" -Destination "rlink_client_python/pyproject.toml"
+    podman run --rm -v ${PWD}:/local openapitools/openapi-generator-cli generate -i /local/openapi.yaml -g python -o /local/rlink_client_python_new --package-name rlink_client
+
+renew: generate
+    cp "rlink_client_python/pyproject.toml" "rlink_client_python_new/pyproject.toml"
+    rmdir -R "rlink_client_python"
+    mv "rlink_client_python_new" "rlink_client_python"
+    mkdir "rlink_client_python/src"
+    mv "rlink_client_python/rlink_client" "rlink_client_python/src/rlink_client"
