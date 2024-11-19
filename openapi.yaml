@@ -5,7 +5,7 @@ info:
   description: ""
   version: "23.03.03"
 servers:
-  - url: https://aoe-api.reliclink.com
+  - url: https://aoe-api.worldsedgelink.com
 paths:
   /community/external/proxysteamuserrequest:
     get:
